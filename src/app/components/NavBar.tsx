@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const { theme, setTheme } = useTheme();
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 px-6 py-3 backdrop-blur-md bg-white/30 dark:bg-gray-900/30 border-b border-white/20 dark:border-gray-800/30 shadow-sm transition-colors duration-300">
+    <nav className={`${theme==='dark'?'text-white':'text-black'} fixed top-0 left-0 w-full z-50 px-6 py-3 backdrop-blur-md bg-white/30 dark:bg-gray-900/30 border-b border-white/20 dark:border-gray-800/30 shadow-sm transition-colors duration-300`}>
       <div className="max-w-6xl mx-auto flex justify-between items-center">
            <Image
                   src={theme==='dark'?"/logo_white.png":'/logo_black.png'}

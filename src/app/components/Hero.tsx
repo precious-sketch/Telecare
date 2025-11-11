@@ -32,7 +32,7 @@ const Hero = () => {
                 </div>
             ))}
         </Zoom>
-        <div className="absolute max-w-[800px] min-w-[400px] flex flex-col bottom-3 left-3 w-1/4 ">
+        <div className="absolute max-w-[500px] flex flex-col bottom-0 left-0 w-full p-4 ">
             <span className='font-extrabold text-4xl max-sm:text-2xl max-md:text-3xl'>Telecare Services</span>
             <span className='text-md text-justify max-md:text-sm max-sm:text-xs'>we’re committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
         </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import ThemeToggle from './ThemeToggle';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -11,9 +11,20 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const { theme, setTheme } = useTheme();
+    const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY); 
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className={`${theme==='dark'?'text-white':'text-black'} fixed top-0 left-0 w-full z-50 px-6 py-3 backdrop-blur-md bg-white/30 dark:bg-gray-900/30 border-b border-white/20 dark:border-gray-800/30 shadow-sm transition-colors duration-300`}>
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+    <nav className={`${theme==='dark'?'text-white':'text-black'}  fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg -colors duration-300`}>
+      <div className={`max-w-6xl mx-auto flex justify-between items-center ${scrollY>100? (theme==='dark'?'bg-black p-3':'bg-white p-3'):''}`}>
            <Image
                   src={theme==='dark'?"/logo_white.png":'/logo_black.png'}
                   alt="Logo"
@@ -23,18 +34,18 @@ export default function Navbar() {
                 />
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 text-gray-700 dark:text-gray-200">
-          <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</Link>
-          <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</Link>
+        <div className="hidden md:flex space-x-6">
+          <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Home</Link>
+          <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About</Link>
     
-          <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</Link>
+          <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</Link>
         </div>
 
         {/* Right section */}
-        <div className="flex items-center gap-3">
+        <div className={`flex items-center gap-3 ${theme==='dark'?'text-white':'text-black'}`}>
           <ThemeToggle />
           <button
-            className="md:hidden p-2 text-gray-700 dark:text-gray-200"
+            className={`md:hidden p-2 ${theme==='dark'?'text-white':'text-black'}`}
             onClick={() => setOpen(!open)}
           >
             {open ? <X /> : <Menu />}
@@ -42,9 +53,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+  
       {open && (
-        <div className="md:hidden mt-3 flex flex-col items-center bg-white/30 dark:bg-gray-900/40 backdrop-blur-lg rounded-lg py-4 space-y-3 text-gray-800 dark:text-gray-100 border border-white/20 dark:border-gray-800/30">
+        <div className="md:hidden mt-3 flex flex-col items-center bg-white/30 dark:bg-gray-900/40 backdrop-blur-lg rounded-lg py-4 space-y-3  border border-white/20 dark:border-gray-800/30">
           <Link href="/" onClick={() => setOpen(false)}>Home</Link>
           <Link href="/" onClick={() => setOpen(false)}>About</Link>
           <Link href="/" onClick={() => setOpen(false)}>Contact</Link>

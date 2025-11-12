@@ -88,7 +88,7 @@ const services = [
         key={i}
         className={`${
           theme === 'dark' ? 'bg-black text-zinc-50' : 'bg-white text-zinc-900'
-        } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition`}
+        } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition `}
       >
         <Image
           src={item.img}
@@ -97,7 +97,7 @@ const services = [
           height={300}
           className="object-cover w-full h-48"
         />
-        <div className="p-3 space-y-1">
+        <div className="p-4 space-y-1">
           <h3 className="font-bold text-base">{item.title}</h3>
           <p className="text-sm opacity-80">{item.desc}</p>
           <Link

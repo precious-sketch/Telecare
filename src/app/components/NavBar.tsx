@@ -36,9 +36,9 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6">
           <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Home</Link>
-          <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About</Link>
+          <Link href="/about" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About</Link>
     
-          <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</Link>
+          <Link href="/contact" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</Link>
         </div>
 
         {/* Right section */}
@@ -57,8 +57,8 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden mt-3 flex flex-col items-center bg-white/30 dark:bg-gray-900/40 backdrop-blur-lg rounded-lg py-4 space-y-3  border border-white/20 dark:border-gray-800/30">
           <Link href="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link href="/" onClick={() => setOpen(false)}>About</Link>
-          <Link href="/" onClick={() => setOpen(false)}>Contact</Link>
+          <Link href="/about" onClick={() => setOpen(false)}>About</Link>
+          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </div>
       )}
     </nav>

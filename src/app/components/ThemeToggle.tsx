@@ -20,13 +20,13 @@ export default function ThemeToggle() {
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className={`${
         theme === 'dark' ? 'border-white' : 'border-black'
-      } p-2 rounded-full border transition`}
+      } p-1 rounded-full border-2 transition`}
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-        <Sun className="w-5 h-5 text-yellow-400" />
+        <Sun className="w-6 h-6 text-yellow-400" />
       ) : (
-        <Moon className="w-5 h-5 text-gray-800" />
+        <Moon className="w-6 h-6 text-gray-500" />
       )}
     </button>
   );

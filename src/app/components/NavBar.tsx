@@ -24,7 +24,7 @@ export default function Navbar() {
   }, []);
   return (
     <nav className={`${theme==='dark'?'text-white':'text-black'}  fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg -colors duration-300`}>
-      <div className={`max-w-6xl mx-auto flex justify-between items-center ${scrollY>100? (theme==='dark'?'bg-black p-3':'bg-white p-3'):''}`}>
+      <div className={`max-w-2xl mx-auto flex justify-between items-center ${scrollY>100? (theme==='dark'?'bg-black/50 p-3  backdrop-blur-sm border border-neutral-600/40 shadow-sm':'bg-white/50 p-3 backdrop-blur-sm border border-neutral-600/40 shadow-sm'):''} `}>
            <Image
                   src={theme==='dark'?"/logo_white.png":'/logo_black.png'}
                   alt="Logo"

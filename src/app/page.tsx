@@ -64,29 +64,57 @@ const services = [
 <span className="font-extrabold max-sm:text-xl max-md:text-2xl max-2xl:text-3xl text-5xl justify-center text-justify max-w-[600px]">Our team comprises passionate and experienced professionals dedicated to providing exceptional care and support. Meet the individuals behind our mission, each committed to delivering person-centered care and advocacy.</span>
 <Link className={`w-fit p-2 px-3 font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`} href='/about'>Meet the team</Link>
       </section>
-      <section className={`${theme==='dark'?'text-zinc-50 bg-zinc-950':'text-zinc-950 bg-zinc-50'} w-full h-screen flex flex-row align-middle justify-center items-start   max-w-7xl space-x-3 space-y-3 mx-auto px-4 py-10  item-center flex-wrap`}>
-        .
-     {services.map((item, i) => (
-          <div
-            key={i}
-            className="bg-white shadow-md hover:shadow-lg w-full flex flex-1 flex-col  min-w-60 max-w-80  rounded-md overflow-hidden transition"
-          >
-            <Image
-              src={item.img}
-              alt={item.title}
-              width={500}
-              height={300}
-              className="object-cover w-full h-48"
-            />
-            <div className="p-3">
-              <h3 className="font-bold text-gray-800 text-sm mb-1">{item.title}</h3>
-              <p className="text-gray-600 text-xs mb-1">{item.desc}</p>
-              <Link className={`w-fit p-2 px-2 font-semibold ${theme==='dark'?'bg-zinc-100 text-zinc-900':'bg-zinc-900 text-zinc-100'}`} href='/about'>Read more</Link>
-            </div>
+  <section
+  className={` ${
+    theme === 'dark'
+      ? 'text-zinc-50 bg-zinc-900'
+      : 'text-zinc-900 bg-zinc-100'
+  } w-full min-h-screen py-10 px-4 mx-auto max-w-7xl`}
+>
+  <h2 className="text-3xl font-bold mb-8 text-center">Services</h2>
 
-          </div>
-        ))}
-      </section>
+  <div
+    className="
+      grid 
+      gap-6 
+      sm:grid-cols-2 
+      lg:grid-cols-3 
+      xl:grid-cols-4
+      justify-items-center
+    "
+  >
+    {services.map((item, i) => (
+      <div
+        key={i}
+        className={`${
+          theme === 'dark' ? 'bg-black text-zinc-50' : 'bg-white text-zinc-900'
+        } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition`}
+      >
+        <Image
+          src={item.img}
+          alt={item.title}
+          width={500}
+          height={300}
+          className="object-cover w-full h-48"
+        />
+        <div className="p-3 space-y-1">
+          <h3 className="font-bold text-base">{item.title}</h3>
+          <p className="text-sm opacity-80">{item.desc}</p>
+          <Link
+            href="/about"
+            className={`inline-block mt-1 px-3 py-1 font-semibold ${
+              theme === 'dark'
+                ? 'bg-zinc-100 text-zinc-900'
+                : 'bg-zinc-900 text-zinc-100'
+            }`}
+          >
+            Read more
+          </Link>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
     </div>
   );
 }

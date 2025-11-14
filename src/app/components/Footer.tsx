@@ -142,7 +142,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 gap-2 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 border-t border-gray-500/30 pt-8">
+        <div className="mt-8 gap-1 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 border-t border-gray-500/30 pt-6">
           <div className="flex flex-wrap justify-center md:justify-start space-x-2 space-y-2 mb-5">
             <Link href="/" className="">
               Privacy Policy

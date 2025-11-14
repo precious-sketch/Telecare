@@ -38,7 +38,6 @@ export default function Navbar() {
           <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Home</Link>
           <Link href="/about" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About</Link>
           <Link href="/services" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Services</Link>
-    
           <Link href="/contact" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</Link>
         </div>
 

@@ -142,8 +142,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 gap-1 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 border-t border-gray-500/30 pt-6">
-          <div className="flex flex-wrap justify-center md:justify-start space-x-2 space-y-2 mb-5">
+        <div className="my-6 mb-0 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 border-t border-gray-500/30 pt-6 space-x-4">
+          <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-3">
             <Link href="/" className="">
               Privacy Policy
             </Link>
@@ -157,14 +157,14 @@ const Footer = () => {
          
          
           
-          <div className="mb-4">
+          <div className="mb-3 flex-row flex flex-wrap gap-1">
             <b>Address: </b>
             <p> 
              165 Log Canoe Circle, Suite G
 Stevensville, MD 21666
             </p>
           </div>
-          <p className="mt-4 md:mt-0">
+          <p className="mb-3">
             &copy; 2025 Telecare Services, Inc. All rights reserved
           </p>
 

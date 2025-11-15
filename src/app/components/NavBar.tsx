@@ -13,18 +13,35 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
     const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY); 
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+useEffect(() => {
+requestAnimationFrame(() => {
+setScrollY(window.scrollY);
+});
+const handleScroll = () => {
+setScrollY(window.scrollY);
+};
+window.addEventListener("scroll", handleScroll, { passive: true });
+return () => {
+window.removeEventListener("scroll", handleScroll);
+};
+}, []);
+  useEffect(()=>{
+   console.log('object', theme, scrollY)
+  },[theme, scrollY])
+const [mounted, setMounted] = useState(false);
+useEffect(() => {
+const timer = setTimeout(() => setMounted(true), 0);
+ if(typeof window!= undefined){
+ setTheme(localStorage.getItem('theme')||'dark')
+  }
+return () => clearTimeout(timer);
+}, []);
+
+
+if (!mounted) return null;
   return (
     <nav className={`${theme==='dark'?'text-white':'text-black'}  fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg -colors duration-300`}>
-      <div className={`max-w-3xl mx-auto flex justify-between items-center ${scrollY>100? (theme==='dark'?'bg-black/50 p-3  backdrop-blur-sm border border-neutral-600/40 shadow-sm':'bg-white/50 p-3 backdrop-blur-sm border border-neutral-600/40 shadow-sm'):''} `}>
+      <div className={`max-w-3xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? 'bg-black/50 p-3  backdrop-blur-sm border border-neutral-600/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-white/50 p-3 backdrop-blur-sm border border-neutral-600/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
            <Image
                   src={theme==='dark'?"/logo_white.png":'/logo_black.png'}
                   alt="Logo"

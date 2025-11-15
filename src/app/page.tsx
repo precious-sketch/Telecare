@@ -4,11 +4,11 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import Hero from "./components/Hero";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   
   const { theme, setTheme } = useTheme();
-
 const services = [
   { 
     title: "Personal Support", 
@@ -56,7 +56,19 @@ const services = [
     desc: "We offer structured, enriching day habilitation programs designed to support individuals in achieving greater independence and personal growth. Our services include both CSR Compliant and Non-CSR Compliant options to meet diverse needs.", 
   }
 ];
+const [mounted, setMounted] = useState(false);
+useEffect(() => {
+const timer = setTimeout(() => setMounted(true), 0);
+ if(typeof window!= undefined){
+ setTheme(localStorage.getItem('theme')||'dark')
+  }
+return () => clearTimeout(timer);
+}, []);
 
+useEffect(() => {
+  window.history.scrollRestoration = "manual";
+}, []);
+if (!mounted) return null;
   return (
     <div className={`flex flex-col min-h-screen items-center justify-center font-sans  ${theme==='dark'?'bg-black text-white ':'bg-zinc-50 text-zinc-900'}`}>
       <Hero />

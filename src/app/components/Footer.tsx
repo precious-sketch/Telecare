@@ -2,12 +2,24 @@
 
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { FaTelegram, FaLinkedin, FaFacebook, FaWhatsapp,  } from "react-icons/fa";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+  const timer = setTimeout(() => setMounted(true), 0);
+   if(typeof window!= undefined){
+   setTheme(localStorage.getItem('theme')||'dark')
+    }
+  return () => clearTimeout(timer);
+  }, []);
+  
+  
+  if (!mounted) return null;
   return (
     <footer className={`border-t border-gray-500  ${theme==='dark'?'bg-black text-gray-400':' bg-white text-gray-600'}  font-sans pb-2 footer`}>
       <div className=" m-0 mx-auto px-[3%]">

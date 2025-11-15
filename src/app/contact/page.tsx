@@ -1,28 +1,40 @@
 'use client';
-
-
 import { useTheme } from 'next-themes';
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import Map from 'react-map-gl/mapbox';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const Page = () => {
       const [form, setForm] = useState({ name: '', email: '', message: '' });
-
 const handleChange = (
   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
 ) => {
   setForm({ ...form, [e.target.name]: e.target.value });
 };
- const { theme } = useTheme();
+
+
+  const { theme, setTheme } = useTheme();
+const [mounted, setMounted] = useState(false);
+useEffect(() => {
+const timer = setTimeout(() => setMounted(true), 0);
+ if(typeof window!= undefined){
+ setTheme(localStorage.getItem('theme')||'dark')
+  }
+return () => clearTimeout(timer);
+}, []);
+
+if (!mounted) return null;
   return (
-    <div className={`${theme==='dark'?'bg-black text-white':'bg-white text-black'} flex items-center justify-center bg-cover bg-fixed w-full h-screen  max-md:pt-16 pt-24   relative overflow-x-hidden`}>
+    <div className={`${theme==='dark'?'bg-black text-white':'bg-white text-black'} flex items-center justify-center bg-cover bg-fixed w-full  max-md:pt-16 pt-24   relative overflow-x-hidden`}>
           
         
+         <div className={`py-4 w-[93%]   zinc max-w-[600px] border-2 my-4 border-slate-600/50  z-10  backdrop-blur-sm space-x-3 flex flex-row flex-wrap space-y-6 ${theme==='dark'?'bg-slate-950 text-slate-200':'bg-slate-200 text-slate-900'} `}>
               
-              <form className='py-8 w-[93%]  px-5 zinc max-w-[600px] border-2 my-4 border-black/25 bg-white/30 z-10 overflow-y-hidden backdrop-blur-sm rounded-xl' >
-      <div className='text-xl max-md:text-md p-2 align-middle flex items-center px-7 m-auto bg-black/25 w-fit rounded-full h-fit bebas tracking-wider leading-snug font-semibold'>Send us a message!</div>
-        <div className='w-full flex flex-row pt-8  gap-2 text-xl align-middle items-center max-md:flex-col max-md:gap-0'>
+              <form className='px-5 w-full' >
+      <div className='text-md max-md:text-md p-2 align-middle flex items-center px-7 m-auto  w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Send us a message!</div>
+        <div className='w-full flex flex-row pt-8  gap-1 text-md align-middle items-center max-md:flex-col max-md:gap-0'>
           <label className='text-nowrap align-start text-start h-fit max-md:w-full max-md:px-1  w-[200px] font-semibold  mulish'>Your Name  </label>
           <input
             type="name"
@@ -30,10 +42,10 @@ const handleChange = (
             value={form.name}
             onChange={handleChange}
             required
-            className='w-full outline-0 border p-1 px-3 text-white bg-black/40 border-black/50 rounded-lg focus:border-white/60  font-light text-lg'
+            className='w-full outline-0 border p-1 px-3 text-white bg-black/40 border-black/50  focus:border-white/60  font-light text-lg'
           />
         </div>
-        <div className='w-full flex flex-row pt-3 gap-2 text-xl align-middle items-center max-md:flex-col max-md:gap-0'>
+        <div className='w-full flex flex-row pt-3 gap-1 text-md align-middle items-center max-md:flex-col max-md:gap-0'>
           <label className='text-nowrap align-start text-start h-fit max-md:w-full max-md:px-1 w-[200px] font-semibold  mulish'>Your Email</label>
           <input
             type="email"
@@ -41,10 +53,10 @@ const handleChange = (
             value={form.email}
             onChange={handleChange}
             required
-            className='w-full outline-0 border p-1 px-3 text-white bg-black/40 active:bg-black/25 focus:border-white/60 border-black/50 rounded-lg font-light text-lg'
+            className='w-full outline-0 border p-1 px-3 text-white bg-black/40 active:bg-black/25 focus:border-white/60 border-black/50  font-light text-lg'
           />
         </div>
-        <div className='w-full flex flex-row pt-3  gap-2 text-xl align-middle items-center max-md:flex-col max-md:gap-0'>
+        <div className='w-full flex flex-row pt-3  gap-1 text-md align-middle items-center max-md:flex-col max-md:gap-0'>
           <label className='text-nowrap align-start text-start h-fit max-md:w-full active:bg-black/25 max-md:px-1   w-[200px] font-semibold mulish'>Your Message</label>
           <textarea
             name="message"
@@ -52,7 +64,7 @@ const handleChange = (
             onChange={handleChange}
             required
             rows={2}
-            className='w-full outline-0 border p-1 px-3 text-white  border-black/50 bg-black/40 focus:border-white/60  active:bg-black/25 rounded-lg font-light text-lg'
+            className='w-full outline-0 border p-1 px-3 text-white  border-black/50 bg-black/40 focus:border-white/60  active:bg-black/25  font-light text-lg'
           />
         </div>
         {/* <div>
@@ -75,8 +87,37 @@ const handleChange = (
 
          </textarea>
         </div> */}
-        <button type="submit" className='w-full p-2 align-middle mt-4 text-2xl bg-black/60  font-semibold rounded-md hover:text-black/65 hover:bg-white/50 mulisg '>Send</button>
+        <button type="submit" className={`w-full p-2 align-middle mt-4 text-2xl ${theme==='dark'?'bg-slate-200 text-slate-900':'bg-slate-900 text-slate-200'}  font-semibold spacin`}>Send</button>
       </form>
+      <div className="w-full flex flex-row flex-wrap space-y-2 p-5 space-x-2 align-start justify-start items-start text-wrap border-t-2 border-black/25">
+        <div className="w-[33%] flex-1 min-w-24">
+<div className="font-bold">Visit us</div>
+<span>165 Log Canoe Circle, Suite G, Stevensville, MD 21666</span>
+</div>
+        <div className="w-[33%] min-w-32">
+<div className="font-bold">Call us</div>
+<span>(443) 249-3285</span>
+</div>
+        <div className="w-[33%] min-w-fit">
+<div className="font-bold">Email us</div>
+<span>Info@telecareservices.org</span>
+</div>
+</div>
+<div className="w-full h-full flex-1 flex">
+<Map
+mapboxAccessToken="pk.eyJ1Ijoic25vdGF0IiwiYSI6ImNseW5vdnN5cjA3ZHEycnM0eTlyMzhrYnUifQ.tsLlCTVcEm1YAlkjCu3AiQ"
+initialViewState={{
+        longitude: -38.9,
+        latitude: -76.3,
+        zoom: 14
+      }}
+      style={{width: 600, height: 400}}
+      
+      mapStyle="mapbox://styles/mapbox/streets-v9"
+    />
+          </div>
+
+   </div> 
     </div>
   )
 }

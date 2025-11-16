@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         {/* Main footer content */}
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Portal Description */}
           <div className="lg:col-span-1 text-gray-500/80">
             <div className="border border-gray-500/80 relative">

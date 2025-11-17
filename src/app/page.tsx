@@ -29,52 +29,26 @@ const services = [
     title: "Community Development (CDS)", 
      img: "/service_4.jpg", 
     desc: "CDS focuses on fostering community engagement, encouraging social inclusion, and promoting active participation within diverse community settings.", 
-  }, 
-  { 
-    title: "Respite Care", 
-      img: "/service_5.jpg", 
-    desc: "We provide temporary relief for caregivers through respite care services. These services offer short-term breaks, allowing caregivers to recharge while ensuring continuous care for participants.", 
-  }, 
-  { 
-    title: "Employment Services", 
-   img: "/service_6.jpg", 
-    desc: "At Telecare Services, we are committed to empowering individuals with disabilities by providing comprehensive employment services. Our goal is to ensure that each individual finds meaningful, long-term employment that aligns with their skills and aspirations.", 
-  }, 
-  { 
-    title: "Adult Residential Services", 
-   img: "/service_7.jpg",  
-    desc: "At Telecare Services, we understand the importance of providing a supportive and nurturing environment for adults with special needs. Our Adult Residential Services offer a comforting and inclusive home setting where individuals can thrive.", 
-  }, 
-  { 
-    title: "Remote Support Services", 
-     img: "/service_8.jpg",  
-    desc: "Our Remote Support Services enable individuals to maintain independence while receiving real-time assistance when needed. Through the use of advanced technology and professional support, we provide:", 
-  }, 
-  { 
-    title: "Day Habilitation Services", 
-     img: "/service_9.jpg", 
-    desc: "We offer structured, enriching day habilitation programs designed to support individuals in achieving greater independence and personal growth. Our services include both CSR Compliant and Non-CSR Compliant options to meet diverse needs.", 
   }
 ];
 const [mounted, setMounted] = useState(false);
 useEffect(() => {
 const timer = setTimeout(() => setMounted(true), 0);
- if(typeof window!= undefined){
- setTheme(localStorage.getItem('theme')||'dark')
-  }
+if(typeof window!= undefined){
+setTheme(localStorage.getItem('theme')||'dark')}
 return () => clearTimeout(timer);
 }, []);
 
 useEffect(() => {
-  window.history.scrollRestoration = "manual";
+window.history.scrollRestoration = "manual";
 }, []);
+
 if (!mounted) return null;
-  return (
-    <div className={`flex flex-col min-h-screen items-center justify-center font-sans  ${theme==='dark'?'bg-black text-white ':'bg-zinc-50 text-zinc-900'}`}>
+return (<div className={`flex flex-col min-h-screen items-center justify-center font-sans  ${theme==='dark'?'bg-black text-white ':'bg-zinc-50 text-zinc-900'}`}>
       <Hero />
       <section className={`${theme==='dark'?'text-white bg-black':'text-black bg-white'} w-full h-screen flex flex-col align-middle justify-center items-start px-[5%] space-y-4`}>
 <span className="font-extrabold max-sm:text-xl max-md:text-2xl max-2xl:text-3xl text-5xl justify-center text-justify max-w-[600px]">Our team comprises passionate and experienced professionals dedicated to providing exceptional care and support. Meet the individuals behind our mission, each committed to delivering person-centered care and advocacy.</span>
-<Link className={`w-fit p-2 px-3 font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`} href='/about'>Meet the team</Link>
+<Link className={`w-fit h-fit p-2 px-3 font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`} href='/about'>Meet the team</Link>
       </section>
   <section
   className={` ${
@@ -83,7 +57,7 @@ if (!mounted) return null;
       : 'text-zinc-900 bg-zinc-100'
   } w-full min-h-screen py-10 px-4 mx-auto max-w-7xl`}
 >
-  <h2 className="text-3xl font-bold mb-8 text-center">Services</h2>
+ <div className="w-full flex flex-row"><h2 className="w-full text-2xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2> <Link href='/services' className={`w-fit h-fit p-1 px-2 text-sm font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`}>View all services</Link></div> 
 
   <div
     className="

@@ -133,11 +133,11 @@ const Footer = () => {
           {/* Publications & Contact */}
           <div className="lg:col-span-1 flex flex-col">
               <h4 className="text-lg font-semibold mb-3">Talk To Us</h4>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-sm flex flex-col">
                 <li>
                   <Link href="mailto:info@telecareservices.org" className="">
-                    Info@telecareservices.org
-                  </Link>
+                    info@telecareservices.org
+                  </Link></li> <li>
                   <Link href="mailto:emem@telecareservices.org" className="">
                     emem@telecareservices.org
                   </Link>

@@ -13,7 +13,7 @@ const services = [
     title: "Personal Support", 
     img: "/service_1.jpg", 
     desc: "Our personal support services are tailored to meet the individual needs of each participant. We offer comprehensive assistance to foster independence and improve daily living skills.", 
-  }, 
+  },
   { 
     title: "Supported Living", 
    img: "/service_2.jpg",  
@@ -106,7 +106,7 @@ if (!mounted) return null;
           <h3 className="font-bold text-base">{item.title}</h3>
           <p className="text-sm opacity-80">{item.desc}</p>
           <Link
-            href="/about"
+            href={"/services"+i}
             className={`inline-block mt-1 px-3 py-1 font-semibold ${
               theme === 'dark'
                 ? 'bg-zinc-100 text-zinc-900'

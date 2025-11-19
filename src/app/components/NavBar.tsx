@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+ const [open, setOpen] = useState(false);
 
   const { theme, setTheme } = useTheme();
     const [scrollY, setScrollY] = useState(0);
@@ -55,6 +55,8 @@ if (!mounted) return null;
           <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Home</Link>
           <Link href="/about" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About</Link>
           <Link href="/services" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Services</Link>
+          <Link href="/tools" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Tools</Link>
+          <Link href="/career" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Career</Link>
           <Link href="/contact" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</Link>
         </div>
 
@@ -75,6 +77,9 @@ if (!mounted) return null;
         <div className="md:hidden mt-3 flex flex-col items-center bg-white/30 dark:bg-gray-900/40 backdrop-blur-lg rounded-lg py-4 space-y-3  border border-white/20 dark:border-gray-800/30">
           <Link href="/" onClick={() => setOpen(false)}>Home</Link>
           <Link href="/about" onClick={() => setOpen(false)}>About</Link>
+          <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+          <Link href="/tools" onClick={() => setOpen(false)}>Tools</Link>
+          <Link href="/career" onClick={() => setOpen(false)}>Career</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </div>
       )}

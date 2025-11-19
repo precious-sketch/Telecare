@@ -106,7 +106,7 @@ if (!mounted) return null;
           <h3 className="font-bold text-base">{item.title}</h3>
           <p className="text-sm opacity-80">{item.desc}</p>
           <Link
-            href={"/services"+i}
+            href={"/services/"+i}
             className={`inline-block mt-1 px-3 py-1 font-semibold ${
               theme === 'dark'
                 ? 'bg-zinc-100 text-zinc-900'

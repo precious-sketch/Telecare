@@ -30,9 +30,9 @@ if (!mounted) return null;
     <div className={`${theme==='dark'?'bg-black text-white':'bg-white text-black'} flex items-center justify-center bg-cover bg-fixed w-full  max-md:pt-16 pt-24 pb-12   relative overflow-x-hidden`}>
           
         
-         <div className={`w-[94%] max-md:max-w-[500px] md:flex-row  max-md:flex-col shadow-lg my-6  z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?'bg-slate-950 text-slate-00':'bg-slate-100 text-slate-900'} `}>
+         <div className={`w-[94%] max-md:max-w-[500px] md:flex-row  max-md:flex-col shadow-lg my-6  z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-neutral-900':' text-neutral-950 bg-neutral-100'} `}>
               
-              <form className='px-3  w-full flex flex-1 items-center border-2 border-slate-600/40 flex-col min-w-56 py-7' >
+              <form className='px-3  w-full flex flex-1 items-center  flex-col min-w-56 py-8' >
       <div className='text-xl max-md:text-lg align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Send us a message!</div>
         <div className='w-full flex flex-row flex-wrap pt-5  gap-1 text-md align-middle items-center  max-md:gap-0'>
           <label className='text-nowrap align-start text-start h-fit max-md:w-full max-md:px-1  w-[200px] font-semibold  mulish'>Your Name  </label>
@@ -42,7 +42,7 @@ if (!mounted) return null;
             value={form.name}
             onChange={handleChange}
             required
-            className='w-full min-w-32 outline-0 border p-1 px-3 text-white bg-black/40 border-black/50  focus:border-white/60  font-light text-lg'
+            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white':'bg-white text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         <div className='w-full flex flex-row flex-wrap  pt-3 gap-1 text-md align-middle items-center  max-md:gap-0'>
@@ -53,7 +53,7 @@ if (!mounted) return null;
             value={form.email}
             onChange={handleChange}
             required
-            className='w-full  min-w-32 outline-0 border p-1 px-3 text-white bg-black/40 active:bg-black/25 focus:border-white/60 border-black/50  font-light text-lg'
+              className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white':'bg-white text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         <div className='w-full flex flex-row flex-wrap pt-3  gap-1 text-md align-middle items-center  max-md:gap-0'>
@@ -64,7 +64,7 @@ if (!mounted) return null;
             onChange={handleChange}
             required
             rows={2}
-            className='w-full outline-0 border  min-w-32 p-1 px-3 text-white  border-black/50 bg-black/40 focus:border-white/60  active:bg-black/25  font-light text-lg'
+            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white':'bg-white text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         {/* <div>
@@ -87,23 +87,23 @@ if (!mounted) return null;
 
          </textarea>
         </div> */}
-        <button type="submit" className={`w-full p-2 align-middle mt-4 text-2xl ${theme==='dark'?'bg-slate-200 text-slate-900':'bg-slate-900 text-slate-200'}  font-semibold spacin`}>Send</button>
+        <button type="submit" className={`w-full p-2 align-middle mt-4 text-2xl ${theme==='dark'?'bg-neutral-100 text-neutral-950':'bg-neutral-950 text-neutral-100'}  font-semibold spacin`}>Send</button>
       </form>
-      <div className="w-fit min-w-36 flex flex-1 flex-row flex-wrap gap-2 p-3 align-start justify-start items-start text-wrap border-2 border-slate-600/50">
-        <div className="w-[34%] flex-1 min-w-24">
+      <div className="w-fit gap-4 md:flex-col flex flex-1 flex-row flex-wrap  p-3 md:py-8 align-start justify-start items-start text-wrap pb-8 border-slate-600/50">
+        <div className="w-[34%] md:w-[60%] min-w-32">
 <div className="font-bold">Visit us</div>
-<span className='text-sm'>165 Log Canoe Circle, Suite G, Stevensville, MD 21666</span>
+<span className='text-sm w-full'>165 Log Canoe Circle, Suite G, Stevensville, MD 21666</span>
 </div>
-        <div className="w-[33%] min-w-32">
+        <div className="w-[33%]  md:w-full  min-w-32">
 <div className="font-bold">Call us</div>
 <span className='text-sm'>+1 (443) 249-3285</span>
 </div>
-        <div className="w-[33%] min-w-fit">
+        <div className="w-[33%]  md:w-full  min-w-fit">
 <div className="font-bold">Email us</div>
 <span className='text-sm'>Info@telecareservices.org</span>
 </div>
 </div>
-<div className=" w-full min-w-56 h-full flex-1 flex border-2 border-slate-600/50">
+<div className=" w-full min-w-56 h-full flex-1 flex border-slate-600/50">
 <Map
 mapboxAccessToken="pk.eyJ1Ijoic25vdGF0IiwiYSI6ImNseW5vdnN5cjA3ZHEycnM0eTlyMzhrYnUifQ.tsLlCTVcEm1YAlkjCu3AiQ"
 initialViewState={{

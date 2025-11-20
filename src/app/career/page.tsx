@@ -8,8 +8,8 @@ const Page = () => {
     
     const { theme, setTheme } = useTheme();
   return (
-    <div className={`w-full py-32 max-w-6xl px-[3%] space-y-5 ${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"}`}>
-
+    <div className={`w-full py-32  px-[3%] space-y-5 ${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"}`}>
+<div className="w-full  max-w-5xl m-auto">
 <section className="w-full">
         <div className="p-2 text-xs border w-fit">Vacancies/Jobs!</div>
   <div className="max-md:text-xl text-3xl font-bold ">Join Our Mission of Care</div>
@@ -30,7 +30,7 @@ const Page = () => {
   </section>
 
   <JobComp />
-    </div>
+    </div></div>
   )
 }
 

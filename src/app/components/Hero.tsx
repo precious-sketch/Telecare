@@ -2,6 +2,7 @@ import React from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import { Zoom } from 'react-slideshow-image';
 import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 const Hero = () => {
   const images = [
@@ -18,7 +19,7 @@ const Hero = () => {
 
   return (
     <div
-      className={`${
+      className={`relative ${
         theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'
       } relative w-full h-full overflow-hidden`}
     >
@@ -32,7 +33,7 @@ const Hero = () => {
         autoplay={true}
       >
         {images.map((image, index) => (
-          <div key={index} className="w-full opacity-50 h-screen relative">
+          <div key={index} className="w-full  h-screen relative">
             <div
               className="w-full h-full bg-cover bg-center"
               style={{
@@ -43,7 +44,22 @@ const Hero = () => {
           </div>
         ))}
       </Zoom>
-<div className="absolute max-w-[500px] opacity-85 flex flex-col bottom-0 left-0 w-full p-4  z-10"> <span className='font-extrabold text-7xl max-sm:text-5xl max-md:text-4xl'>Telecare Services</span> <span className='text-lg max-md:text-md max-sm:text-sm text-justify'>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span> </div>
+      <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000030,black)]':'bg-[radial-gradient(circle_at_center,#ffffff30,white)]'}`}></div>
+
+<div className="absolute max-w-[500px] opacity-85 flex flex-col bottom-0 left-0 w-full p-4 pb-8 z-10"> <span className='font-extrabold text-5xl max-md:text-4xl'>Telecare Services</span> <span className='text-lg max-md:text-md max-sm:text-sm text-justify '>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
+
+ <Link
+            href="/contact"
+            className={`w-fit mt-1 px-5 max-md:text-lg text-xl  py-2 font-bold ${
+              theme === 'dark'
+                ? 'bg-white text-black'
+                : 'bg-black text-white'
+            }`}
+          >
+            Contact Us
+          </Link>
+    
+ </div>
     </div>
   );
 };

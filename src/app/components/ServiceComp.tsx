@@ -71,47 +71,44 @@ import React, { useEffect, useState } from 'react'
     img: "/service_6.jpg",
     desc: "At Telecare Services, we are committed to empowering individuals with disabilities through a comprehensive approach to employment. We focus on helping each individual find meaningful and long-term employment that best utilizes their skills and aspirations.",
     content_paragraphs: [
-      "We believe that employment is a prime driver of independence and self-worth. Telecare Services provides specialized Employment Services to support individuals with disabilities in their pursuit of job market success. Our process starts with a thorough discovery phase, during which time we assess the individual's skills, interests, and strengths to identify career paths that offer genuine satisfaction and sustainability.",
-      "Once a job-oriented objective has been established, we take the active approach of offering hands-on assistance with the job search process; this includes resume writing workshops, preparation for interviews, and how to go about making an application. We realize the hiring process can be intimidating, so we conduct mock interviews to teach soft skills such as punctuality, communication, and workplace etiquette so our clients can give a good first impression.",
-      "Our support does not end when an individual receives a job offer. We also provide on-site job coaching and support during the initial phase of employment to assist the individual to learn their new job duties and also adapt to the culture of the workplace. We work alongside clients to master the occupation, fading support as the individual becomes confident and competent, thus ensuring they become a fully integrated and productive member of the team.",
-      "Advocacy plays a major role in our Employment Services. We work with employers to identify and implement reasonable accommodations that enable our clients to perform their jobs effectively. By educating employers about the benefits of an inclusive workforce, we help create supportive work environments that value individuals with disabilities for their talents and contributions rather than their limitations.",
-      "Long-term job retention is our ultimate metric of success. We keep in constant contact with both the employee and the employer to work out challenges and provide retraining or mediation as needed. Telecare Services is committed to making jobs into careers for our clients, with the financial independence and social connections that valuable work provides."
+      "One of the main factors influencing independence and self-worth is employment.  To help people with disabilities succeed in the job market, Telecare Services offers specialised employment services.  Our process begins with a comprehensive discovery phase in which we evaluate the person's abilities, interests, and strengths in order to determine career paths that provide true fulfilment and sustainability.", "After a job-oriented objective has been established, we take the active approach of providing hands-on assistance with the job search process; this includes resume writing workshops, interview preparation, and how to make an application.  We conduct interviews to teach soft skills like punctuality, communication, and workplace etiquette so our clients can make a good first impression because we understand that the hiring process can be intimidating.",
+   "Our assistance doesn't stop when someone gets a job offer.  In order to help the person learn their new job responsibilities and adjust to the workplace culture, we also offer on-site job coaching and support during the first phase of employment.  In order to ensure that our clients become fully integrated and productive members of the team, we work alongside them to master the profession, providing fading support as they gain competence and confidence.",
+   "A significant part of our employment services is advocacy.  In order to help our clients do their jobs well, we collaborate with employers to find and implement reasonable accommodations.  By teaching employers about the advantages of having an inclusive workforce, we contribute to the development of welcoming workplaces where people with disabilities are valued for their abilities and contributions rather than their limitations.",
+       "Our ultimate success metric is long-term job retention.  To resolve issues and offer retraining or mediation when necessary, we maintain continuous communication with both the employer and the employee.  With the financial independence and social connections that meaningful work offers, Telecare Services is dedicated to helping our clients turn their jobs into careers."
     ]
   },
   {
     title: "Adult Residential Services",
     img: "/service_7.jpg",
-    desc: "At Telecare Services, we believe that adults with special needs require a caring and nurturing environment. Our Adult Residential Services have become a comforting and supportive home for a number of people - a place where they can grow and thrive.",
+    desc: "Adults with special needs need a loving and supportive environment, in our opinion at Telecare Services.  For many, our Adult Residential Services have evolved into a cosy and encouraging home where they can develop and flourish.",
     content_paragraphs: [
-      "Our Adult Residential Services provide a warm, family-like atmosphere for individuals who need 24-hour support, but would prefer to live in the community rather than an institution. The group homes managed by Telecare Services are safe, accessible, and comfortably furnished. We work hard at providing a genuine 'home' for residents to experience belongingness, safety, and companionship among their housemates.",
-      "The staffing in our residential homes is comprehensive and attentive. We provide round-the-clock supervision to assist with every aspect of daily life, including meal preparation and housekeeping, personal hygiene, and medication administration. Our staff are trained in both behavioral challenges and medical needs so that residents are kept safe at all times while still maintaining their privacy and dignity.",
-      "Community is built around the dining table and the living room. We also encourage communal living dynamics where the residents share meals, celebrate their birthdays, and enjoy leisure time together. It is important, for this reason, for combating loneliness and helping a resident build social skills. However, we also respect the need for individual time, ensuring each resident has their own personalized space to retreat to.",
-      "Each resident in our care has an Individualized Support Plan that outlines how we will provide services for that individual. We work with the individual to establish personal goals, such as learning to do laundry, developing better communication skills, or managing personal finances. Our residential staff actively works on those goals each day, making the residence a place of ongoing learning and growth.",
-      "We maintain an open-door policy for families and encourage their active involvement in the lives of our residents. We also facilitate visits, home trips, and regular communication to keep family bonds intact. It is our commitment at Telecare Services that we turn the residential homes into a place of joy, dignity, and comfort, allowing adults with special needs to live life to the fullest."
+      "For people who require round-the-clock assistance but would rather live in the community than an institution, our Adult Residential Services offer a cosy, family-like environment.  Telecare Services oversees group homes that are secure, easily accessible, and cosy.  We put a lot of effort into giving residents a true home where they can feel safe, connected to one another, and at home.",
+ "We have thorough and attentive staffing in our residential homes.  We offer 24-hour supervision to help with all facets of daily life, such as medication administration, personal hygiene, meal preparation, and housekeeping.  In order to keep residents safe at all times while preserving their privacy and dignity, our staff is trained in both medical needs and behavioural challenges.",
+      "Additionally, we promote communal living arrangements where residents eat meals together, celebrate birthdays, and spend free time together.  This makes it crucial for preventing loneliness and assisting a resident in developing social skills.  But we also value the need for personal time, so we make sure every resident has a private area to retreat to.",
+       "Every resident under our care has an Individualised Support Plan that describes the services we will offer to them.  We collaborate with the person to set personal objectives, like learning how to do laundry, improving communication, or handling personal finances.  The residence is a place of continuous learning and development because our residential staff actively works towards those objectives every day.",
+      "Families are welcome and encouraged to actively participate in our residents' lives.  In order to maintain family ties, we also arrange visits, house trips, and frequent communication.  At Telecare Services, we are dedicated to making residential homes joyful, dignified, and comfortable so that adults with special needs can fully experience life."
     ]
   },
   {
     title: "Remote Support Services",
     img: "/service_8.jpg",
-    desc: "Our Remote Support Services allow individuals to stay independent but offer real-time support when it is needed. With the help of advanced technology and proficient support, we provide:",
+    desc: "Our Remote Support Services allow individuals to stay independent but offer real-time support when it is needed. With the help of advanced technology and proficient support, we provide the best remote support services",
     content_paragraphs: [
-      "Telecare Services provides Remote Support Services as a modern alternative or supplement to traditional in-person care during this era of digital innovation. This service utilizes secure, two-way communication technology, sensors, and monitoring systems to support individuals in their homes without the physical presence of a caregiver. This is perfect for individuals who require more privacy and independence but still need that safety net.",
-      "Our remote support system instantaneously connects clients to a remote staff that is available 24/7. From giving verbal cues to remind them to take their medicines to audio intercoms assisting a person to resolve a problem or just reassurance on a moment of anxiety through video calls, staff can intervene while empowering clients to solve their own problems with just that little guidance and building further self-reliance.",
-      "Non-intrusive environmental sensors enhance safety. We can install technology for fall detection, unauthorized door openings, or smoke detection that indicates elopement risk; also, unusual inactivity is detected. If an alert is triggered, our remote team assesses the situation immediately. We can quickly dispatch emergency services or a roving caregiver if physical assistance is required, thereby ensuring a swift response to whatever crisis has occurred.",
-      "Remote support is particularly effective for overnight monitoring. Instead of having a staff member sleep in the home, which can be intrusive, our remote team monitors the home electronically. This allows the individual to have the house to themselves, improving their sleep quality and sense of normalcy while ensuring that help is available at the push of a button if they wake up and need assistance.",
-      "We carefully tailor the technology employed to meet each individual's comfort level and needs. From simple, intuitive interfaces for tablets to complex arrays of sensors, we make sure the client and their family members understand how to use the system. Telecare Services is on the front line in using technology to provide efficient, respectful, and empowering care."
+      "In this age of digital innovation, remote support services are a contemporary addition to traditional in-person care.  This service supports people in their homes without a carer physically present by using sensors, monitoring systems, and secure, two-way communication technology.  For those who need that safety net but also want more privacy and independence, this is ideal. Our remote support system instantly connects clients to a remote staff that is available 24/7.", "Staff can intervene while empowering clients to solve their own problems with just that little guidance and building further self-reliance, whether it's through verbal cues to remind them to take their medications or audio intercoms to help someone solve a problem or just reassure them during a moment of anxiety through video calls.",
+      "Safety is improved by non-intrusive environmental sensors.  If physical assistance is needed, we can promptly send out emergency services or a roving carer, guaranteeing a prompt response to whatever crisis has arisen.",
+       "Remote assistance works especially well for monitoring during the night.  Our remote team electronically monitors the house rather than having a staff member sleep there, which can be invasive.  This makes it possible for the person to have the house to themselves, which enhances their quality of sleep and sense of normalcy while guaranteeing that assistance is at their fingertips in case they wake up and require it.",
+      "We carefully customise the technology used to suit the needs and comfort level of each individual.  We ensure that the client and their family members are able to operate the system, from straightforward tablet interfaces to intricate sensor arrays.  Telecare Services is at the forefront of leveraging technology to deliver effective, considerate, and empowering care."
     ]
   },
   {
     title: "Day Habilitation Services",
     img: "/service_9.jpg",
-    desc: "We provide structured, meaningful day habilitation programs to aide in the advancement of participant independence and personal development. We provide services in both CSR Compliant and Non-CSR Compliant options to answer specific individual needs.",
+    desc: "To support the growth of participant independence and personal development, we offer organised, purposeful day habilitation programs.  To address particular individual needs, we offer services in both CSR-compliant and non-CSR-compliant options.",
     content_paragraphs: [
-      "Our Day Habilitation Services are a lively and organized setting where clients can happily spend their weekdays doing meaningful things. More than simply a supervised setting, at Telecare Services, we offer a curriculum of growth for our clients. Our programs aim at improving socialization, physical health, and cognitive skills through a mix of group activities, educational workshops, and recreational fun.",
-      "Each day at the center is unique, which keeps participants both excited and active. We provide creative arts and crafts, music therapy to work out emotions, and physical fitness adapted for participants with various levels of mobility. Activities that are typically enjoyable are now therapeutic tools to help improve fine motor skills, communication abilities, and overall physical wellness.",
-      "A major focus of Day Habilitation is reinforcing the skills that lead to greater independence. We run sessions on practical life skills such as money management, computer literacy, and safety awareness. By practicing these skills in a supportive group setting, participants gain the confidence to apply them in the real world, whether at home or in the community.",
-      "We realize every individual has different funding and regulatory needs, so we offer both CSR (Community Social Responsibility) Compliant and Non-CSR options. Our CSR-compliant tracks conform strictly to selected state and federal guidelines on community integration and ratios so that individuals receiving government waivers get just the amount of regulated care they need.",
-      "Socially, the Day Habilitation program builds a sense of belonging. It is the place where friendships are forged and peer support is available. We celebrate holidays, cultural events, and personal milestones-all part of what makes it a community. Telecare Services is committed to making every day a good day: a day with purpose, laughter, and learning."
+      "Clients can enjoyably spend their weekdays doing worthwhile activities in our vibrant and well-organised day habilitation services.  At Telecare Services, we provide our clients with a curriculum of growth rather than just a supervised environment.  Our programs use a combination of educational workshops, recreational fun, and group activities to improve socialisation, physical health, and cognitive abilities.",
+       "Every day at the centre is different, which keeps people engaged and enthusiastic.  We offer physical fitness programs tailored to individuals with different mobility levels, music therapy to address emotions, and creative arts and crafts.  Nowadays, enjoyable activities can be used as therapeutic tools to enhance communication skills, fine motor skills, and general physical wellness.",
+      "Day Habilitation places a lot of emphasis on strengthening the abilities that result in increased independence.  We conduct workshops on useful life skills like computer literacy, money management, and safety awareness.  We provide both CSR (Community Social Responsibility) Compliant and Non-CSR options because we understand that each person has different funding and regulatory needs.", "Participants gain the confidence to apply these skills in the real world, whether at home or in the community, by practicing them in a supportive group setting.  In order to ensure that people receiving government waivers receive precisely the right amount of regulated care, our CSR-compliant tracks closely adhere to specific state and federal guidelines on community integration and ratios.",
+      "The Day Habilitation program fosters a feeling of social inclusion.  Peer support is available and friendships are formed there.  We commemorate holidays, cultural occasions, and individual achievements—all of which contribute to our sense of community.  Telecare Services is dedicated to making each day enjoyable—a day filled with learning, laughter, and purpose."
     ]
   }
 ]
@@ -155,7 +152,7 @@ if (!mounted) return null;
   />
 </div>
 
-      <div className="w-full md:w-1/2 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 flex flex-col 0justify-center">=
         <h1 className="text-xl md:text-2xl font-bold 
          leading-tight mb-1">
         
@@ -163,7 +160,7 @@ if (!mounted) return null;
         </h1>
 
         <p className="
-         text-md leading-relaxed">
+         text-md">
          
     {service.desc}
         </p>
@@ -171,11 +168,11 @@ if (!mounted) return null;
     </div>
 
     {/* Content Sections */}
-    <div className="mt-4 space-y-4">
+    <div className="mt-4 space-y-3">
 
     {service.content_paragraphs.map((res, index)=>{
         return  <p key={index} className="
-       text-md leading-relaxed">
+       text-md">
         {res}
     </p>
     })}

@@ -152,7 +152,7 @@ if (!mounted) return null;
   />
 </div>
 
-      <div className="w-full md:w-1/2 flex flex-col 0justify-center">
+      <div className="w-full md:w-1/2 flex flex-col justify-center">
         <h1 className="text-xl md:text-2xl font-bold 
          leading-tight mb-1">
         

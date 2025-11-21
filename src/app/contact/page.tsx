@@ -27,10 +27,14 @@ return () => clearTimeout(timer);
 
 if (!mounted) return null;
   return (
-    <div className={`${theme==='dark'?'bg-black text-white':'bg-white text-black'} flex items-center justify-center bg-cover bg-fixed w-full  max-md:pt-16 pt-24 pb-12   relative overflow-x-hidden`}>
+    <div className={`${
+    theme === 'dark'
+      ? 'text-zinc-50 bg-zinc-900'
+      : 'text-zinc-900 bg-zinc-100'
+  } flex items-center justify-center bg-cover bg-fixed w-full  max-md:pt-16 pt-24 pb-12   relative overflow-x-hidden`}>
           
         
-         <div className={`w-[94%] max-md:max-w-[500px] md:flex-row  max-md:flex-col shadow-lg my-6  z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-neutral-900':' text-neutral-950 bg-neutral-100'} `}>
+         <div className={`w-[94%] max-md:max-w-[500px] md:flex-row  max-md:flex-col shadow-lg my-6  z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-black':' text-neutral-950 bg-white'} `}>
               
               <form className='px-3  w-full flex flex-1 items-center  flex-col min-w-56 py-8' >
       <div className='text-xl max-md:text-lg align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Send us a message!</div>
@@ -42,7 +46,7 @@ if (!mounted) return null;
             value={form.name}
             onChange={handleChange}
             required
-            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white':'bg-white text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
+            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black border-white text-white':'bg-white border-black  text-black'} border  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         <div className='w-full flex flex-row flex-wrap  pt-3 gap-1 text-md align-middle items-center  max-md:gap-0'>
@@ -53,7 +57,7 @@ if (!mounted) return null;
             value={form.email}
             onChange={handleChange}
             required
-              className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white':'bg-white text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
+              className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white border-white ':'bg-white border-black text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         <div className='w-full flex flex-row flex-wrap pt-3  gap-1 text-md align-middle items-center  max-md:gap-0'>
@@ -64,7 +68,7 @@ if (!mounted) return null;
             onChange={handleChange}
             required
             rows={2}
-            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white':'bg-white text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
+            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white border-white ':'bg-white border-black  text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         {/* <div>
@@ -89,18 +93,22 @@ if (!mounted) return null;
         </div> */}
         <button type="submit" className={`w-full p-2 align-middle mt-4 text-2xl ${theme==='dark'?'bg-neutral-100 text-neutral-950':'bg-neutral-950 text-neutral-100'}  font-semibold spacin`}>Send</button>
       </form>
-      <div className="w-fit gap-4 md:flex-col flex flex-1 flex-row flex-wrap  p-3 md:py-8 align-start justify-start items-start text-wrap pb-8 border-slate-600/50">
+      <div className="w-fit gap-4 md:flex-col flex flex-1 flex-row flex-wrap  p-3 md:py-8 align-start justify-start items-start text-wrap pb-10 border-slate-600/50">
         <div className="w-[34%] md:w-[60%] min-w-32">
 <div className="font-bold">Visit us</div>
-<span className='text-sm w-full'>165 Log Canoe Circle, Suite G, Stevensville, MD 21666</span>
+<span className='text-sm w-full leading-0 tracking-tighter'>165 Log Canoe Circle, Suite G, Stevensville, MD 21666</span>
 </div>
         <div className="w-[33%]  md:w-full  min-w-32">
 <div className="font-bold">Call us</div>
-<span className='text-sm'>+1 (443) 249-3285</span>
+<div className="flex flex-col text-sm w-full  tracking-tighter">
+<span className=''>+1 (443) 249-3285</span>
+<span className=''>+1 (301) 576-0555</span></div>
 </div>
         <div className="w-[33%]  md:w-full  min-w-fit">
 <div className="font-bold">Email us</div>
-<span className='text-sm'>Info@telecareservices.org</span>
+<div className="flex  flex-col text-sm w-full  tracking-tighter">
+<span className=''>Info@telecareservices.org</span>
+<span className=''>Emem@telecareservices.org</span></div>
 </div>
 </div>
 <div className=" w-full min-w-56 h-full flex-1 flex border-slate-600/50">

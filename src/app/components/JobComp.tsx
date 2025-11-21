@@ -10,12 +10,12 @@ import { TbBriefcase2Filled } from 'react-icons/tb';
 const JobComp = () => {
     const { theme, setTheme } = useTheme();
   return (
-        <div className="w-full flex flex-col text-justify">
+        <div className="w-full flex flex-col text-justify my-5">
 
     <div className='w-full flex flex-row max-md:flex-col gap-3 border-t border-b py-3'>
     <div className="w-full flex flex-col flex-1">
         <div className="text-md font-bold md:text-lg mb-1">Caregiver for the Elderly</div>
-        <div className="text-sm">We are a looking for a New york based caregiver for the elderly, to assist elders with task such dressing up, and cooking of good food, as well as household chores and errands</div>
+        <div className="text-sm">We are a looking for a New york based caregiver for the elderly, to assist elders with task such as dressing, and cooking, as well as household chores and errands. This is a full time role with flexible scheduling.</div>
           <section className="w-full text-xs flex flex-row gap-0.5 py-3 flex-wrap">
 
 <div className="p-1.5 border flex flex-row item-center text-center gap-0.5"> <MdLocationPin  className='w-4 h-4' /><span>New York</span></div>

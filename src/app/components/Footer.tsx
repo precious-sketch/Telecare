@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         {/* Main footer content */}
-        <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+        <div className="w-full mt-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
           {/* Portal Description */}
           <div className="lg:col-span-1 text-gray-500/80">
             <div className="border border-gray-500/80 relative">
@@ -79,22 +79,22 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-2">Services</h4>
         <ul className="space-y-0.5 text-sm">
               <li className="">
-                <Link href="/" className="">
+                <Link href="/services/0" className="">
                   Personal Support
                 </Link>
                </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/services/1" className="">
                   Supported Living
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/services/2" className="">
                   Nursing Support
                 </Link>
               </li>
               <li>
-                <Link href="/" className=" font-extrabold">
+                <Link href="/services" className=" font-extrabold">
                   And more
                 </Link>
               </li>
@@ -106,7 +106,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <h4 className="text-lg font-semibold mb-2">Pages</h4>
-            <ul className="space-y-0.5 space-x-2 text-sm grid grid-cols-2 w-fit">
+            <ul className="space-y-0.5 space-x-3 text-sm grid grid-cols-2 w-fit">
               <li>
                 <Link href="/" className="">
                   Home

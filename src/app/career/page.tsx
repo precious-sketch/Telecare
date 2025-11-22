@@ -11,7 +11,7 @@ const Page = () => {
     <div className={`w-full py-32  px-[3%] space-y-5 ${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"}`}>
 <div className="w-full  max-w-5xl m-auto">
 <section className="w-full">
-        <div className="p-2 text-xs border w-fit">Vacancies/Jobs!</div>
+        <div className="p-2 text-xs border w-fit">We are hiring!</div>
   <div className="max-md:text-xl text-3xl font-bold ">Join Our Mission of Care</div>
   <div className="py-3">Join us in our commitment to care. We are seeking <br />compassionate team members who embody our company values.</div></section>
 

@@ -55,8 +55,8 @@ if (!mounted) return null;
           <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Home</Link>
           <Link href="/about" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About</Link>
           <Link href="/services" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Services</Link>
-          <Link href="/tools" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Tools</Link>
-          <Link href="/career" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Career</Link>
+          {/* <Link href="/tools" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Tools</Link>
+          <Link href="/career" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Career</Link> */}
           <Link href="/contact" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</Link>
         </div>
 
@@ -78,8 +78,8 @@ if (!mounted) return null;
           <Link href="/" onClick={() => setOpen(false)}>Home</Link>
           <Link href="/about" onClick={() => setOpen(false)}>About</Link>
           <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
-          <Link href="/tools" onClick={() => setOpen(false)}>Tools</Link>
-          <Link href="/career" onClick={() => setOpen(false)}>Career</Link>
+          {/* <Link href="/tools" onClick={() => setOpen(false)}>Tools</Link>
+          <Link href="/career" onClick={() => setOpen(false)}>Career</Link> */}
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </div>
       )}

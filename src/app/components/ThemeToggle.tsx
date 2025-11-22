@@ -23,15 +23,15 @@ return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className={`${
-        theme === 'dark' ? 'border-white' : 'border-black'
-      } p-1 rounded-full border-2 transition`}
+        theme === 'dark' ? 'bg-white text-black' : 'bg-black text-white'
+      } px-1 p-1 pr-2 rounded-full font-bold transition text-sm`}
        aria-labelledby="Toggle theme"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-        <Sun className="w-6 h-6 text-yellow-400" />
+       <span className='gap-1 flex flex-row items-center align-middle'><Sun className="w-5 h-5 text-blue-400" /> <span>Light</span></span> 
       ) : (
-        <Moon className="w-6 h-6 text-gray-600" />
+       <span className='gap-1 flex flex-row items-center align-middle'> <Moon className="w-5 h-5 text-gray-400" /> <span> Dark</span> </span>
       )}
     </button>
   );

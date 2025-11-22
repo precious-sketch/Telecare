@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         {/* Main footer content */}
-        <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
           {/* Portal Description */}
           <div className="lg:col-span-1 text-gray-500/80">
             <div className="border border-gray-500/80 relative">
@@ -76,8 +76,8 @@ const Footer = () => {
 
           {/* Products */}
           <div>
-            <h4 className="text-lg font-semibold mb-3">Services</h4>
-        <ul className="space-y-1 text-sm">
+            <h4 className="text-lg font-semibold mb-2">Services</h4>
+        <ul className="space-y-0.5 text-sm">
               <li className="">
                 <Link href="/" className="">
                   Personal Support
@@ -105,26 +105,41 @@ const Footer = () => {
 
           {/* About */}
           <div>
-            <h4 className="text-lg font-semibold mb-3">Pages</h4>
-            <ul className="space-y-1 text-sm">
+            <h4 className="text-lg font-semibold mb-2">Pages</h4>
+            <ul className="space-y-0.5 space-x-2 text-sm grid grid-cols-2 w-fit">
               <li>
                 <Link href="/" className="">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/about" className="">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/services" className="">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/" className="">
+                <Link href="/contact" className="">
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/career" className="">
+                  Career
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools" className="">
+                  Tools
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools" className="">
+                  Blog
                 </Link>
               </li>
             </ul>
@@ -132,8 +147,8 @@ const Footer = () => {
 
           {/* Publications & Contact */}
           <div className="lg:col-span-1 flex flex-col">
-              <h4 className="text-lg font-semibold mb-3">Talk To Us</h4>
-              <ul className="space-y-1 text-sm flex flex-col">
+              <h4 className="text-lg font-semibold mb-2">Talk To Us</h4>
+              <ul className="space-y-0.5 text-sm flex flex-col">
                 <li>
                   <Link href="mailto:info@telecareservices.org" className="">
                     info@telecareservices.org

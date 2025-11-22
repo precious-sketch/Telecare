@@ -101,14 +101,25 @@ if (!mounted) return null;
         <div className="w-[33%]  md:w-full  min-w-32">
 <div className="font-bold">Call us</div>
 <div className="flex flex-col text-sm w-full  tracking-tighter">
-<span className=''>+1 (443) 249-3285</span>
-<span className=''>+1 (301) 576-0555</span></div>
+<Link href="tel:+14432493285" className="">
+                   +1 (443) 249-3285
+                  </Link>
+ <Link href="tel:+13015760555" className="">
+                  +1 (301) 576-0555
+                  </Link>
+</div>
 </div>
         <div className="w-[33%]  md:w-full  min-w-fit">
 <div className="font-bold">Email us</div>
 <div className="flex  flex-col text-sm w-full  tracking-tighter">
-<span className=''>Info@telecareservices.org</span>
-<span className=''>Emem@telecareservices.org</span></div>
+ <Link href="mailto:info@telecareservices.org" className="">
+                    info@telecareservices.org
+                  </Link>
+ <Link href="mailto:emem@telecareservices.org" className="">
+                    emem@telecareservices.org
+                  </Link>
+
+</div>
 </div>
 </div>
 <div className=" w-full min-w-56 h-full flex-1 flex border-slate-600/50">

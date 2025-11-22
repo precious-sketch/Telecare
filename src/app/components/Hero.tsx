@@ -46,7 +46,7 @@ const Hero = () => {
       </Zoom>
       <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000020,black)]':'bg-[radial-gradient(circle_at_center,#ffffff20,white)]'}`}></div>
 
-<div className="absolute max-w-[500px] opacity-85 flex flex-col bottom-0 left-0 w-full p-4 pb-8 z-10"> <span className='font-extrabold text-5xl max-md:text-4xl'>Telecare Services</span> <span className='text-lg max-md:text-md max-sm:text-sm text-justify '>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
+<div className="absolute max-w-[500px] opacity-85 flex flex-col bottom-0 left-0 w-full p-4 pb-10 z-10"> <span className='font-extrabold text-5xl max-md:text-4xl'>Telecare Services</span> <span className='text-lg max-md:text-md max-sm:text-sm text-justify '>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
 
  <Link
             href="/contact"

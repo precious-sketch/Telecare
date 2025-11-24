@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import {motion} from 'framer-motion';
 
 const Services = () => {
 
@@ -71,15 +72,24 @@ if (!mounted) return null;
 
   return (
     <div
-  className={` pt-20 ${
+  className={` ${
     theme === 'dark'
       ? 'text-zinc-50 bg-zinc-900'
       : 'text-zinc-900 bg-zinc-100'
-  } w-full min-h-screen py-10 px-3 mx-auto max-w-7xl`}>
-          <h2 className="text-3xl font-bold mb-8 text-center">Services</h2>
-
-  <div
+  } w-full min-h-screen   mx-auto max-w-7xl`}>
+  
+  <section className="w-full relative min-h-[250px] h-[45vh] max-h-[600px] bg-cover bg-center"
+              style={{
+                backgroundImage: `url(/service_10.jpg)`,
+                filter: theme === 'dark' ? 'brightness(0.6)' : 'brightness(1)',
+              }}>
+     
+              <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
+              <div className="absolute max-w-[500px]  flex flex-col bottom-0 left-0 w-full p-3 py-2 z-50 font-extrabold  text-5xl max-md:text-4xl">OUR SERVICES</div>
+</section>
+   <div
     className="
+     py-24
       grid 
       gap-6 
       sm:grid-cols-2 
@@ -89,7 +99,11 @@ if (!mounted) return null;
     "
   >
     {services.map((item, i) => (
-      <div
+      <motion.div
+       initial={{ opacity: 0.2, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      viewport={{ once:true, amount: 0.2 }}
         key={i}
         className={`${
           theme === 'dark' ? 'bg-black text-zinc-50' : 'bg-white text-zinc-900'
@@ -107,7 +121,7 @@ if (!mounted) return null;
           <p className="text-sm opacity-80">{item.desc}</p>
           <Link
             href={"/services/"+i}
-            className={`inline-block mt-1 px-3 py-1 font-semibold ${
+            className={`inline-block mt-1 px-3 cursor-target py-1 font-semibold ${
               theme === 'dark'
                 ? 'bg-zinc-100 text-zinc-900'
                 : 'bg-zinc-900 text-zinc-100'
@@ -116,7 +130,7 @@ if (!mounted) return null;
             Read more
           </Link>
         </div>
-      </div>
+      </motion.div>
     ))}
   </div>
 

@@ -2,9 +2,11 @@
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import {motion} from 'framer-motion';
 import Hero from "./components/Hero";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import ScrollReveal from "./components/ScrollReveal";
 
 export default function Home() {
   
@@ -47,8 +49,14 @@ if (!mounted) return null;
 return (<div className={`flex flex-col min-h-screen items-center justify-center font-sans  ${theme==='dark'?'bg-black text-white ':'bg-zinc-50 text-zinc-900'}`}>
       <Hero />
       <section className={`${theme==='dark'?'text-white bg-black':'text-black bg-white'} w-full h-screen flex flex-col align-middle justify-center items-start px-[5%] space-y-4`}>
-<span className="font-extrabold max-sm:text-xl max-md:text-2xl max-2xl:text-3xl text-5xl justify-center text-justify max-w-[600px]">Our team comprises passionate and experienced professionals dedicated to providing exceptional care and support. Meet the individuals behind our mission, each committed to delivering person-centered care and advocacy.</span>
-<Link className={`w-fit h-fit p-2 px-3 font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`} href='/about'>Meet the team</Link>
+   
+<span className=" max-sm:text-xl max-lg:text-2xl max-2xl:text-3xl text-5xl leading-snug tracking-wide  justify-center text-justify max-w-[600px]">     <ScrollReveal
+  baseOpacity={0}
+  enableBlur={true}
+  baseRotation={7}
+  blurStrength={10}
+>Our team comprises passionate and experienced professionals dedicated to providing exceptional care and support. Meet the individuals behind our mission, each committed to delivering person-centered care and advocacy.</ScrollReveal></span>
+<Link className={`cursor-target w-fit h-fit p-2 px-3 font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`} href='/about'>More about us</Link>
       </section>
   <section
   className={` ${
@@ -57,7 +65,7 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
       : 'text-zinc-900 bg-zinc-100'
   } w-full min-h-screen py-10 px-4 mx-auto max-w-7xl`}
 >
- <div className="w-full flex flex-row"><h2 className="w-full text-2xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2> <Link href='/services' className={`w-fit h-fit p-1 px-2 text-sm font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`}>View all services</Link></div> 
+ <div className="w-full flex flex-row"><h2 className="w-full text-2xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2> <Link href='/services' className={`cursor-target w-fit h-fit p-1 px-2 text-sm font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`}>View all services</Link></div> 
 
   <div
     className="
@@ -70,7 +78,11 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
     "
   >
     {services.map((item, i) => (
-      <div
+      <motion.div
+      initial={{ opacity: 0.2, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      viewport={{ once:true, amount: 0.2 }}
         key={i}
         className={`${
           theme === 'dark' ? 'bg-black text-zinc-50' : 'bg-white text-zinc-900'
@@ -88,7 +100,7 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
           <p className="text-sm opacity-80">{item.desc}</p>
           <Link
             href={'/services/'+i}
-            className={`inline-block mt-1 px-3 py-1 font-semibold ${
+            className={`cursor-target inline-block mt-1 px-3 py-1 font-semibold ${
               theme === 'dark'
                 ? 'bg-zinc-100 text-zinc-900'
                 : 'bg-zinc-900 text-zinc-100'
@@ -97,7 +109,7 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
             Read more
           </Link>
         </div>
-      </div>
+      </motion.div>
     ))}
   </div>
 </section>

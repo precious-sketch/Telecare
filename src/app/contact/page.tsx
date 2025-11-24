@@ -3,8 +3,7 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react';
-import Map from 'react-map-gl/mapbox';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 const Page = () => {
       const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -27,7 +26,7 @@ return () => clearTimeout(timer);
 
 if (!mounted) return null;
   return (
-    <div className={`${
+    <div className={`contact ${
     theme === 'dark'
       ? 'text-zinc-50 bg-zinc-900'
       : 'text-zinc-900 bg-zinc-100'
@@ -37,7 +36,7 @@ if (!mounted) return null;
          <div className={`w-[94%] max-md:max-w-[500px] md:flex-row  max-md:flex-col shadow-lg my-6  z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-black':' text-neutral-950 bg-white'} `}>
               
               <form className='px-3  w-full flex flex-1 items-center  flex-col min-w-56 py-8' >
-      <div className='text-xl max-md:text-lg align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Send us a message!</div>
+      <div className='text-xl max-md:text-lg align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Message Us!</div>
         <div className='w-full flex flex-row flex-wrap pt-5  gap-1 text-md align-middle items-center  max-md:gap-0'>
           <label className='text-nowrap align-start text-start h-fit max-md:w-full max-md:px-1  w-[200px] font-semibold  mulish'>Your Name  </label>
           <input
@@ -91,7 +90,7 @@ if (!mounted) return null;
 
          </textarea>
         </div> */}
-        <button type="submit" className={`w-full p-2 align-middle mt-4 text-2xl ${theme==='dark'?'bg-neutral-100 text-neutral-950':'bg-neutral-950 text-neutral-100'}  font-semibold spacin`}>Send</button>
+        <button type="submit" className={`cursor-target w-full p-2 align-middle mt-4 text-2xl ${theme==='dark'?'bg-neutral-100 text-neutral-950':'bg-neutral-950 text-neutral-100'}  font-semibold spacin`}>Send</button>
       </form>
       <div className="w-fit gap-4 md:flex-col flex flex-1 flex-row flex-wrap  p-3 md:py-8 align-start justify-start items-start text-wrap pb-10 border-slate-600/50">
         <div className="w-[34%] md:w-[60%] min-w-32">
@@ -122,18 +121,16 @@ if (!mounted) return null;
 </div>
 </div>
 </div>
-<div className=" w-full min-w-56 h-full flex-1 flex border-slate-600/50">
-<Map
-mapboxAccessToken="pk.eyJ1Ijoic25vdGF0IiwiYSI6ImNseW5vdnN5cjA3ZHEycnM0eTlyMzhrYnUifQ.tsLlCTVcEm1YAlkjCu3AiQ"
-initialViewState={{
-        longitude: -38.9,
-        latitude: -76.3,
-        zoom: 14
-      }}
-      style={{width: 600, height: 400}}
-      
-      mapStyle="mapbox://styles/mapbox/streets-v9"
-    />
+<div className=" w-full min-w-56 min-h-[400px] h-full flex-1 flex border-slate-600/50">
+    <LoadScript
+    googleMapsApiKey="AIzaSyD68SwChTso5faj75Erza_SJbYVO8Cs0M8">
+      <GoogleMap
+        mapContainerStyle={{ width: "100%", height: "425px" }}
+        center={{ lat: 38.9862, lng: -76.3202 }}
+        zoom={12}
+      />
+    </LoadScript>
+
           </div>
 
    </div> 

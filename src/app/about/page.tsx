@@ -2,27 +2,37 @@
 
 import { useTheme } from "next-themes";
 import Image from "next/image"
-
+import { motion, useInView } from 'framer-motion';
+import { useEffect, useRef, useState } from "react";
+import AboutQuote from "../components/AboutQuote";
 const Page = () => {
-  
-  const { theme } = useTheme();
+  const { theme, setTheme } = useTheme();
+  const text = '  “Telecare Services was founded with a vision to redefine Home-based and Community-Focused Care for individuals with intellectual and developmental disabilities.”'
+
+ const [mounted, setMounted] = useState(false);
+ useEffect(() => {
+ const timer = setTimeout(() => setMounted(true), 0);
+  if(typeof window!= undefined){
+  setTheme(localStorage.getItem('theme')||'dark')
+   }
+ return () => clearTimeout(timer);
+ }, []);
+ 
+ if (!mounted) return null;
   return (
     <div className={`w-full min-h-screen ${
         theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'
       }`}>
-<section className="w-full relative min-h-[250px] h-[40vh] max-h-[600px] bg-cover bg-center"
+<section className="w-full relative min-h-[250px] h-[45vh] max-h-[600px] bg-cover bg-center"
               style={{
-                backgroundImage: `url(/about.jpg)`,
+                backgroundImage: `url(/services_11.jpg)`,
                 filter: theme === 'dark' ? 'brightness(0.6)' : 'brightness(1)',
               }}>
      
-              <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000020,black)]':'bg-[radial-gradient(circle_at_center,#ffffff20,white)]'}`}></div>
+              <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
               <div className="absolute max-w-[500px] opacity-85 flex flex-col bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold  text-5xl max-md:text-4xl">ABOUT US</div>
 </section>
-<section className="text-center max-w-2xl max-sm:text-base text-xl lg:text-2xl  w-full p-[3%] py-16 mx-auto leading-relaxed tracking-wide georgia">
-  “Telecare Services was founded with a vision to redefine Home-based and Community-Focused Care for individuals with intellectual and developmental disabilities.”
-</section>
-
+<AboutQuote />
 <section className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pb-24 p-[3%] gap-5 mx-auto align-middle justify-center items-center 
       justify-items-center">
 

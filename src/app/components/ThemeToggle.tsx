@@ -3,7 +3,7 @@
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
-
+import { motion } from "framer-motion";
 export default function ThemeToggle() {
 const { theme, setTheme } = useTheme();
 const [mounted, setMounted] = useState(false);
@@ -20,11 +20,14 @@ localStorage.setItem('theme',theme||'dark')
 },[theme])
 if (!mounted) return null;
 return (
-    <button
+    <motion.button
+    initial={{ opacity: 0, x: 150 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4, delay:0.2 }}
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className={`${
+      className={`cursor-target ${
         theme === 'dark' ? 'bg-white text-black' : 'bg-black text-white'
-      } px-1 p-1 pr-2 rounded-full font-bold transition text-sm`}
+      } px-1.5 p-1 pr-2.5 rounded-full font-bold transition text-sm`}
        aria-labelledby="Toggle theme"
       aria-label="Toggle theme"
     >
@@ -33,6 +36,6 @@ return (
       ) : (
        <span className='gap-1 flex flex-row items-center align-middle'> <Moon className="w-5 h-5 text-gray-400" /> <span> Dark</span> </span>
       )}
-    </button>
+    </motion.button>
   );
 }

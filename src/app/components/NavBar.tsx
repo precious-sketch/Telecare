@@ -6,7 +6,7 @@ import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
-
+import { motion } from "framer-motion";
 export default function Navbar() {
  const [open, setOpen] = useState(false);
 
@@ -41,46 +41,56 @@ return () => clearTimeout(timer);
 if (!mounted) return null;
   return (
     <nav className={`${theme==='dark'?'text-white':'text-black'}  fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg -colors duration-300`}>
-      <div className={`max-w-3xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? 'bg-black/50 p-3  backdrop-blur-sm border border-neutral-600/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-white/50 p-3 backdrop-blur-sm border border-neutral-600/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
-           <Image
+      <div className={`max-w-3xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? 'bg-black/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-white/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
+        <motion.div
+      initial={{ opacity: 0, x: -150 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4 }}
+        className="">
+            <Link href='/'><Image
                   src={theme==='dark'?"/logo_white.png":'/logo_black.png'}
                   alt="Logo"
                   width={50}
                   height={50}
                   className="rounded-full object-contain"
-                />
-
-        {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6">
-          <Link href="/" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Home</Link>
-          <Link href="/about" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About</Link>
-          <Link href="/services" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Services</Link>
-          {/* <Link href="/tools" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Tools</Link>
-          <Link href="/career" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Career</Link> */}
-          <Link href="/contact" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</Link>
-        </div>
+                /></Link> 
+        </motion.div>
+      
+        <motion.div 
+         initial={{ opacity: 0, y: -200 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay:0.3 }}
+        className="hidden md:flex space-x-6">
+          <Link href="/" className="cursor-target hover:text-blue-700 transition-colors">Home</Link>
+          <Link href="/about" className="cursor-target hover:text-blue-700 transition-colors">About</Link>
+          <Link href="/services" className="cursor-target hover:text-blue-700 transition-colors">Services</Link>
+         <Link href="/contact" className="cursor-target hover:text-blue-700 transition-colors">Contact</Link>
+        </motion.div>
 
         {/* Right section */}
-        <div className={`flex items-center gap-3 ${theme==='dark'?'text-white':'text-black'}`}>
+        <div className={`flex items-center gap-2 ${theme==='dark'?'text-white':'text-black'}`}>
           <ThemeToggle />
-          <button
-            className={`md:hidden p-2 ${theme==='dark'?'text-white':'text-black'}`}
+          <motion.button
+           initial={{ opacity: 0, x: 150 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3 }}
+            className={`cursor-target md:hidden p-2 ${theme==='dark'?'text-white':'text-black'}`}
             onClick={() => setOpen(!open)}
           >
             {open ? <X /> : <Menu />}
-          </button>
+          </motion.button>
         </div>
       </div>
 
   
       {open && (
-        <div className="md:hidden mt-3 flex flex-col items-center bg-white/30 dark:bg-gray-900/40 backdrop-blur-lg rounded-lg py-4 space-y-3  border border-white/20 dark:border-gray-800/30">
-          <Link href="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link href="/about" onClick={() => setOpen(false)}>About</Link>
-          <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+        <div className={`${theme==='dark'?'bg-black/50 p-3   border border-neutral-700/40 shadow-sm':'bg-white/50 p-3  border border-neutral-700/40 shadow-sm'} md:hidden mt-3 flex flex-col items-center  backdrop-blur-md  py-4 space-y-3`}>
+          <Link href="/" className='cursor-target hover:text-blue-700 transition-colors' onClick={() => setOpen(false)}>Home</Link>
+          <Link href="/about" className='cursor-target hover:text-blue-700 transition-colors' onClick={() => setOpen(false)}>About</Link>
+          <Link href="/services" className='cursor-target hover:text-blue-700 transition-colors' onClick={() => setOpen(false)}>Services</Link>
           {/* <Link href="/tools" onClick={() => setOpen(false)}>Tools</Link>
           <Link href="/career" onClick={() => setOpen(false)}>Career</Link> */}
-          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link href="/contact" className='cursor-target hover:text-blue-700 transition-colors' onClick={() => setOpen(false)}>Contact</Link>
         </div>
       )}
     </nav>

@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { useState } from "react";
+import TargetCursor from "./components/TargetCursor";
 
 
 
@@ -30,6 +31,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+           <TargetCursor 
+        spinDuration={2}
+        hideDefaultCursor={true}
+        parallaxOn={true}
+      />
           <Navbar />
             {children}
           <Footer />

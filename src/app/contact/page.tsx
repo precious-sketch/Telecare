@@ -36,7 +36,7 @@ if (!mounted) return null;
          <div className={`w-[94%] max-md:max-w-[500px] md:flex-row  max-md:flex-col shadow-lg my-6  z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-black':' text-neutral-950 bg-white'} `}>
               
               <form className='px-3  w-full flex flex-1 items-center  flex-col min-w-56 py-8' >
-      <div className='text-xl max-md:text-lg align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Message Us!</div>
+      <div className='text-2xl max-md:text-xl align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Message Us</div>
         <div className='w-full flex flex-row flex-wrap pt-5  gap-1 text-md align-middle items-center  max-md:gap-0'>
           <label className='text-nowrap align-start text-start h-fit max-md:w-full max-md:px-1  w-[200px] font-semibold  mulish'>Your Name  </label>
           <input
@@ -103,9 +103,6 @@ if (!mounted) return null;
 <Link href="tel:+14432493285" className="">
                    +1 (443) 249-3285
                   </Link>
- <Link href="tel:+13015760555" className="">
-                  +1 (301) 576-0555
-                  </Link>
 </div>
 </div>
         <div className="w-[33%]  md:w-full  min-w-fit">
@@ -114,9 +111,7 @@ if (!mounted) return null;
  <Link href="mailto:info@telecareservices.org" className="">
                     info@telecareservices.org
                   </Link>
- <Link href="mailto:emem@telecareservices.org" className="">
-                    emem@telecareservices.org
-                  </Link>
+\
 
 </div>
 </div>

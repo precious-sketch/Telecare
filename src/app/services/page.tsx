@@ -26,7 +26,7 @@ const services = [
     desc: "Our nursing support services ensure that participants receive specialized care and medical attention as needed, delivered by qualified healthcare professionals.", 
   }, 
   { 
-    title: "Community Development (CDS)", 
+    title: "Community Development Services", 
      img: "/service_4.jpg", 
     desc: "CDS focuses on fostering community engagement, encouraging social inclusion, and promoting active participation within diverse community settings.", 
   }, 
@@ -78,14 +78,14 @@ if (!mounted) return null;
       : 'text-zinc-900 bg-zinc-100'
   } w-full min-h-screen   mx-auto max-w-7xl`}>
   
-  <section className="w-full relative min-h-[250px] h-[45vh] max-h-[600px] bg-cover bg-center"
+  <section className="w-full relative min-h-[250px] h-[40vh] max-h-[600px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(/service_10.jpg)`,
                 filter: theme === 'dark' ? 'brightness(0.6)' : 'brightness(1)',
               }}>
      
               <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
-              <div className="absolute max-w-[500px]  flex flex-col bottom-0 left-0 w-full p-3 py-2 z-50 font-extrabold  text-5xl max-md:text-4xl">OUR SERVICES</div>
+              <div className="absolute max-w-[500px]  flex flex-col bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl">OUR SERVICES</div>
 </section>
    <div
     className="

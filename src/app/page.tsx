@@ -28,7 +28,7 @@ const services = [
     desc: "Our nursing support services ensure that participants receive specialized care and medical attention as needed, delivered by qualified healthcare professionals.", 
   }, 
   { 
-    title: "Community Development (CDS)", 
+    title: "Community Development Services", 
      img: "/service_4.jpg", 
     desc: "CDS focuses on fostering community engagement, encouraging social inclusion, and promoting active participation within diverse community settings.", 
   }

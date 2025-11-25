@@ -152,20 +152,14 @@ const Footer = () => {
                 <li>
                   <Link href="mailto:info@telecareservices.org" className="">
                     info@telecareservices.org
-                  </Link></li> <li>
-                  <Link href="mailto:emem@telecareservices.org" className="">
-                    emem@telecareservices.org
                   </Link>
+                  
+               
                 </li>
             
                 <li>
                   <Link href="tel:+14432493285" className="">
                    +1 (443) 249-3285
-                  </Link>
-                </li>
-                <li>
-                  <Link href="tel:+13015760555" className="">
-                  +1 (301) 576-0555
                   </Link>
                 </li>
               </ul>

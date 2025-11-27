@@ -168,13 +168,13 @@ const Footer = () => {
 
         <div className="my-6 mb-0 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 border-t border-gray-500/30 pt-6 space-x-4">
           <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-3">
-            <Link href="/" className="">
+            <Link href="/policy/privacy" className="">
               Privacy Policy
             </Link>
-            <Link href="/" className="">
+            <Link href="/policy/cookie" className="">
               Cookie Policy
             </Link>
-            <Link href="/" className="">
+            <Link href="/terms" className="">
               Terms of Service
             </Link>
           </div>

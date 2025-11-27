@@ -111,8 +111,6 @@ if (!mounted) return null;
  <Link href="mailto:info@telecareservices.org" className="">
                     info@telecareservices.org
                   </Link>
-
-
 </div>
 </div>
 </div>

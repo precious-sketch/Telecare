@@ -11,6 +11,22 @@ import ScrollReveal from "./components/ScrollReveal";
 export default function Home() {
   
   const { theme, setTheme } = useTheme();
+  
+const testimonial = [
+  {name:'Solomon Omal.',
+    company:"Chubitex Petroleum Products Ltd.,",
+    picture:'',
+testimony:"Our corporate documents and profile are updated and competitive."
+
+  },
+  {name:'Paul M. Geoffrey,',
+    company:"Expert Assist Limited.",
+    picture:'',
+testimony:"Timely services delivered worthy of recommendation to anyone."
+
+  }
+];
+
 const services = [
   { 
     title: "Personal Support", 
@@ -48,14 +64,17 @@ window.history.scrollRestoration = "manual";
 if (!mounted) return null;
 return (<div className={`flex flex-col min-h-screen items-center justify-center font-sans  ${theme==='dark'?'bg-black text-white ':'bg-zinc-50 text-zinc-900'}`}>
       <Hero />
-      <section className={`${theme==='dark'?'text-white bg-black':'text-black bg-white'} w-full h-screen flex flex-col align-middle justify-center items-start px-[5%] space-y-4`}>
+      <section className={`${theme==='dark'?'text-white bg-black':'text-black bg-white'} w-full h-fit py-14 flex flex-col align-middle justify-center items-start px-[3%]`}>
    
-<span className=" max-sm:text-xl max-lg:text-2xl max-2xl:text-3xl text-5xl leading-snug tracking-wide  justify-center text-justify max-w-[600px]">     <ScrollReveal
-  baseOpacity={0}
-  enableBlur={true}
-  baseRotation={7}
-  blurStrength={10}
->Our team comprises passionate and experienced professionals dedicated to providing exceptional care and support. Meet the individuals behind our mission, each committed to delivering person-centered care and advocacy.</ScrollReveal></span>
+<span className=" max-sm:text-sm max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 max-w-[1200px] flex flex-row  max-md:flex-col">  <span>
+The foundation of Telecare Services is the straightforward but profound idea that every person should receive kind assistance that upholds their dignity and fosters their independence. For individuals with intellectual and developmental disabilities throughout Maryland, we offer home-based and community-focused care, making sure they receive direction that accurately reflects their needs, preferences, and individual objectives. Our strategy is based on sincere empathy and a dedication to providing each participant with the chance to lead a more fulfilling and connected life in their local communities. <br /> Our team is made up of dedicated professionals who bring not only experience but also empathy, patience, and a deep sense of purpose to their work.  Every member contributes significantly to the participants development, success, and sense of worth.  We strive to create an environment where families feel supported, individuals feel heard, and communities feel enriched by the contributions and unique strengths of those we serve.  This collective passion strengthens our mission every single day.
+</span>
+<span>
+
+    At the heart of our services is a strong focus on person-centred care, where every plan is shaped around what matters most to the participant.  Since every persons journey is unique, we customise our support to help them develop self-sufficiency, cultivate deep connections, and participate with confidence in daily activities.  By prioritising choice and autonomy, we encourage participants to take active roles in shaping their lives and exploring opportunities that bring them joy, fulfilment, and a true sense of belonging. <br />
+    Every choice we make and every interaction we have is guided by our mission, vision, and values.  Compassion leads our approach, dignity shapes our respect for each person, inclusivity strengthens our communities, and responsibility drives our commitment to doing what is right.  In addition to providing care, Telecare Services aims to improve lives, boost self-esteem, and pave the way for self-sufficiency and personal development.  Through consistent support and a strong sense of partnership, we empower individuals to live meaningful, rewarding lives within the communities they choose.
+    
+</span></span>
 <Link className={`cursor-target w-fit h-fit p-2 px-3 font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`} href='/about'>More about us</Link>
       </section>
   <section
@@ -113,6 +132,34 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
     ))}
   </div>
 </section>
+
+      <section className="bg-gray-50 py-16 px-6 w-full">
+        <h2 className="text-xl md:text-2xl font-bold text-center mb-10">
+          WHAT OUR CUSTOMERS ARE SAYING
+        </h2>
+        <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+          {testimonial.map((res, i) => (
+            <div key={i} className="bg-white shadow-md p-4">
+              <p className="text-gray-600 mb-6">
+                {res.testimony}
+              </p>
+              <div className="flex items-center gap-2 mb-0">
+              {res.picture&&<Image
+                  src={res.picture||"/ceo.jfif"}
+                  alt="Logo"
+                  width={50}
+                  height={50}
+                  className="rounded-full object-contain bg-neutral-500"
+                />} 
+                <div>
+                  <p className="font-bold">{res.name}</p>
+                  <p className="text-sm text-gray-500">{res.company}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

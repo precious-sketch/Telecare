@@ -139,8 +139,8 @@ The foundation of Telecare Services is the straightforward but profound idea tha
         </h2>
         <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {testimonial.map((res, i) => (
-            <div key={i} className="bg-white shadow-md p-4">
-              <p className="text-gray-600 mb-6">
+            <div key={i} className="shadow-md p-4">
+              <p className=" mb-6">
                 {res.testimony}
               </p>
               <div className="flex items-center gap-2 mb-0">

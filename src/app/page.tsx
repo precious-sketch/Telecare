@@ -133,7 +133,7 @@ The foundation of Telecare Services is the straightforward but profound idea tha
   </div>
 </section>
 
-      <section className="bg-gray-300/10 py-16 px-6 w-full">
+      <section className="bg-gray-300/30 py-16 px-6 w-full">
         <h2 className="text-xl md:text-2xl font-bold text-center mb-10">
           WHAT OUR CUSTOMERS ARE SAYING
         </h2>

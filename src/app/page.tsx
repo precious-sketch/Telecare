@@ -133,14 +133,14 @@ The foundation of Telecare Services is the straightforward but profound idea tha
   </div>
 </section>
 
-      <section className="bg-gray-50 py-16 px-6 w-full">
+      <section className="bg-gray-500/5 py-16 px-6 w-full">
         <h2 className="text-xl md:text-2xl font-bold text-center mb-10">
           WHAT OUR CUSTOMERS ARE SAYING
         </h2>
         <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {testimonial.map((res, i) => (
-            <div key={i} className="shadow-md p-4">
-              <p className=" mb-6">
+            <div key={i} className={`${theme==='dark'?'bg-black':'bg-white '} shadow-md p-4`}>
+              <p className="text-gray-600 mb-6">
                 {res.testimony}
               </p>
               <div className="flex items-center gap-2 mb-0">
@@ -149,7 +149,7 @@ The foundation of Telecare Services is the straightforward but profound idea tha
                   alt="Logo"
                   width={50}
                   height={50}
-                  className="rounded-full object-contain bg-neutral-500"
+                  className="rounded-full object-contain bg-neutral-500/10"
                 />} 
                 <div>
                   <p className="font-bold">{res.name}</p>

@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "src/app/components/TextType.jsx", "src/app/about/page.jsx"  ],
+, "src/app/components/TextType.jsx", "src/app/about/page.jsx", "src/app/tools/list.jsx", "src/app/tools/page.tsx"  ],
   "exclude": ["node_modules"]
 }

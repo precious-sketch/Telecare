@@ -58,8 +58,8 @@ if (!mounted) return null;
     <Image
       src={
         theme === "dark"
-          ? "https://res.cloudinary.com/dayvllk5w/image/upload/v1764616622/logo_white_y6guiz.png"
-          : "https://res.cloudinary.com/dayvllk5w/image/upload/v1764447452/logo_black_wdpepe.png"
+          ? "https://res.cloudinary.com/dayvllk5w/image/upload/v1764707810/logo_light_br_sqdgac.png"
+          : "https://res.cloudinary.com/dayvllk5w/image/upload/v1764707809/logo_dark_br_ywdqow.png"
       }
       alt="Logo"
       fill

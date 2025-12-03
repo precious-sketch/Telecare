@@ -81,13 +81,13 @@ if (!mounted) return null;
       <Link href="/services" className={linkClass("/services")}>Services</Link>
       <Link href="/contact" className={linkClass("/contact")}>Contact</Link>
     </motion.div>
-        <div className={`flex items-center gap-2 ${theme==='dark'?'text-white':'text-black'}`}>
+        <div className={`flex items-center gap-4 ${theme==='dark'?'text-white':'text-black'}`}>
           <ThemeToggle />
           <motion.button
            initial={{ opacity: 0, x: 150 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.3 }}
-            className={`cursor-target md:hidden p-3 ${theme==='dark'?'text-white':'text-black'}`}
+            className={`cursor-target md:hidden p-0 ${theme==='dark'?'text-white':'text-black'}`}
             onClick={() => setOpen(!open)}
           >
             {open ? <X  className='w-8 h-8' /> : <Menu className='w-8 h-8' />}

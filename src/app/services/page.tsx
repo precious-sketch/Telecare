@@ -127,10 +127,8 @@ if (!mounted) return null;
           <Link
             href={"/services/"+i}
             className={`inline-block mt-1 px-3 cursor-target py-1 font-semibold ${
-              theme === 'dark'
-                ? 'bg-zinc-100 text-zinc-900'
-                : 'bg-zinc-900 text-zinc-100'
-            }`}
+        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+      }`}
           >
             Read more
           </Link>

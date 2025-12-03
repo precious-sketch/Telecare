@@ -50,10 +50,8 @@ const Hero = () => {
  <Link
             href="/contact"
             className={`w-fit mt-1 px-4 max-md:text-lg text-xl  py-1.5 font-bold cursor-target ${
-              theme === 'dark'
-                ? 'bg-white text-black'
-                : 'bg-black text-white'
-            }`}
+        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+      }`}
           >
             Contact Us
           </Link>

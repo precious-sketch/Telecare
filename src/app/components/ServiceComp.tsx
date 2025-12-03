@@ -180,10 +180,8 @@ if (!mounted) return null;
  <Link
             href="/contact"
             className={`inline-block cursor-target mt-1 px-5 max-md:text-lg text-xl  py-2 font-semibold ${
-              theme === 'dark'
-                ? 'bg-zinc-100 text-zinc-900'
-                : 'bg-zinc-900 text-zinc-100'
-            }`}
+        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+      }`}
           >
             Contact Us
           </Link>

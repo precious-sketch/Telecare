@@ -67,15 +67,19 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
       <section className={`${theme==='dark'?'text-white bg-black':'text-black bg-white'} w-full h-fit py-14 flex flex-col align-middle justify-center items-start px-[3%]`}>
    
 <span className=" max-sm:text-sm max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 max-w-[1200px] flex flex-row  max-md:flex-col">  <span>
-The foundation of Telecare Services is the straightforward but profound idea that every person should receive kind assistance that upholds their dignity and fosters their independence. For individuals with intellectual and developmental disabilities throughout Maryland, we offer home-based and community-focused care, making sure they receive direction that accurately reflects their needs, preferences, and individual objectives. Our strategy is based on sincere empathy and a dedication to providing each participant with the chance to lead a more fulfilling and connected life in their local communities. <br /> Our team is made up of dedicated professionals who bring not only experience but also empathy, patience, and a deep sense of purpose to their work.  Every member contributes significantly to the participants development, success, and sense of worth.  We strive to create an environment where families feel supported, individuals feel heard, and communities feel enriched by the contributions and unique strengths of those we serve.  This collective passion strengthens our mission every single day.
+The foundation of Telecare Services is the straightforward but profound idea that every person should receive kind assistance that upholds their dignity and fosters their independence. For individuals with intellectual and developmental disabilities throughout Maryland, we offer home-based and community-focused care, making sure they receive direction that accurately reflects their needs, preferences, and individual objectives. Our strategy is based on sincere empathy and a dedication to providing each participant with the chance to lead a more fulfilling and connected life in their local communities. <br /> 
+{/* Our team is made up of dedicated professionals who bring not only experience but also empathy, patience, and a deep sense of purpose to their work.  Every member contributes significantly to the participants development, success, and sense of worth.  We strive to create an environment where families feel supported, individuals feel heard, and communities feel enriched by the contributions and unique strengths of those we serve.  This collective passion strengthens our mission every single day. */}
 </span>
 <span>
 
-    At the heart of our services is a strong focus on person-centred care, where every plan is shaped around what matters most to the participant.  Since every persons journey is unique, we customise our support to help them develop self-sufficiency, cultivate deep connections, and participate with confidence in daily activities.  By prioritising choice and autonomy, we encourage participants to take active roles in shaping their lives and exploring opportunities that bring them joy, fulfilment, and a true sense of belonging. <br />
+    {/* At the heart of our services is a strong focus on person-centred care, where every plan is shaped around what matters most to the participant.  Since every persons journey is unique, we customise our support to help them develop self-sufficiency, cultivate deep connections, and participate with confidence in daily activities.  By prioritising choice and autonomy, we encourage participants to take active roles in shaping their lives and exploring opportunities that bring them joy, fulfilment, and a true sense of belonging. */}
+    <br />
     Every choice we make and every interaction we have is guided by our mission, vision, and values.  Compassion leads our approach, dignity shapes our respect for each person, inclusivity strengthens our communities, and responsibility drives our commitment to doing what is right.  In addition to providing care, Telecare Services aims to improve lives, boost self-esteem, and pave the way for self-sufficiency and personal development.  Through consistent support and a strong sense of partnership, we empower individuals to live meaningful, rewarding lives within the communities they choose.
     
 </span></span>
-<Link className={`cursor-target w-fit h-fit p-2 px-3 font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`} href='/about'>More about us</Link>
+<Link className={`cursor-target w-fit h-fit p-2 px-3 font-semibold ${
+        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+      } `} href='/about'>More about us</Link>
       </section>
   <section
   className={` ${
@@ -84,7 +88,9 @@ The foundation of Telecare Services is the straightforward but profound idea tha
       : 'text-zinc-900 bg-zinc-100'
   } w-full min-h-screen py-10 px-4 mx-auto max-w-7xl`}
 >
- <div className="w-full flex flex-row"><h2 className="w-full text-2xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2> <Link href='/services' className={`cursor-target w-fit h-fit p-1 px-2 text-sm font-semibold ${theme==='dark'?'bg-white text-black':'bg-black text-white'}`}>View all services</Link></div> 
+ <div className="w-full flex flex-row"><h2 className="w-full text-2xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2> <Link href='/services' className={`cursor-target w-fit h-fit p-1 px-2 text-sm font-semibold ${
+        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+      }`}>View all services</Link></div> 
 
   <div
     className="
@@ -120,10 +126,8 @@ The foundation of Telecare Services is the straightforward but profound idea tha
           <Link
             href={'/services/'+i}
             className={`cursor-target inline-block mt-1 px-3 py-1 font-semibold ${
-              theme === 'dark'
-                ? 'bg-zinc-100 text-zinc-900'
-                : 'bg-zinc-900 text-zinc-100'
-            }`}
+        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+      }`}
           >
             Read more
           </Link>

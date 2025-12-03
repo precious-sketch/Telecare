@@ -90,6 +90,18 @@ import React, { useEffect, useState } from 'react'
     ]
   },
   {
+    "title": "Organised Healthcare Delivery System",
+    "img": "/services_12.jpg",
+    "desc": "Telecare Services specializes in providing an Organized Healthcare Delivery System tailored for individuals with special needs. Our system is meticulously designed to offer comprehensive and structured support, focusing on the unique requirements of each participant.",
+    "content_paragraphs": [
+      "Through a combination of assistive technology, environmental assessments, modifications, and caregiver supports, we ensure a holistic approach to care. From short-term respite options to transportation services and specialized camps, our system is crafted to enhance accessibility, safety, and quality of life for individuals with diverse abilities.",
+      "The staffing in our residential homes is comprehensive and attentive. We provide round-the-clock supervision to assist with every aspect of daily life, including meal preparation and housekeeping, personal hygiene, and medication administration. Our staff are trained in both behavioral challenges and medical needs so that residents are kept safe at all times while still maintaining their privacy and dignity.",
+      "At Telecare Services, we are committed to organizing healthcare delivery in a way that promotes independence, inclusivity, and continuous improvement for those we serve. This include Assistive Technology & Services, Environmental Assessment, Environmental Modifications, Live-in Caregiver Supports, Respite 15 Minutes (Hourly), Respite Daily (CLGH Sites Only), Respite Camp, Transition Services, Transportation Services, Vehicle Modifications",
+      // "Each resident in our care has an Individualized Support Plan that outlines how we will provide services for that individual. We work with the individual to establish personal goals, such as learning to do laundry, developing better communication skills, or managing personal finances. Our residential staff actively works on those goals each day, making the residence a place of ongoing learning and growth.",
+      // "We maintain an open-door policy for families and encourage their active involvement in the lives of our residents. We also facilitate visits, home trips, and regular communication to keep family bonds intact. It is our commitment at Telecare Services LLC that we turn the residential homes into a place of joy, dignity, and comfort, allowing adults with special needs to live life to the fullest."
+    ]
+  },
+  {
     title: "Remote Support Services",
     img: "/service_8.jpg",
     desc: "Our Remote Support Services allow individuals to stay independent but offer real-time support when it is needed. With the help of advanced technology and proficient support, we provide the best remote support services",

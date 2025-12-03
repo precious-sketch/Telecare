@@ -91,7 +91,7 @@ import React, { useState } from 'react';
   },
   {
     "title": "Organised Healthcare Delivery System",
-    "img": "/service_7.jpg",
+    "img": "/services_12.jpg",
     "desc": "Telecare Services specializes in providing an Organized Healthcare Delivery System tailored for individuals with special needs. Our system is meticulously designed to offer comprehensive and structured support, focusing on the unique requirements of each participant.",
     "content_paragraphs": [
       "Through a combination of assistive technology, environmental assessments, modifications, and caregiver supports, we ensure a holistic approach to care. From short-term respite options to transportation services and specialized camps, our system is crafted to enhance accessibility, safety, and quality of life for individuals with diverse abilities.",

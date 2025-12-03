@@ -32,9 +32,9 @@ return (
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-       <span className='gap-1.5 flex flex-row items-center align-middle text-lg'><Sun className="w-6 h-6 text-blue-400" /> <span>Light</span></span> 
+       <span className='gap-1.5 flex flex-row items-center align-middle'><Sun className="w-5 h-5 text-blue-400" /> <span>Light</span></span> 
       ) : (
-       <span className='gap-1.5 flex flex-row items-center align-middle text-lg'> <Moon className="w-6 h-6 text-gray-400" /> <span> Dark</span> </span>
+       <span className='gap-1.5 flex flex-row items-center align-middle '> <Moon className="w-5 h-5 text-gray-400" /> <span> Dark</span> </span>
       )}
     </motion.button>
   );

@@ -54,7 +54,7 @@ if (!mounted) return null;
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.4 }}
 >
-  <Link href="/" className="w-20 h-20 relative block">
+  <Link href="/" className="w-16 h-16 relative block">
     <Image
       src={
         theme === "dark"

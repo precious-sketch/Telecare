@@ -27,7 +27,7 @@ return (
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className={`cursor-target ${
         theme === 'dark' ? 'bg-white text-black' : 'bg-black text-white'
-      } px-2 p-1.5 pr-3 rounded-full font-bold transition text-sm`}
+      } px-2 p-1.5 pr-3 rounded-full font-bold transition text-sm hover:bg-[#6B3F26] `}
        aria-labelledby="Toggle theme"
       aria-label="Toggle theme"
     >

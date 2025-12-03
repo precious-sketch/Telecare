@@ -44,6 +44,11 @@ const services = [
     title: "Adult Residential Services", 
    img: "/service_7.jpg",  
     desc: "At Telecare Services, we understand the importance of providing a supportive and nurturing environment for adults with special needs. Our Adult Residential Services offer a comforting and inclusive home setting where individuals can thrive.", 
+  },  
+  { 
+    title: "Organised Healthcare Delivery System", 
+   img: "/service_7.jpg",  
+    desc: "At Telecare Services, we are committed to organizing healthcare delivery in a way that promotes independence, inclusivity, and continuous improvement for those we serve.", 
   }, 
   { 
     title: "Remote Support Services", 

@@ -35,23 +35,33 @@ body {
   font-style: normal;
 }
 .georgia {
-/* color: #ffcb98; */
+/* color: #542b00; */
   font-family: "Georgia", sans-serif !important;
 }
-.footer a:hover {
+/* .footer a:hover {
   color: #4545ff;
-  }
   
   .contact a:hover {
     color: rgb(69, 69, 255);
 }
+*/
 #map-container {
   height: 100%;
     width: 100%;
       /* temporarily set the background color so we can tell where the map container is positioned */
       background-color: lightgrey;
     }
-    
+ .dark a:hover {
+   color: #ffcc98;
+   text-decoration-color: #ffcc98;
+ }
+
+ .light a:hover {
+   color: #542b00;
+
+   text-decoration-color: #542b00;
+ }
+  
     .sidebar {
   background-color: rgb(35 55 75 / 90%);
   color: #fff;

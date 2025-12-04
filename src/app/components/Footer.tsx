@@ -133,11 +133,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/tools" className="">
-                  Tools
-                </Link>
-              </li>
-              <li>
                 <Link href="/blog" className="">
                   Blog
                 </Link>

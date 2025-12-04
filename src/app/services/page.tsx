@@ -90,7 +90,9 @@ if (!mounted) return null;
               }}>
      
               <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
-              <div className="absolute max-w-[500px]  flex flex-col bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl">OUR SERVICES</div>
+              <div className="absolute max-w-[500px]   bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl flex flex-row gap-2"> <span className='opacity-70'>OUR </span> <span className={` ${
+        theme === 'dark' ? 'text-[#ffcc98]' : 'text-[#542b00] '
+      } `} >SERVICES</span> </div>
 </section>
    <div
     className="
@@ -127,7 +129,7 @@ if (!mounted) return null;
           <Link
             href={"/services/"+i}
             className={`inline-block mt-1 px-3 cursor-target py-1 font-semibold ${
-        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#542b00] text-white'
       }`}
           >
             Read more

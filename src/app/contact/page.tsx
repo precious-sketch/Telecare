@@ -91,7 +91,7 @@ if (!mounted) return null;
          </textarea>
         </div> */}
         <button type="submit" className={`cursor-target w-full p-2 align-middle mt-4 text-2xl ${
-        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#542b00] text-white'
       }  font-semibold spacin`}>Send</button>
       </form>
       <div className="w-fit gap-4 md:flex-col flex flex-1 flex-row flex-wrap  p-3 md:py-8 align-start justify-start items-start text-wrap pb-10 border-slate-600/50">

@@ -30,7 +30,9 @@ const Page = () => {
               }}>
      
               <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
-              <div className="absolute max-w-[500px] opacity-85 flex flex-col bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl">ABOUT US</div>
+               <div className="absolute max-w-[500px]   bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl flex flex-row gap-2"> <span className={` ${
+        theme === 'dark' ? 'text-[#ffcc98]' : 'text-[#542b00] '
+      } `} >ABOUT</span><span className='opacity-70'>US </span>  </div>
 </section>
 <AboutQuote />
 <section className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pb-24 p-[3%] gap-5 mx-auto align-middle justify-center items-center 

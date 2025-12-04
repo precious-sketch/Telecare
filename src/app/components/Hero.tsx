@@ -49,7 +49,7 @@ const Hero = () => {
 <div className="absolute max-w-[500px] opacity-85 flex flex-col  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full p-4 pt-5 z-10"> <span className='font-semibold text-5xl max-xl:text-3xl max-md:text-2xl'>TELECARE SERVICES</span> <span className='text-lg max-md:text-md max-sm:text-sm text-justify '>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
  <Link
             href="/contact"
-            className={`w-fit mt-1 px-4 max-md:text-lg text-xl  py-1.5 font-bold cursor-target ${
+            className={`w-fit mt-1 px-4 max-md:text-lg text-xl opacity-100 py-1.5 font-bold cursor-target ${
         theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
       }`}
           >

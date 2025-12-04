@@ -19,7 +19,7 @@ const Page = () => {
   return  (
     <main className={`${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"} min-h-screen py-24`}>
       
-      <section className="bg-white shadow-sm border-b border-gray-200">
+      <section className=" shadow-sm border-b border-gray-500">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-amber-700">
             U.S. Health & Wellness News

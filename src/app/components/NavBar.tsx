@@ -8,6 +8,8 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { LiquidGlass } from '@liquidglass/react';
+
 
 export default function Navbar() {
  const [open, setOpen] = useState(false);
@@ -48,8 +50,15 @@ return () => clearTimeout(timer);
 if (!mounted) return null;
   return (
     <nav className={`${theme==='dark'?'text-white':'text-black'} font-bold  fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg -colors duration-300`}>
-      <div className={`max-w-3xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? 'bg-black/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-white/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
-  <motion.div
+     <div className={`max-w-3xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? ' border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?' border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
+  <LiquidGlass
+        borderRadius={0}
+        blur={0.5}
+        contrast={1.2}
+        brightness={1.1}
+        className='w-full'
+        saturation={1.2}
+      > <motion.div
   initial={{ opacity: 0, x: -150 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.4 }}
@@ -93,12 +102,13 @@ if (!mounted) return null;
             {open ? <X  className='w-8 h-8' /> : <Menu className='w-8 h-8' />}
           </motion.button>
         </div>
+</LiquidGlass> 
       </div>
-
   
-      {open && (
+      
+   {open && (
         <div className={`${theme==='dark'?'bg-black/50 p-3   border border-neutral-700/40 shadow-sm':'bg-white/50 p-3  border border-neutral-700/40 shadow-sm'} md:hidden mt-3 flex flex-col items-center  backdrop-blur-md  py-4 space-y-3`}>
-          <Link href="/" className='cursor-target hover:text-blue-700 transition-colors' onClick={() => setOpen(false)}>Home</Link>
+      <Link href="/" className='cursor-target hover:text-blue-700 transition-colors' onClick={() => setOpen(false)}>Home</Link>
           <Link href="/about" className='cursor-target hover:text-blue-700 transition-colors' onClick={() => setOpen(false)}>About</Link>
           <Link href="/services" className='cursor-target hover:text-blue-700 transition-colors' onClick={() => setOpen(false)}>Services</Link>
           {/* <Link href="/tools" onClick={() => setOpen(false)}>Tools</Link>

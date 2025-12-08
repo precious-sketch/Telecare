@@ -65,10 +65,9 @@ if (!mounted) return null;
 return (<div className={`flex flex-col min-h-screen items-center justify-center font-sans  ${theme==='dark'?'bg-black text-white ':'bg-zinc-50 text-zinc-900'}`}>
       <Hero />
       <section className={`${theme==='dark'?'text-white bg-black':'text-black bg-white'} w-full h-fit py-14 flex flex-col align-middle justify-center items-start px-[3%]`}>
-   
+     <span className="text-3xl mb-4 font-semibold">ABOUT US</span>
 <span className=" max-sm:text-sm max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 max-w-[1200px] flex flex-row  max-md:flex-col">  <span>
-  <span className="text-3xl font-semibold">ABOUT US</span>
-  <br />
+
 The foundation of Telecare Services is the straightforward but profound idea that every person should receive kind assistance that upholds their dignity and fosters their independence. For individuals with intellectual and developmental disabilities throughout Maryland, we offer home-based and community-focused care, making sure they receive direction that accurately reflects their needs, preferences, and individual objectives. Our strategy is based on sincere empathy and a dedication to providing each participant with the chance to lead a more fulfilling and connected life in their local communities. <br /> 
 {/* Our team is made up of dedicated professionals who bring not only experience but also empathy, patience, and a deep sense of purpose to their work.  Every member contributes significantly to the participants development, success, and sense of worth.  We strive to create an environment where families feel supported, individuals feel heard, and communities feel enriched by the contributions and unique strengths of those we serve.  This collective passion strengthens our mission every single day. */}
 </span>

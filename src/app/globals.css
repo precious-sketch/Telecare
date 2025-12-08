@@ -51,12 +51,23 @@ body {
       /* temporarily set the background color so we can tell where the map container is positioned */
       background-color: lightgrey;
     }
- .dark a:hover {
+ .dark footer a:hover {
    color: #ffcc98;
    text-decoration-color: #ffcc98;
  }
 
- .light a:hover {
+ .light footer a:hover {
+   color: #542b00;
+
+   text-decoration-color: #542b00;
+ }
+
+ .dark nav a:hover {
+   color: #ffcc98;
+   text-decoration-color: #ffcc98;
+ }
+
+ .light nav a:hover {
    color: #542b00;
 
    text-decoration-color: #542b00;

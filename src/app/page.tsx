@@ -79,7 +79,7 @@ The foundation of Telecare Services is the straightforward but profound idea tha
     Every choice we make and every interaction we have is guided by our mission, vision, and values.  Compassion leads our approach, dignity shapes our respect for each person, inclusivity strengthens our communities, and responsibility drives our commitment to doing what is right.  In addition to providing care, Telecare Services aims to improve lives, boost self-esteem, and pave the way for self-sufficiency and personal development.  Through consistent support and a strong sense of partnership, we empower individuals to live meaningful, rewarding lives within the communities they choose.
     
 </span></span>
-<Link className={`cursor-target w-fit h-fit p-2 px-3 flex items-end font-semibold ${
+<Link className={`cursor-target w-fit h-fit p-2 px-3 mt-2 flex items-end font-semibold ${
         theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#542b00] text-white'
       } `} href='/about'>More about us</Link>
       </section>
@@ -101,7 +101,7 @@ The foundation of Telecare Services is the straightforward but profound idea tha
       sm:grid-cols-2 
       lg:grid-cols-3 
       xl:grid-cols-4
-      justify-items-center
+      justify-items-stretch
     "
   >
     {services.map((item, i) => (

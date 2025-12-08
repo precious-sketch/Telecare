@@ -31,7 +31,7 @@ if (!mounted) return null;
     theme === 'dark'
       ? 'text-zinc-50 bg-zinc-900'
       : 'text-zinc-900 bg-zinc-100'
-  } w-full min-h-screen   mx-auto max-w-7xl`}>
+  } w-full min-h-screen h-full  mx-auto pb-20`}>
           <section className="w-full relative min-h-[250px] h-[40vh] max-h-[600px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(/handshake.jpg)`,
@@ -44,7 +44,7 @@ if (!mounted) return null;
       } `} >CONTACT</span><span className='opacity-70'>US </span>  </div>
 </section>
         
-         <div className={`w-[94%] mx-auto max-md:max-w-[500px] my-20 md:flex-row  max-md:flex-col shadow-lg z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-black':' text-neutral-950 bg-white'} `}>
+         <div className={`w-[94%] mx-auto max-md:max-w-[500px] mt-20 md:flex-row  max-md:flex-col shadow-lg z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-black':' text-neutral-950 bg-white'} `}>
               
               <form className='px-3  w-full flex flex-1 items-center  flex-col min-w-56 py-8' >
       <div className='text-2xl max-md:text-xl align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Message Us</div>

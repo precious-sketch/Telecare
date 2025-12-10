@@ -46,7 +46,7 @@ const Hero = () => {
       </Zoom>
       {/* <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000025,black)]':'bg-[radial-gradient(circle_at_center,#ffffff25,white)]'}`}></div> */}
  <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-black/40':'bg-white/40'}`}></div>
-<div className="absolute max-w-[500px] opacity-85 flex flex-col  top-1/2  -translate-y-1/2 w-full p-4 pt-5 z-10"> <div className="max-w-[500px]  w-full py-2 z-10 font-extrabold text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-3xl flex flex-row gap-2"> <span className={` ${
+<div className="absolute max-w-[500px] opacity-85 flex flex-col  top-1/2  -translate-y-1/2 w-full p-4 pt-5 z-10"> <div className="max-w-[500px]  w-full py-2 z-10 font-extrabold  text-5xl max-lg:text-4xl max-md:text-3xl flex flex-row gap-2"> <span className={` ${
         theme === 'dark' ? 'text-[#ffcc98]' : 'text-[#542b00] '
       } `} >TELECARE</span><span className='opacity-80'>SERVICES </span>  </div> <span className='text-lg max-md:text-md max-sm:text-sm text-justify '>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
  <Link

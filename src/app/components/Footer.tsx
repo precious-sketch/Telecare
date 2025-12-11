@@ -21,10 +21,10 @@ const Footer = () => {
   
   if (!mounted) return null;
   return (
-    <footer className={`border-t border-gray-500  ${theme==='dark'?'bg-[#71583c] text-gray-400':' bg-[#efe1cd] text-gray-600'}  font-sans pb-2 footer`}>
-      <div className=" m-0 mx-auto px-[3%]">
+    <footer className={`border-t border-gray-500  ${theme==='dark'?'bg-[#50391e] text-gray-400':' bg-[#efe1cd] text-gray-600'}  font-sans pb-2 footer`}>
+      <div className=" m-0 mx-auto px-[3%] pt-4">
         {/* Social media and other links */}
-        <div className="w-full flex-row flex items-center pb-8">
+        {/* <div className="w-full flex-row flex items-center pb-8">
      
           <Link
             href="https://fb.com/telecareservices"
@@ -60,11 +60,12 @@ const Footer = () => {
             </span>
             <span className="mt-2 text-sm uppercase max-sm:hidden">Whatsapp</span>
           </Link>
-        </div>
+        </div> */}
 
         {/* Main footer content */}
-        <div className="w-full mt-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
-          {/* Portal Description */}
+        <div className="w-full mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 place-items-center">
+
+       
           <div className="lg:col-span-1 text-gray-500/80">
             <div className="border border-gray-500/80 relative">
               <h3 className="text-lg font-bold p-1 px-3  border-b  border-gray-600/60">Telecare Services</h3>
@@ -74,7 +75,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Products */}
           <div>
             <h4 className="text-lg font-semibold mb-2">Services</h4>
         <ul className="space-y-0.5 text-sm">
@@ -102,8 +102,6 @@ const Footer = () => {
           </div>
 
     
-
-          {/* About */}
           <div>
             <h4 className="text-lg font-semibold mb-2">Pages</h4>
             <ul className="space-y-0.5 space-x-3 text-sm grid grid-cols-2 w-fit">
@@ -136,7 +134,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Publications & Contact */}
           <div className="lg:col-span-1 flex flex-col">
               <h4 className="text-lg font-semibold mb-2">Talk To Us</h4>
               <ul className="space-y-0.5 text-sm flex flex-col">
@@ -153,6 +150,21 @@ const Footer = () => {
                    +1 (443) 249-3285
                   </Link>
                 </li>
+              </ul>
+          </div>
+      
+          <div className="lg:col-span-1 flex flex-col">
+              <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
+              <ul className="space-y-0.5 text-sm flex flex-col">
+                <li>
+                  <Link href="https://www.facebook.com/share/17VQX3qn1j/" className="">
+                    Facebook
+                  </Link>
+                  
+               
+                </li>
+            
+             
               </ul>
           </div>
         </div>

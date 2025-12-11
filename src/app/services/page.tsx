@@ -115,7 +115,7 @@ if (!mounted) return null;
       viewport={{ once:true, amount: 0.2 }}
         key={i}
         className={`${
-          theme === 'dark' ? 'bg-[#71583c] text-zinc-50' : 'bg-[#efe1cd] text-[#644b2e]'
+          theme === 'dark' ? 'bg-[#50391e] text-zinc-50' : 'bg-[#efe1cd] text-[#644b2e]'
         } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition `}
       >
         <Image
@@ -131,7 +131,7 @@ if (!mounted) return null;
           <Link
             href={"/services/"+i}
             className={`inline-block mt-1 px-3 cursor-target py-1 font-semibold ${
-        theme === 'dark' ? 'bg-[#efe1cd] text-[#71583c]' : 'bg-[#71583c] text-white'
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }`}
           >
             Read more

@@ -137,7 +137,7 @@ const Page = ({ params }: { params: Promise<{ id: string }> }) => {
   const { theme } = useTheme();
   
   return (
- <section className= {`w-full py-24 text-justify ${theme==='dark'?'bg-[#71583c] text-white':'bg-[#fff9f0] text-[#71583c]'}`}>
+ <section className= {`w-full py-24 text-justify ${theme==='dark'?'bg-[#50391e] text-white':'bg-[#fff9f0] text-[#50391e]'}`}>
   <ServiceComp id={id}/>
 </section>
   );

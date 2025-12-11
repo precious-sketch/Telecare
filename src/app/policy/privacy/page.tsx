@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
     <div
       className={`
         min-h-screen w-full 
-        ${theme === "dark" ? "bg-[#71583c] text-white" : "bg-[#fff9f0] text-[#644b2e]"}
+        ${theme === "dark" ? "bg-[#50391e] text-white" : "bg-[#fff9f0] text-[#644b2e]"}
         flex justify-center px-4 py-32
       `}
     >

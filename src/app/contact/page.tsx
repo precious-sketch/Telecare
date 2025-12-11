@@ -46,7 +46,7 @@ if (!mounted) return null;
       } `} >US </span>  </div>
 </section>
         
-         <div className={`w-[94%] mx-auto max-md:max-w-[500px] mt-20 md:flex-row  max-md:flex-col shadow-lg z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-[#71583c]':' text-neutral-950 bg-[#efe1cd]'} `}>
+         <div className={`w-[94%] mx-auto max-md:max-w-[500px] mt-20 md:flex-row  max-md:flex-col shadow-lg z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-[#50391e]':' text-neutral-950 bg-[#efe1cd]'} `}>
               
               <form className='px-3  w-full flex flex-1 items-center  flex-col min-w-56 py-8' >
       <div className='text-2xl max-md:text-xl align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Message Us</div>
@@ -58,7 +58,7 @@ if (!mounted) return null;
             value={form.name}
             onChange={handleChange}
             required
-            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#71583c] border-white text-white':'bg-[#efe1cd] border-[#71583c]  text-[#71583c]'} border  focus:border-neutral/60  font-light text-lg`}
+            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#50391e] border-white text-white':'bg-[#efe1cd] border-[#50391e]  text-[#50391e]'} border  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         <div className='w-full flex flex-row flex-wrap  pt-3 gap-1 text-md align-middle items-center  max-md:gap-0'>
@@ -69,18 +69,18 @@ if (!mounted) return null;
             value={form.email}
             onChange={handleChange}
             required
-              className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#71583c] text-white border-white ':'bg-[#efe1cd] border-[#71583c] text-[#71583c]'} border border-[#71583c]/40  focus:border-neutral/60  font-light text-lg`}
+              className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#50391e] text-white border-white ':'bg-[#efe1cd] border-[#50391e] text-[#50391e]'} border border-[#50391e]/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         <div className='w-full flex flex-row flex-wrap pt-3  gap-1 text-md align-middle items-center  max-md:gap-0'>
-          <label className='text-nowrap align-start text-start h-fit max-md:w-full active:bg-[#71583c]/25 max-md:px-1   w-[200px] font-semibold mulish'>Your Message</label>
+          <label className='text-nowrap align-start text-start h-fit max-md:w-full active:bg-[#50391e]/25 max-md:px-1   w-[200px] font-semibold mulish'>Your Message</label>
           <textarea
             name="message"
             value={form.message}
             onChange={handleChange}
             required
             rows={2}
-            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#71583c] text-white border-white ':'bg-[#efe1cd] border-[#71583c]  text-[#71583c]'} border border-[#71583c]/40  focus:border-neutral/60  font-light text-lg`}
+            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#50391e] text-white border-white ':'bg-[#efe1cd] border-[#50391e]  text-[#50391e]'} border border-[#50391e]/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         {/* <div>
@@ -104,7 +104,7 @@ if (!mounted) return null;
          </textarea>
         </div> */}
         <button type="submit" className={`cursor-target w-full p-2 align-middle mt-4 text-2xl ${
-        theme === 'dark' ? 'bg-[#efe1cd] text-[#71583c]' : 'bg-[#71583c] text-white'
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }  font-semibold spacin`}>Send</button>
       </form>
       <div className="w-fit gap-4 md:flex-col flex flex-1 flex-row flex-wrap  p-3 md:py-8 align-start justify-start items-start text-wrap pb-10 border-slate-600/50">

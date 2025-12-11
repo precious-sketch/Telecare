@@ -47,7 +47,7 @@ return () => clearTimeout(timer);
 
 if (!mounted) return null;
   return (
-    <nav className={`${theme==='dark'?'text-white font-[550]  decoration-[#efe1cd]':'text-[#50391e] decoration-[#50391e]'} font-medium fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg duration-300`}>
+    <nav className={`${theme==='dark'?'text-white font-[550]  decoration-[#efe1cd]':'text-black decoration-[#50391e]'} font-medium fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg duration-300`}>
       <div className={`max-w-4xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? 'bg-[#50391e]/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-[#efe1cd]/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
   <motion.div
   initial={{ opacity: 0, x: -150 }}

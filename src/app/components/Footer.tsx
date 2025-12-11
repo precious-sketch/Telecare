@@ -63,13 +63,13 @@ const Footer = () => {
         </div> */}
 
         {/* Main footer content */}
-        <div className="w-full mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 place-items-center">
+        <div className="w-full mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 place-items-center ">
 
        
-          <div className="lg:col-span-1 text-gray-500/80">
-            <div className="border border-gray-500/80 relative">
+          <div className="lg:col-span-1 text-gray-500">
+            <div className="border border-gray-500 relative">
               <h3 className="text-lg font-bold p-1 px-3  border-b  border-gray-600/60">Telecare Services</h3>
-              <p className="text-sm p-3 text-justify">
+              <p className="text-sm p-3 ">
                Our mission is rooted in empowering persons with disability to live fulfilling, independent lives within their communities.
               </p>
             </div>

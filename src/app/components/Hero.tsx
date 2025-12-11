@@ -46,13 +46,15 @@ const Hero = () => {
       </Zoom>
       {/* <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000025,black)]':'bg-[radial-gradient(circle_at_center,#ffffff25,white)]'}`}></div> */}
  <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-black/40':'bg-white/40'}`}></div>
-<div className="absolute max-w-[500px] opacity-85 flex flex-col  top-1/2  -translate-y-1/2 w-full p-4 pt-5 z-10"> <div className="max-w-[500px]  w-full py-2 z-10 font-extrabold  text-5xl max-lg:text-4xl max-md:text-3xl flex flex-row gap-2"> <span className={` ${
-        theme === 'dark' ? 'text-[#ffcc98]' : 'text-[#542b00] '
-      } `} >TELECARE</span><span className='opacity-80'>SERVICES </span>  </div> <span className='text-lg max-md:text-md max-sm:text-sm text-justify '>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
+<div className="absolute opacity-85 flex flex-col  top-1/2 w-[95%] -translate-y-1/2  left-1/2 -translate-x-1/2 p-4 pt-5 z-10"> <div className="w-full text-center py-2 z-10 font-extrabold  text-5xl max-lg:text-4xl max-md:text-3xl flex flex-row gap-2 flex justify-center"> <span className={` ${
+        theme === 'dark' ? 'text-white' : 'text-[#542b00] '
+      } `} >TELECARE</span><span className={` ${
+        theme === 'dark' ? 'text-white' : 'text-[#542b00] '
+      } `}>SERVICES </span>  </div> <span className='text-lg max-md:text-md max-sm:text-sm text-center mb-2 max-w-[650px] mx-auto w-full'>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
  <Link
             href="/contact"
-            className={`w-fit mt-1 px-4 max-md:text-lg text-xl opacity-100 py-1.5 font-bold cursor-target ${
-        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#443000] text-white'
+            className={`w-fit mt-1 px-4 mx-auto max-md:text-lg text-xl opacity-100 py-1.5 font-bold cursor-target ${
+        theme === 'dark' ? 'bg-[#ffedd4] text-black' : 'bg-[#443000] text-white'
       }`}
           >
             Contact Us

@@ -66,9 +66,9 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
       <Hero />
       <section className={`${theme==='dark'?'text-white bg-black':'text-black bg-white'} w-full h-fit py-14 flex flex-col align-middle justify-center items-start px-[3%]`}>
      <span className="text-3xl mb-4 font-semibold">ABOUT US</span>
-<span className=" max-sm:text-sm max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 max-w-[1200px] flex flex-row  max-md:flex-col">  <span>
 
-The foundation of Telecare Services is the straightforward but profound idea that every person should receive kind assistance that upholds their dignity and fosters their independence. For individuals with intellectual and developmental disabilities throughout Maryland, we offer home-based and community-focused care, making sure they receive direction that accurately reflects their needs, preferences, and individual objectives. Our strategy is based on sincere empathy and a dedication to providing each participant with the chance to lead a more fulfilling and connected life in their local communities. <br /> 
+<span className=" max-sm:text-sm max-w-[650px] max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 flex flex-row  max-md:flex-col">  <span>
+At Telecare Services, we’re committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland. Our mission is rooted in empowering each participant to live fulfilling, independent lives within their communities. <br /> 
 {/* Our team is made up of dedicated professionals who bring not only experience but also empathy, patience, and a deep sense of purpose to their work.  Every member contributes significantly to the participants development, success, and sense of worth.  We strive to create an environment where families feel supported, individuals feel heard, and communities feel enriched by the contributions and unique strengths of those we serve.  This collective passion strengthens our mission every single day. */}
 </span>
 <span>
@@ -76,11 +76,11 @@ The foundation of Telecare Services is the straightforward but profound idea tha
     {/* At the heart of our services is a strong focus on person-centred care, where every plan is shaped around what matters most to the participant.  Since every persons journey is unique, we customise our support to help them develop self-sufficiency, cultivate deep connections, and participate with confidence in daily activities.  By prioritising choice and autonomy, we encourage participants to take active roles in shaping their lives and exploring opportunities that bring them joy, fulfilment, and a true sense of belonging. */}
    
 
-    Every choice we make and every interaction we have is guided by our mission, vision, and values.  Compassion leads our approach, dignity shapes our respect for each person, inclusivity strengthens our communities, and responsibility drives our commitment to doing what is right.  In addition to providing care, Telecare Services aims to improve lives, boost self-esteem, and pave the way for self-sufficiency and personal development.  Through consistent support and a strong sense of partnership, we empower individuals to live meaningful, rewarding lives within the communities they choose.
+    {/* Every choice we make and every interaction we have is guided by our mission, vision, and values.  Compassion leads our approach, dignity shapes our respect for each person, inclusivity strengthens our communities, and responsibility drives our commitment to doing what is right.  In addition to providing care, Telecare Services aims to improve lives, boost self-esteem, and pave the way for self-sufficiency and personal development.  Through consistent support and a strong sense of partnership, we empower individuals to live meaningful, rewarding lives within the communities they choose. */}
     
 </span></span>
 <Link className={`cursor-target w-fit h-fit p-2 px-3 mt-2 flex items-end font-semibold ${
-        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#542b00] text-white'
+        theme === 'dark' ? 'bg-[#ffedd4] text-black' : 'bg-[#542b00] text-white'
       } `} href='/about'>More about us</Link>
       </section>
   <section
@@ -90,8 +90,9 @@ The foundation of Telecare Services is the straightforward but profound idea tha
       : ' bg-neutral-100'
   } w-full min-h-screen py-10 px-4 mx-auto max-w-7xl`}
 >
- <div className="w-full flex flex-row"><h2 className="w-full text-3xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2> <Link href='/services' className={`cursor-target w-fit h-fit p-1 px-2 text-sm font-semibold ${
-        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#542b00] text-white'
+ <div className="w-full flex flex-row"><h2 className="w-full text-3xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2>
+  <Link href='/services' className={`cursor-target w-fit h-fit p-1 px-2 text-sm font-semibold ${
+        theme === 'dark' ? 'bg-[#ffedd4] text-black' : 'bg-[#542b00] text-white'
       }`}>View all services</Link></div> 
 
   <div
@@ -130,7 +131,7 @@ The foundation of Telecare Services is the straightforward but profound idea tha
             className={`cursor-targe`}
           >
         <div   className={`cursor-target inline-block mt-1 px-3 py-1 font-semibold ${
-        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#542b00] text-white'
+        theme === 'dark' ? 'bg-[#ffedd4] text-black' : 'bg-[#542b00] text-white'
       }`}>Read more</div>    
           </Link>
         </div>

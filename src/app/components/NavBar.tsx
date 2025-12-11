@@ -41,13 +41,13 @@ return () => clearTimeout(timer);
   const pathname = usePathname();
 
   const linkClass = (path:string) =>
-    `cursor-target transition-colors capitalise font-[600] ${theme==='dark'?'decoration-[#ffcc98]':'decoration-[#542b00]'} ${
+    `cursor-target transition-colors capitalise font-[600] ${theme==='dark'?'decoration-[#ffedd4]':'decoration-[#542b00]'} ${
       pathname === path ? `underline underline-offset-2 decoration-2 ` : ""
     }`;
 
 if (!mounted) return null;
   return (
-    <nav className={`${theme==='dark'?'text-white font-[550]  decoration-[#ffcc98]':'text-black decoration-[#542b00]'} font-medium fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg duration-300`}>
+    <nav className={`${theme==='dark'?'text-white font-[550]  decoration-[#ffedd4]':'text-black decoration-[#542b00]'} font-medium fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg duration-300`}>
       <div className={`max-w-4xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? 'bg-black/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-white/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
   <motion.div
   initial={{ opacity: 0, x: -150 }}

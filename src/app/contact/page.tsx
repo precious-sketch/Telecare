@@ -40,7 +40,7 @@ if (!mounted) return null;
      
               <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
                <div className="absolute max-w-[500px]   bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl flex flex-row gap-2"> <span className={` ${
-        theme === 'dark' ? 'text-[#ffcc98]' : 'text-[#542b00] '
+        theme === 'dark' ? 'text-[#ffedd4]' : 'text-[#542b00] '
       } `} >CONTACT</span><span className='opacity-70'>US </span>  </div>
 </section>
         
@@ -102,7 +102,7 @@ if (!mounted) return null;
          </textarea>
         </div> */}
         <button type="submit" className={`cursor-target w-full p-2 align-middle mt-4 text-2xl ${
-        theme === 'dark' ? 'bg-[#ffcc98] text-black' : 'bg-[#542b00] text-white'
+        theme === 'dark' ? 'bg-[#ffedd4] text-black' : 'bg-[#542b00] text-white'
       }  font-semibold spacin`}>Send</button>
       </form>
       <div className="w-fit gap-4 md:flex-col flex flex-1 flex-row flex-wrap  p-3 md:py-8 align-start justify-start items-start text-wrap pb-10 border-slate-600/50">

@@ -25,14 +25,14 @@ const CookiePolicy: React.FC = () => {
     <div
       className={`
         min-h-screen w-full 
-        ${theme === "dark" ? "bg-[#432400] text-white" : "bg-zinc-100 text-[#2d1400]"}
+        ${theme === "dark" ? "bg-[#50391e] text-white" : "bg-[#fff9f0] text-[#644b2e]"}
         flex justify-center px-4 py-32
       `}
     >
       <div
         className={`
           w-full max-w-4xl 
-          ${theme === "dark" ? "bg-[#2d1400]/60 backdrop-blur-lg" : "bg-white/70 backdrop-blur-lg"}
+          ${theme === "dark" ? "bg-[#644b2e]/60 backdrop-blur-lg" : "bg-[#efe1cd]/70 backdrop-blur-lg"}
           shadow-xl  p-6 md:p-12 space-y-10
         `}
       >

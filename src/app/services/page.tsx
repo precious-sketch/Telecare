@@ -79,8 +79,8 @@ if (!mounted) return null;
     <div
   className={` ${
     theme === 'dark'
-      ? 'text-zinc-50 bg-[#2d1400]'
-      : 'text-[#2d1400] bg-zinc-100'
+      ? 'text-zinc-50 bg-[#644b2e]'
+      : 'text-[#644b2e] bg-[#fff9f0]'
   } w-full min-h-screen   mx-auto max-w-7xl`}>
   
   <section className="w-full relative min-h-[250px] h-[40vh] max-h-[600px] bg-cover bg-center"
@@ -115,7 +115,7 @@ if (!mounted) return null;
       viewport={{ once:true, amount: 0.2 }}
         key={i}
         className={`${
-          theme === 'dark' ? 'bg-[#432400] text-zinc-50' : 'bg-white text-[#2d1400]'
+          theme === 'dark' ? 'bg-[#50391e] text-zinc-50' : 'bg-[#efe1cd] text-[#644b2e]'
         } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition `}
       >
         <Image
@@ -131,7 +131,7 @@ if (!mounted) return null;
           <Link
             href={"/services/"+i}
             className={`inline-block mt-1 px-3 cursor-target py-1 font-semibold ${
-        theme === 'dark' ? 'bg-[#ffedd4] text-[#432400]' : 'bg-[#432400] text-white'
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }`}
           >
             Read more

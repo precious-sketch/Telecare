@@ -17,12 +17,12 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: white;
+      color: #50391e;
   }
 }
 
 body {
-  
   background: var(--background);
   color: var(--foreground);
   font-family: "Englebert", cursive;
@@ -52,25 +52,25 @@ font-family: "Fresca", sans-serif;
       background-color: lightgrey;
     }
  .dark footer a:hover {
-  color: #ffedd4;
-    text-decoration-color: #ffedd4;
+  color: #efe1cd;
+    text-decoration-color: #efe1cd;
  }
 
  .light footer a:hover {
-  color: #432400;
+  color: #50391e;
 
-  text-decoration-color: #432400;
+  text-decoration-color: #50391e;
  }
 
  .dark nav a:hover {
-  color: #ffedd4;
-    text-decoration-color: #ffedd4;
+  color: #efe1cd;
+    text-decoration-color: #efe1cd;
  }
 
  .light nav a:hover {
-  color: #432400;
+  color: #50391e;
 
-  text-decoration-color: #432400;
+  text-decoration-color: #50391e;
  }
   
     .sidebar {

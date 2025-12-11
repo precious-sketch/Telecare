@@ -25,7 +25,7 @@ const JobComp = () => {
         </div>
         <div className="w-fit text-md font-bold md:text-lg max-md:flex-row flex flex-col align-middle justify-center items-center">
             <span className='w-fit flex-row flex hover:scale-105' > <span>Apply</span> <MdArrowOutward className='w-7 h-7 ml-1' /></span>
-            <hr className='border max-md:rotate-90 border-[#432400] bg-[#432400] max-md:w-8 w-22 md:my-1' />
+            <hr className='border max-md:rotate-90 border-[#50391e] bg-[#50391e] max-md:w-8 w-22 md:my-1' />
             <span className='w-fit flex-row flex hover:scale-105' > <span>Check</span> <MdArrowOutward className='w-7 h-7 ml-1' /></span>
         </div>
     </div> 
@@ -43,7 +43,7 @@ const JobComp = () => {
      
         <div className="w-fit text-md font-bold md:text-lg max-md:flex-row flex flex-col align-middle justify-center items-center">
             <span className='w-fit flex-row flex hover:scale-105' > <span>Apply</span> <MdArrowOutward className='w-7 h-7 ml-1' /></span>
-            <hr className='border max-md:rotate-90 border-[#432400] bg-[#432400] max-md:w-8 w-22 md:my-1' />
+            <hr className='border max-md:rotate-90 border-[#50391e] bg-[#50391e] max-md:w-8 w-22 md:my-1' />
             <span className='w-fit flex-row flex hover:scale-105' > <span>Check</span> <MdArrowOutward className='w-7 h-7 ml-1' /></span>
         </div>
     </div>

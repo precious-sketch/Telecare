@@ -64,14 +64,14 @@ window.history.scrollRestoration = "manual";
 if (!mounted) return null;
 return (<div className={`flex flex-col min-h-screen items-center justify-center font-sans  ${
     theme === 'dark'
-      ? 'bg-[#2d1400]'
-      : 'bg-neutral-100'
+      ? 'bg-[#644b2e]'
+      : 'bg-[#efe1cd]'
   } `}>
       <Hero />
       <section className={`${
     theme === 'dark'
-      ? 'bg-[#2d1400]'
-      : 'bg-neutral-100'
+      ? 'bg-[#644b2e]'
+      : 'bg-[#efe1cd]'
   } w-full h-fit py-14 flex flex-col align-middle justify-center items-start px-[3%]`}>
      <span className="text-3xl mb-4 font-semibold">ABOUT US</span>
 
@@ -88,19 +88,19 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
     
 </span></span>
 <Link className={`cursor-target w-fit h-fit p-2 px-3 mt-2 flex items-end font-semibold ${
-        theme === 'dark' ? 'bg-[#ffedd4] text-[#432400]' : 'bg-[#432400] text-white'
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       } `} href='/about'>More about us</Link>
       </section>
   <section
   className={` ${
     theme === 'dark'
-      ? 'bg-[#432400]'
-      : 'bg-neutral-100'
+      ? 'bg-[#50391e]'
+      : 'bg-[#efe1cd]'
   } w-full min-h-screen py-10 px-4 mx-auto max-w-7xl`}
 >
  <div className="w-full flex flex-row"><h2 className="w-full text-3xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2>
   <Link href='/services' className={`cursor-target w-fit h-fit p-1 px-2 text-sm font-semibold ${
-        theme === 'dark' ? 'bg-[#ffedd4] text-[#432400]' : 'bg-[#432400] text-white'
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }`}>View all services</Link></div> 
 
   <div
@@ -121,7 +121,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
       viewport={{ once:true, amount: 0.2 }}
         key={i}
         className={`${
-          theme === 'dark' ? 'bg-[#2d1400] text-zinc-50' : 'bg-white text-[#2d1400]'
+          theme === 'dark' ? 'bg-[#644b2e] text-zinc-50' : 'bg-[#efe1cd] text-[#644b2e]'
         } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition `}
       >
         <Image
@@ -139,7 +139,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
             className={`cursor-targe`}
           >
         <div   className={`cursor-target inline-block mt-1 px-3 py-1 font-semibold ${
-        theme === 'dark' ? 'bg-[#ffedd4] text-[#432400]' : 'bg-[#432400] text-white'
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }`}>Read more</div>    
           </Link>
         </div>
@@ -150,15 +150,15 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
 
       <section className={`${
     theme === 'dark'
-      ? 'bg-[#2d1400]'
-      : 'bg-neutral-100'
+      ? 'bg-[#644b2e]'
+      : 'bg-[#efe1cd]'
   } py-16 px-6 w-full`}>
         <h2 className="text-xl md:text-2xl font-bold text-center mb-10">
           WHAT OUR CLIENTS ARE SAYING
         </h2>
         <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {testimonial.map((res, i) => (
-            <div key={i} className={`${theme==='dark'?'bg-[#432400]':'bg-white '} shadow-md p-4`}>
+            <div key={i} className={`${theme==='dark'?'bg-[#50391e]':'bg-[#efe1cd] '} shadow-md p-4`}>
               <p className={`${theme==='dark'?'text-gray-400':'text-gray-700'}  mb-6`}>
                 {res.testimony}
               </p>
@@ -212,7 +212,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
 
 // if (!mounted) return null;
 //   return (
-//     <div className={`${theme==='dark'?'bg-[#432400] text-white':'bg-white text-[#432400]'} flex items-center justify-center bg-cover bg-fixed w-full  max-md:pt-16 pt-24   relative overflow-x-hidden`}>
+//     <div className={`${theme==='dark'?'bg-[#50391e] text-white':'bg-[#efe1cd] text-[#50391e]'} flex items-center justify-center bg-cover bg-fixed w-full  max-md:pt-16 pt-24   relative overflow-x-hidden`}>
           
         
 //          <div className={`py-4 w-[93%]   zinc max-w-[600px] border-2 my-4 border-slate-600/50  z-10  backdrop-blur-sm space-x-3 flex flex-row flex-wrap space-y-6 ${theme==='dark'?'bg-slate-950 text-slate-200':'bg-slate-200 text-slate-900'} `}>
@@ -227,7 +227,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
 //             value={form.name}
 //             onChange={handleChange}
 //             required
-//             className='w-full outline-0 border p-1 px-3 text-white bg-[#432400]/40 border-[#432400]/50  focus:border-white/60  font-light text-lg'
+//             className='w-full outline-0 border p-1 px-3 text-white bg-[#50391e]/40 border-[#50391e]/50  focus:border-white/60  font-light text-lg'
 //           />
 //         </div>
 //         <div className='w-full flex flex-row pt-3 gap-1 text-md align-middle items-center max-md:flex-col max-md:gap-0'>
@@ -238,23 +238,23 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
 //             value={form.email}
 //             onChange={handleChange}
 //             required
-//             className='w-full outline-0 border p-1 px-3 text-white bg-[#432400]/40 active:bg-[#432400]/25 focus:border-white/60 border-[#432400]/50  font-light text-lg'
+//             className='w-full outline-0 border p-1 px-3 text-white bg-[#50391e]/40 active:bg-[#50391e]/25 focus:border-white/60 border-[#50391e]/50  font-light text-lg'
 //           />
 //         </div>
 //         <div className='w-full flex flex-row pt-3  gap-1 text-md align-middle items-center max-md:flex-col max-md:gap-0'>
-//           <label className='text-nowrap align-start text-start h-fit max-md:w-full active:bg-[#432400]/25 max-md:px-1   w-[200px] font-semibold mulish'>Your Message</label>
+//           <label className='text-nowrap align-start text-start h-fit max-md:w-full active:bg-[#50391e]/25 max-md:px-1   w-[200px] font-semibold mulish'>Your Message</label>
 //           <textarea
 //             name="message"
 //             value={form.message}
 //             onChange={handleChange}
 //             required
 //             rows={2}
-//             className='w-full outline-0 border p-1 px-3 text-white  border-[#432400]/50 bg-[#432400]/40 focus:border-white/60  active:bg-[#432400]/25  font-light text-lg'
+//             className='w-full outline-0 border p-1 px-3 text-white  border-[#50391e]/50 bg-[#50391e]/40 focus:border-white/60  active:bg-[#50391e]/25  font-light text-lg'
 //           />
 //         </div>
 //         <button type="submit" className={`w-full p-2 align-middle mt-4 text-2xl ${theme==='dark'?'bg-slate-200 text-slate-900':'bg-slate-900 text-slate-200'}  font-semibold spacin`}>Send</button>
 //       </form>
-//       <div className="w-full flex flex-row flex-wrap space-y-2 p-5 space-x-2 align-start justify-start items-start text-wrap border-t-2 border-[#432400]/25">
+//       <div className="w-full flex flex-row flex-wrap space-y-2 p-5 space-x-2 align-start justify-start items-start text-wrap border-t-2 border-[#50391e]/25">
 //         <div className="w-[33%] flex-1 min-w-24">
 // <div className="font-bold">Visit us</div>
 // <span>165 Log Canoe Circle, Suite G, Stevensville, MD 21666</span>

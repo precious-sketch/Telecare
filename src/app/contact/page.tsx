@@ -29,8 +29,8 @@ if (!mounted) return null;
   <div
   className={` ${
     theme === 'dark'
-      ? 'text-zinc-50 bg-zinc-900'
-      : 'text-zinc-900 bg-zinc-100'
+      ? 'text-zinc-50 bg-[#2d1400]'
+      : 'text-[#2d1400] bg-zinc-100'
   } w-full min-h-screen h-full  mx-auto pb-20`}>
           <section className="w-full relative min-h-[250px] h-[40vh] max-h-[600px] bg-cover bg-center"
               style={{
@@ -39,12 +39,14 @@ if (!mounted) return null;
               }}>
      
               <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
-               <div className="absolute max-w-[500px]   bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl flex flex-row gap-2"> <span className={` ${
-        theme === 'dark' ? 'text-[#ffedd4]' : 'text-[#542b00] '
-      } `} >CONTACT</span><span className='opacity-70'>US </span>  </div>
+               <div className="absolute max-w-[500px]   bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl flex flex-row gap-2"> <span  className={` ${
+        theme === 'dark' ? 'text-white' : 'text-black'
+      } `} >CONTACT</span><span  className={` ${
+        theme === 'dark' ? 'text-white' : 'text-black'
+      } `} >US </span>  </div>
 </section>
         
-         <div className={`w-[94%] mx-auto max-md:max-w-[500px] mt-20 md:flex-row  max-md:flex-col shadow-lg z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-black':' text-neutral-950 bg-white'} `}>
+         <div className={`w-[94%] mx-auto max-md:max-w-[500px] mt-20 md:flex-row  max-md:flex-col shadow-lg z-10  backdrop-blur-sm flex flex-row flex-wrap ${theme==='dark'?' text-neutral-100 bg-[#432400]':' text-neutral-950 bg-white'} `}>
               
               <form className='px-3  w-full flex flex-1 items-center  flex-col min-w-56 py-8' >
       <div className='text-2xl max-md:text-xl align-middle flex items-center   w-fit h-fit bebas tracking-wider leading-snug font-semibold'>Message Us</div>
@@ -56,7 +58,7 @@ if (!mounted) return null;
             value={form.name}
             onChange={handleChange}
             required
-            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black border-white text-white':'bg-white border-black  text-black'} border  focus:border-neutral/60  font-light text-lg`}
+            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#432400] border-white text-white':'bg-white border-[#432400]  text-[#432400]'} border  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         <div className='w-full flex flex-row flex-wrap  pt-3 gap-1 text-md align-middle items-center  max-md:gap-0'>
@@ -67,18 +69,18 @@ if (!mounted) return null;
             value={form.email}
             onChange={handleChange}
             required
-              className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white border-white ':'bg-white border-black text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
+              className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#432400] text-white border-white ':'bg-white border-[#432400] text-[#432400]'} border border-[#432400]/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         <div className='w-full flex flex-row flex-wrap pt-3  gap-1 text-md align-middle items-center  max-md:gap-0'>
-          <label className='text-nowrap align-start text-start h-fit max-md:w-full active:bg-black/25 max-md:px-1   w-[200px] font-semibold mulish'>Your Message</label>
+          <label className='text-nowrap align-start text-start h-fit max-md:w-full active:bg-[#432400]/25 max-md:px-1   w-[200px] font-semibold mulish'>Your Message</label>
           <textarea
             name="message"
             value={form.message}
             onChange={handleChange}
             required
             rows={2}
-            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-black text-white border-white ':'bg-white border-black  text-black'} border border-black/40  focus:border-neutral/60  font-light text-lg`}
+            className={`w-full min-w-32 outline-0 p-1 px-3 text-white ${theme==='dark'?'bg-[#432400] text-white border-white ':'bg-white border-[#432400]  text-[#432400]'} border border-[#432400]/40  focus:border-neutral/60  font-light text-lg`}
           />
         </div>
         {/* <div>
@@ -102,7 +104,7 @@ if (!mounted) return null;
          </textarea>
         </div> */}
         <button type="submit" className={`cursor-target w-full p-2 align-middle mt-4 text-2xl ${
-        theme === 'dark' ? 'bg-[#ffedd4] text-black' : 'bg-[#542b00] text-white'
+        theme === 'dark' ? 'bg-[#ffedd4] text-[#432400]' : 'bg-[#432400] text-white'
       }  font-semibold spacin`}>Send</button>
       </form>
       <div className="w-fit gap-4 md:flex-col flex flex-1 flex-row flex-wrap  p-3 md:py-8 align-start justify-start items-start text-wrap pb-10 border-slate-600/50">

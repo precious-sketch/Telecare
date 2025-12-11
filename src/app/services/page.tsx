@@ -47,7 +47,7 @@ const services = [
   },  
   { 
     title: "Organised Healthcare Delivery System", 
-   img: "/service_7.jpg",  
+   img: "/service_13.jpg",  
     desc: "At Telecare Services, we are committed to organizing healthcare delivery in a way that promotes independence, inclusivity, and continuous improvement for those we serve.", 
   }, 
   { 
@@ -79,8 +79,8 @@ if (!mounted) return null;
     <div
   className={` ${
     theme === 'dark'
-      ? 'text-zinc-50 bg-zinc-900'
-      : 'text-zinc-900 bg-zinc-100'
+      ? 'text-zinc-50 bg-[#2d1400]'
+      : 'text-[#2d1400] bg-zinc-100'
   } w-full min-h-screen   mx-auto max-w-7xl`}>
   
   <section className="w-full relative min-h-[250px] h-[40vh] max-h-[600px] bg-cover bg-center"
@@ -90,8 +90,10 @@ if (!mounted) return null;
               }}>
      
               <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
-              <div className="absolute max-w-[500px]   bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl flex flex-row gap-2"> <span className='opacity-70'>OUR </span> <span className={` ${
-        theme === 'dark' ? 'text-[#ffedd4]' : 'text-[#542b00] '
+              <div className="absolute max-w-[500px]   bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl flex flex-row gap-2"> <span  className={` ${
+        theme === 'dark' ? 'text-white' : 'text-black'
+      } `} >OUR </span> <span  className={` ${
+        theme === 'dark' ? 'text-white' : 'text-black'
       } `} >SERVICES</span> </div>
 </section>
    <div
@@ -113,7 +115,7 @@ if (!mounted) return null;
       viewport={{ once:true, amount: 0.2 }}
         key={i}
         className={`${
-          theme === 'dark' ? 'bg-black text-zinc-50' : 'bg-white text-zinc-900'
+          theme === 'dark' ? 'bg-[#432400] text-zinc-50' : 'bg-white text-[#2d1400]'
         } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition `}
       >
         <Image
@@ -129,7 +131,7 @@ if (!mounted) return null;
           <Link
             href={"/services/"+i}
             className={`inline-block mt-1 px-3 cursor-target py-1 font-semibold ${
-        theme === 'dark' ? 'bg-[#ffedd4] text-black' : 'bg-[#542b00] text-white'
+        theme === 'dark' ? 'bg-[#ffedd4] text-[#432400]' : 'bg-[#432400] text-white'
       }`}
           >
             Read more

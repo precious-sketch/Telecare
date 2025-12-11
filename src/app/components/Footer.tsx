@@ -21,7 +21,7 @@ const Footer = () => {
   
   if (!mounted) return null;
   return (
-    <footer className={`border-t border-gray-500  ${theme==='dark'?'bg-black text-gray-400':' bg-white text-gray-600'}  font-sans pb-2 footer`}>
+    <footer className={`border-t border-gray-500  ${theme==='dark'?'bg-[#432400] text-gray-400':' bg-white text-gray-600'}  font-sans pb-2 footer`}>
       <div className=" m-0 mx-auto px-[3%]">
         {/* Social media and other links */}
         <div className="w-full flex-row flex items-center pb-8">

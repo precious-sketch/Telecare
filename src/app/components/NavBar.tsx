@@ -41,14 +41,14 @@ return () => clearTimeout(timer);
   const pathname = usePathname();
 
   const linkClass = (path:string) =>
-    `cursor-target transition-colors capitalise font-[600] ${theme==='dark'?'decoration-[#ffedd4]':'decoration-[#542b00]'} ${
+    `cursor-target transition-colors capitalise font-[600] ${theme==='dark'?'decoration-[#ffedd4]':'decoration-[#432400]'} ${
       pathname === path ? `underline underline-offset-2 decoration-2 ` : ""
     }`;
 
 if (!mounted) return null;
   return (
-    <nav className={`${theme==='dark'?'text-white font-[550]  decoration-[#ffedd4]':'text-black decoration-[#542b00]'} font-medium fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg duration-300`}>
-      <div className={`max-w-4xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? 'bg-black/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-white/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
+    <nav className={`${theme==='dark'?'text-white font-[550]  decoration-[#ffedd4]':'text-[#432400] decoration-[#432400]'} font-medium fixed top-0 left-0 w-full z-50 px-6 py-3  text-lg duration-300`}>
+      <div className={`max-w-4xl mx-auto flex justify-between items-center  ${(theme==='dark'&&scrollY>100)? 'bg-[#432400]/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-white/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
   <motion.div
   initial={{ opacity: 0, x: -150 }}
   animate={{ opacity: 1, x: 0 }}
@@ -81,13 +81,13 @@ if (!mounted) return null;
       <Link href="/services" className={linkClass("/services")}>Services</Link>
       <Link href="/contact" className={linkClass("/contact")}>Contact</Link>
     </motion.div>
-        <div className={`flex items-center gap-4 ${theme==='dark'?'text-white':'text-black'}`}>
+        <div className={`flex items-center gap-4 ${theme==='dark'?'text-white':'text-[#432400]'}`}>
           <ThemeToggle />
           <motion.button
            initial={{ opacity: 0, x: 150 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.3 }}
-            className={`cursor-target md:hidden p-0 ${theme==='dark'?'text-white':'text-black'}`}
+            className={`cursor-target md:hidden p-0 ${theme==='dark'?'text-white':'text-[#432400]'}`}
             onClick={() => setOpen(!open)}
           >
             {open ? <X  className='w-8 h-8' /> : <Menu className='w-8 h-8' />}
@@ -97,7 +97,7 @@ if (!mounted) return null;
 
   
       {open && (
-        <div className={`${theme==='dark'?'bg-black/50 p-3   border border-neutral-700/40 shadow-sm':'bg-white/50 p-3  border border-neutral-700/40 shadow-sm'} md:hidden mt-3 flex flex-col items-center  backdrop-blur-md  py-4 space-y-3`}>
+        <div className={`${theme==='dark'?'bg-[#432400]/50 p-3   border border-neutral-700/40 shadow-sm':'bg-white/50 p-3  border border-neutral-700/40 shadow-sm'} md:hidden mt-3 flex flex-col items-center  backdrop-blur-md  py-4 space-y-3`}>
           <Link href="/"  className={linkClass("/")} onClick={() => setOpen(false)}>Home</Link>
           <Link href="/about"  className={linkClass("/about")} onClick={() => setOpen(false)}>About</Link>
           <Link href="/services"  className={linkClass("/services")} onClick={() => setOpen(false)}>Services</Link>

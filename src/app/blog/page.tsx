@@ -17,7 +17,7 @@ const Page = () => {
      
      if (!mounted) return null;
   return  (
-    <main className={`${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"} min-h-screen py-24`}>
+    <main className={`${theme==='dark'?'bg-[#432400] text-white border-white':"bg-white text-[#432400] border-[#432400]"} min-h-screen py-24`}>
       
       <section className=" shadow-sm border-b border-gray-500">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
@@ -35,7 +35,7 @@ const Page = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
      
-          <article className={`${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
+          <article className={`${theme==='dark'?'bg-[#432400] text-white border-white':"bg-white text-[#432400] border-[#432400]"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
             <img
               src="https://images.unsplash.com/photo-1584466977773-e625c37cdd40"
               alt=""
@@ -56,7 +56,7 @@ const Page = () => {
           </article>
 
           {/* Article 2 */}
-          <article className={`${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
+          <article className={`${theme==='dark'?'bg-[#432400] text-white border-white':"bg-white text-[#432400] border#ffedd4"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
             <img
               src="https://images.unsplash.com/photo-1550831107-1553da8c8464"
               alt=""
@@ -77,7 +77,7 @@ const Page = () => {
           </article>
 
           {/* Article 3 */}
-          <article className={`${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
+          <article className={`${theme==='dark'?'bg-[#432400] text-white border-white':"bg-white text-[#432400] border-[#432400]"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
             <img
               src="https://images.unsplash.com/photo-1580281657527-47dcb0a707e7"
               alt=""
@@ -98,7 +98,7 @@ const Page = () => {
           </article>
 
      
-          {/* <article className={`${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
+          {/* <article className={`${theme==='dark'?'bg-[#432400] text-white border-white':"bg-white text-[#432400] border-[#432400]"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
             <img
               src="https://images.unsplash.com/photo-1579154203451-c88f5ddf0f3b"
               alt="Healthcare Access"
@@ -119,7 +119,7 @@ const Page = () => {
           </article>
 
           
-          <article className={`${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
+          <article className={`${theme==='dark'?'bg-[#432400] text-white border-white':"bg-white text-[#432400] border-[#432400]"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
             <img
               src="https://images.unsplash.com/photo-1612277795900-ec3cfeea8656"
               alt="Heart Disease Research"
@@ -140,7 +140,7 @@ const Page = () => {
           </article>
 
         
-          <article className={`${theme==='dark'?'bg-black text-white border-white':"bg-white text-black border-black"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
+          <article className={`${theme==='dark'?'bg-[#432400] text-white border-white':"bg-white text-[#432400] border-[#432400]"} shadow-lg  overflow-hidden hover:shadow-xl transition`}>
             <img
               src="https://images.unsplash.com/photo-1587502536900-7d933b38a9a5"
               alt="Fitness Report"

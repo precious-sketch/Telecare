@@ -25,14 +25,14 @@ const TermsOfService: React.FC = () => {
     <div
       className={`
         min-h-screen w-full 
-        ${theme === "dark" ? "bg-black text-white" : "bg-zinc-100 text-zinc-900"}
+        ${theme === "dark" ? "bg-[#432400] text-white" : "bg-zinc-100 text-[#2d1400]"}
         flex justify-center px-4 py-32
       `}
     >
       <div
         className={`
           w-full max-w-4xl 
-          ${theme === "dark" ? "bg-zinc-900/60 backdrop-blur-lg" : "bg-white/70 backdrop-blur-lg"}
+          ${theme === "dark" ? "bg-[#2d1400]/60 backdrop-blur-lg" : "bg-white/70 backdrop-blur-lg"}
           shadow-xl p-6 md:p-12 space-y-10
         `}
       >

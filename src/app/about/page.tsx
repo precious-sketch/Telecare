@@ -21,7 +21,7 @@ const Page = () => {
  if (!mounted) return null;
   return (
     <div className={`w-full min-h-screen ${
-        theme === 'dark' ? 'bg-[#50391e] text-white' : 'bg-[#efe1cd] text-[#50391e]'
+        theme === 'dark' ? 'bg-[#71583c] text-white' : 'bg-[#efe1cd] text-[#71583c]'
       }`}>
 <section className="w-full relative min-h-[250px] h-[40vh] max-h-[600px] bg-cover bg-center"
               style={{

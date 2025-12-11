@@ -192,7 +192,7 @@ if (!mounted) return null;
  <Link
             href="/contact"
             className={`inline-block cursor-target mt-1 px-5 max-md:text-lg text-xl  py-2 font-semibold ${
-        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#71583c]' : 'bg-[#71583c] text-white'
       }`}
           >
             Contact Us

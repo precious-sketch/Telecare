@@ -2,29 +2,11 @@
 @import "tailwindcss";
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--fore ground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: white;
-      color: #50391e;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+
   font-family: "Englebert", cursive;
     font-optical-sizing: auto;
     font-style: normal;
@@ -57,9 +39,9 @@ font-family: "Fresca", sans-serif;
  }
 
  .light footer a:hover {
-  color: #50391e;
+  color: #71583c;
 
-  text-decoration-color: #50391e;
+  text-decoration-color: #71583c;
  }
 
  .dark nav a:hover {
@@ -68,9 +50,9 @@ font-family: "Fresca", sans-serif;
  }
 
  .light nav a:hover {
-  color: #50391e;
+  color: #71583c;
 
-  text-decoration-color: #50391e;
+  text-decoration-color: #71583c;
  }
   
     .sidebar {

@@ -51,7 +51,7 @@ if (!mounted) return null;
   className={`${theme === 'dark'
     ? 'text-white font-[550] decoration-[#efe1cd]'
     : 'text-black decoration-[#50391e]'
-  } font-medium fixed left-0 top-0 right-0 w-full z-50 px-6 py-3 text-lg duration-300`}
+  } font-medium fixed left-0 top-0 right-0 w-full z-50 px-6 py-3 text-lg`}
   style={{marginTop: scrollY < 112 ? `${112 - scrollY}px` : "0px"}}
 >
 

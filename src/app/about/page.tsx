@@ -44,15 +44,15 @@ const Page = () => {
 <div className="w-16 h-16 relative"><Image src='/star.png' alt="star" fill  className="" /></div>
 <div className="font-bold text-md md:text-lg 2xl:text-xl">Our Mission</div>
 <div className="text-sm 2xl:text-md">To provide services that are tailored to the participants preferences to enable them to have a full life in the community.</div>
-  </div><div className={`${theme==='dark'?'bg-[#644b2e] text-slate-100':'bg-[#efe1cd] text-slate-900'} w-full text-center flex p-4 flex-col align-middle justify-center items-center max-w-[400px] flex-1  shadow-lg`}>
+  </div><div className={`${theme==='dark'?'bg-[#50391e] text-slate-100':'bg-[#efe1cd] text-slate-900'} w-full text-center flex p-4 flex-col align-middle justify-center items-center max-w-[400px] flex-1  shadow-lg`}>
 <div className="w-16 h-16 relative"><Image src='/star.png' alt="star" fill  className="" /></div>
 <div className="font-bold text-md md:text-lg 2xl:text-xl">Our Vision</div>
 <div className="text-sm 2xl:text-md">To become one of the preferred healthcare providers in Maryland by caring for and supporting participants with intellectual and/or developmental disabilities to have a meaningful life in their chosen community.</div>
-  </div><div className={`${theme==='dark'?'bg-[#644b2e] text-slate-100':'bg-[#efe1cd] text-slate-900'} w-full text-center flex p-4 flex-col align-middle justify-center items-center max-w-[400px] flex-1  shadow-lg`}>
+  </div><div className={`${theme==='dark'?'bg-[#50391e] text-slate-100':'bg-[#efe1cd] text-slate-900'} w-full text-center flex p-4 flex-col align-middle justify-center items-center max-w-[400px] flex-1  shadow-lg`}>
 <div className="w-16 h-16 relative"><Image src='/star.png' alt="star" fill  className="" /></div>
 <div className="font-bold text-md md:text-lg 2xl:text-xl">Our Values</div>
 <div className="text-sm 2xl:text-md">At Telecare Services, our values form the cornerstone of everything we do. Compassion, dignity, inclusivity, and respect guide our approach in empowering individuals to lead fulfilling lives with dignity and autonomy.</div>
-  </div><div className={`${theme==='dark'?'bg-[#644b2e] text-slate-100':'bg-[#efe1cd] text-slate-900'} w-full text-center flex p-4 flex-col align-middle justify-center items-center max-w-[400px] flex-1  shadow-lg`}>
+  </div><div className={`${theme==='dark'?'bg-[#50391e] text-slate-100':'bg-[#efe1cd] text-slate-900'} w-full text-center flex p-4 flex-col align-middle justify-center items-center max-w-[400px] flex-1  shadow-lg`}>
 <div className="w-16 h-16 relative"><Image src='/star.png' alt="star" fill  className="" /></div>
 <div className="font-bold text-md md:text-lg 2xl:text-xl">Our Motto
 </div>

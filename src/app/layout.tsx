@@ -6,6 +6,7 @@ import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import TargetCursor from "./components/TargetCursor";
+import TopNav from "./components/TopNav";
 
 
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         hideDefaultCursor={true}
         parallaxOn={true}
       />
+      <TopNav />
           <Navbar />
             {children}
           <Footer />

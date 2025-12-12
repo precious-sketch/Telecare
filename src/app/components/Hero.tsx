@@ -50,7 +50,9 @@ const Hero = () => {
         theme === 'dark' ? 'text-white' : 'text-black '
       } `} >TELECARE</span><span className={` ${
         theme === 'dark' ? 'text-white' : 'text-black '
-      } `}>SERVICES </span>  </div> <span className='text-lg max-md:text-md max-sm:text-sm text-center mb-2 max-w-[650px] mx-auto w-full'>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
+      } `}>SERVICES </span>  </div> <span className={`text-lg max-md:text-md max-sm:text-sm text-center mb-2 max-w-[650px] mx-auto w-full  ${
+        theme === 'dark' ? 'text-white' : 'text-black '
+      }`}>We are committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland.</span>
  <Link
             href="/contact"
             className={`w-fit mt-1 px-4 mx-auto max-md:text-lg text-xl opacity-100 py-1.5 font-bold cursor-target ${

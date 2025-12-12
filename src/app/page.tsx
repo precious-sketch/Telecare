@@ -147,7 +147,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
     ))}
   </div>
 </section>
-
+{/* 
       <section className={`${
     theme === 'dark'
       ? 'bg-[#644b2e]'
@@ -178,7 +178,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

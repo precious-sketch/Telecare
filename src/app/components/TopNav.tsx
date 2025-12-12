@@ -4,10 +4,23 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from "framer-motion";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const TopNav = () => {
   const { theme, setTheme } = useTheme();
+    useEffect(()=>{
+     console.log('object', theme, scrollY)
+    },[theme, scrollY])
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+  const timer = setTimeout(() => setMounted(true), 0);
+   if(typeof window!= undefined){
+   setTheme(localStorage.getItem('theme')||'dark')
+    }
+  return () => clearTimeout(timer);
+  }, []);
+   
+if (!mounted) return null;
   return (<div className={`${
     theme === 'dark'
       ? 'bg-[#644b2e]'

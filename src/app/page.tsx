@@ -45,7 +45,7 @@ const services = [
   }, 
   { 
     title: "Community Development Services", 
-     img: "/service_4.jpg", 
+     img: "/services_14.jpg", 
     desc: "CDS focuses on fostering community engagement, encouraging social inclusion, and promoting active participation within diverse community settings.", 
   }
 ];

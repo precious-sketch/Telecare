@@ -23,7 +23,7 @@ const Footer = () => {
   
   if (!mounted) return null;
   return (
-    <footer className={`border-t border-gray-500  ${theme==='dark'?'bg-[#50391e] text-gray-400':' bg-[#efe1cd] text-gray-600'}  font-sans pb-2 footer`}>
+    <footer className={`border-t border-gray-500  ${theme==='dark'?'bg-[#50391e] ':' bg-[#efe1cd] '}  font-sans pb-2 footer`}>
       <div className=" m-0 mx-auto px-[3%] pt-4">
         {/* Social media and other links */}
         {/* <div className="w-full flex-row flex items-center pb-8">
@@ -68,8 +68,8 @@ const Footer = () => {
         <div className="w-full mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
 
        
-          <div className="lg:col-span-1 text-gray-500">
-            <div className="border border-gray-500 relative">
+          <div className="lg:col-span-1 ">
+            <div className="border rounded-lg border-gray-500 relative">
               <h3 className="text-lg font-bold p-1 px-3  border-b  border-gray-600/60">Telecare Services</h3>
               <p className="text-sm p-3 ">
                Our mission is rooted in empowering persons with disability to live fulfilling, independent lives within their communities.

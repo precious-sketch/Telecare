@@ -43,7 +43,7 @@ import React, { useState } from 'react';
   },
   {
     "title": "Community Development (CDS)",
-    "img": "/service_4.jpg",
+    "img": "/services_14.jpg",
     "desc": "CDS is concerned with promoting community involvement, social inclusion, and active participation in diverse community contexts.",
     "content_paragraphs": [
       "Community Development Services at Telecare Services, LLC are designed to break down the walls of isolation that many individuals with disabilities face. We believe that a full life includes active participation in the world outside one's front door. Our CDS program facilitates access to community resources, recreational centers, libraries, and public events, making sure our clients are visible and valued members of the community.",

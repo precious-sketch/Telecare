@@ -27,7 +27,7 @@ const services = [
   }, 
   { 
     title: "Community Development Services", 
-     img: "/service_4.jpg", 
+     img: "/services_14.jpg", 
     desc: "CDS focuses on fostering community engagement, encouraging social inclusion, and promoting active participation within diverse community settings.", 
   }, 
   { 
@@ -47,7 +47,7 @@ const services = [
   },  
   { 
     title: "Organised Healthcare Delivery System", 
-   img: "/service_13.jpg",  
+   img: "/services_13.jpg",  
     desc: "At Telecare Services, we are committed to organizing healthcare delivery in a way that promotes independence, inclusivity, and continuous improvement for those we serve.", 
   }, 
   { 

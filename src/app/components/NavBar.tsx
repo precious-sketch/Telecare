@@ -56,7 +56,7 @@ if (!mounted) return null;
 >
 
     
-      <div className={`max-w-2xl mx-auto flex justify-between items-center max-md: ${(theme==='dark'&&scrollY>100)? 'bg-[#50391e]/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-[#efe1cd]/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
+      <div className={`max-w-2xl max-md:w-fit mx-auto flex justify-between items-center max-md: ${(theme==='dark'&&scrollY>100)? 'bg-[#50391e]/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-[#efe1cd]/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
       <motion.div
       initial={{ opacity: 0, y: -200 }}
       animate={{ opacity: 1, y: 0 }}

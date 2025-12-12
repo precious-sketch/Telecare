@@ -8,6 +8,7 @@ import React, { useEffect, useState } from 'react'
 
 const TopNav = () => {
   const { theme, setTheme } = useTheme();
+      const [scrollY, setScrollY] = useState(0);
     useEffect(()=>{
      console.log('object', theme, scrollY)
     },[theme, scrollY])
@@ -26,20 +27,34 @@ if (!mounted) return null;
       ? 'bg-[#644b2e]'
       : 'bg-[#fff9f0]'
   } w-full h-28 align-middle flex items-center`}>
-<motion.div
+<div className={` w-full h-28 align-middle flex items-center justify-center`}>
+       <motion.div
   initial={{ opacity: 0, x: -150 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.4 }}
-><Link href="/" className="w-28 h-28 relative block">
+>
+  <Link href="/" className="w-24 h-24 relative block">
     <Image
-      src='https://res.cloudinary.com/dayvllk5w/image/upload/v1765535934/logo_bw9gem.jpg'
+      src={
+        theme === "dark"
+          ? "https://res.cloudinary.com/dayvllk5w/image/upload/v1764707810/logo_light_br_sqdgac.png"
+          : "https://res.cloudinary.com/dayvllk5w/image/upload/v1764707809/logo_dark_br_ywdqow.png"
+      }
       alt="Logo"
       fill
       className="object-contain"
       priority
     />
   </Link>
-</motion.div></div>
+</motion.div>
+<div className="font-extrabold pl-2 text-2xl">
+    TELECARE 
+    <br />
+    SERVICES
+</div>
+</div>
+
+</div>
   )
 }
 

@@ -176,7 +176,7 @@ const Footer = () => {
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.4 }}
 >
-  <Link href="/" className="w-28 h-28 relative block">
+  <Link href="/" className="w-24 h-24 relative block">
     <Image
       src={
         theme === "dark"
@@ -189,7 +189,13 @@ const Footer = () => {
       priority
     />
   </Link>
-</motion.div></div>
+</motion.div>
+<div className="font-extrabold pl-2 text-2xl">
+    TELECARE 
+    <br />
+    SERVICES
+</div>
+</div>
         <div className="my-6 mb-0 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 border-t border-gray-500/30 pt-6 space-x-4">
           <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-3">
             <Link href="/policy/privacy" className="">

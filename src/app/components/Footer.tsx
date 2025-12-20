@@ -23,7 +23,7 @@ const Footer = () => {
   
   if (!mounted) return null;
   return (
-    <footer className={`border-t border-gray-500  ${theme==='dark'?'bg-[#50391e] ':' bg-[#efe1cd] '}  font-sans pb-2 footer`}>
+    <footer className={`border-t border-gray-500/60  ${theme==='dark'?'bg-[#50391e] ':' bg-[#fff9f0] '}  font-sans pb-2 footer`}>
       <div className=" m-0 mx-auto px-[3%] pt-4">
         {/* Social media and other links */}
         {/* <div className="w-full flex-row flex items-center pb-8">
@@ -170,7 +170,7 @@ const Footer = () => {
               </ul>
           </div>
         </div>
-<div className={` w-full h-28 align-middle flex items-center justify-center`}>
+<div className={` w-full h-24 align-middle flex items-center justify-center`}>
        <motion.div
   initial={{ opacity: 0, x: -150 }}
   animate={{ opacity: 1, x: 0 }}
@@ -178,11 +178,7 @@ const Footer = () => {
 >
   <Link href="/" className="w-24 h-24 relative block">
     <Image
-      src={
-        theme === "dark"
-          ? "https://res.cloudinary.com/dayvllk5w/image/upload/v1764707810/logo_light_br_sqdgac.png"
-          : "https://res.cloudinary.com/dayvllk5w/image/upload/v1764707809/logo_dark_br_ywdqow.png"
-      }
+      src='https://res.cloudinary.com/dayvllk5w/image/upload/v1765535934/logo_bw9gem.jpg'
       alt="Logo"
       fill
       className="object-contain"

@@ -49,14 +49,14 @@ if (!mounted) return null;
   return (
     <nav
   className={`${theme === 'dark'
-    ? 'text-white font-[550] decoration-[#efe1cd]'
+    ? 'text-white mx-auto font-[550] decoration-[#efe1cd]'
     : 'text-black decoration-[#50391e]'
-  } font-medium fixed left-0 top-0 right-0 w-full z-50 px-6 py-3 text-lg`}
+  } font-medium fixed  top-0 left-1/2 -translate-x-1/2 w-fit z-50 px-6 py-3 text-lg`}
   style={{marginTop: scrollY < 112 ? `${112 - scrollY}px` : "0px"}}
 >
 
     
-      <div className={`max-w-2xl max-md:w-fit mx-auto flex justify-between items-center max-md: ${(theme==='dark'&&scrollY>100)? 'bg-[#50391e]/50 p-3  backdrop-blur-sm border border-neutral-700/40 shadow-sm':((theme==='light'&&scrollY>100)?'bg-[#efe1cd]/50 p-3 backdrop-blur-sm border border-neutral-700/40 shadow-sm':'bg-none p-0 backdrop-blur-none border-0 shadow-none')}`}>
+      <div className={`max-w-6xl max-md:w-fit mx-auto flex justify-between items-center ${(theme==='dark'&&scrollY>100)? 'bg-[#50391e]/50 p-3  backdrop-blur-sm border border-neutral-500/50 shadow-sm':((theme==='light'&&scrollY>100)?'bg-[#efe1cd]/50 p-3 backdrop-blur-sm border border-neutral-500/70 shadow-sm':'bg-none p-0  backdrop-blur-none border-0 shadow-none')}`}>
       <motion.div
       initial={{ opacity: 0, y: -200 }}
       animate={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ if (!mounted) return null;
       <Link href="/services" className={linkClass("/services")}>Services</Link>
       <Link href="/contact" className={linkClass("/contact")}>Contact</Link>
     </motion.div>
-        <div className={`flex items-center float-right mr-0 gap-4 ${theme==='dark'?'text-white':'text-[#50391e]'}`}>
+        <div className={`flex items-center float-right md:pl-20 gap-4 ${theme==='dark'?'text-white':'text-[#50391e]'}`}>
           <ThemeToggle />
           <motion.button
            initial={{ opacity: 0, x: 150 }}
@@ -84,13 +84,15 @@ if (!mounted) return null;
 
   
       {open && (
-        <div className={`${theme==='dark'?'bg-[#50391e]/50 p-3   border border-neutral-700/40 shadow-sm':'bg-[#efe1cd]/50 p-3  border border-neutral-700/40 shadow-sm'} md:hidden mt-3 flex flex-col items-center  backdrop-blur-md  py-4 space-y-3`}>
+        <div className={`${theme==='dark'?'bg-[#50391e]/50 p-3   border border-neutral-700/40 shadow-sm':'bg-[#efe1cd]/50 p-3  border border-neutral-700/40 shadow-sm'} md:hidden mt-3 flex flex-col items-start  backdrop-blur-md  py-4 space-y-3`}>
           <Link href="/"  className={linkClass("/")} onClick={() => setOpen(false)}>Home</Link>
           <Link href="/about"  className={linkClass("/about")} onClick={() => setOpen(false)}>About</Link>
           <Link href="/services"  className={linkClass("/services")} onClick={() => setOpen(false)}>Services</Link>
           {/* <Link href="/tools" onClick={() => setOpen(false)}>Tools</Link>
           <Link href="/career" onClick={() => setOpen(false)}>Career</Link> */}
           <Link href="/contact"  className={linkClass("/contact")} onClick={() => setOpen(false)}>Contact</Link>
+          
+          <ThemeToggle />
         </div>
       )}
     </nav>

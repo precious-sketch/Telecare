@@ -89,7 +89,7 @@ if (!mounted) return null;
                 filter: theme === 'dark' ? 'brightness(0.6)' : 'brightness(1)',
               }}>
      
-              <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000035,black)]':'bg-[radial-gradient(circle_at_center,#ffffff35,white)]'}`}></div>
+             <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#644b2e35,#644b2e)]':'bg-[radial-gradient(circle_at_center,#efe1cd35,#efe1cd)]'}`}></div>
               <div className="absolute max-w-[500px]   bottom-0 left-0 w-full p-3 py-2 z-10 font-extrabold text-6xl max-xl:text-4xl max-md:text-3xl flex flex-row gap-2"> <span  className={` ${
         theme === 'dark' ? 'text-white' : 'text-black'
       } `} >OUR </span> <span  className={` ${
@@ -116,7 +116,7 @@ if (!mounted) return null;
         key={i}
         className={`${
           theme === 'dark' ? 'bg-[#50391e] text-zinc-50' : 'bg-[#efe1cd] text-[#644b2e]'
-        } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition `}
+        } shadow-lg hover:shadow-xl hover:scale-105 w-full max-w-[300px] overflow-hidden transition `}
       >
         <Image
           src={item.img}
@@ -126,7 +126,7 @@ if (!mounted) return null;
           className="object-cover w-full h-48"
         />
         <div className="p-4 space-y-1">
-          <h3 className="font-bold text-base">{item.title}</h3>
+          <h3 className="font-bold text-lg">{item.title}</h3>
           <p className="text-sm opacity-80">{item.desc}</p>
           <Link
             href={"/services/"+i}

@@ -7,7 +7,6 @@
 
 body {
 
-  font-family: "Englebert", cursive;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -35,26 +34,29 @@ font-family: "Fresca", sans-serif;
     }
  .dark footer a:hover {
   color: #efe1cd;
+  transform: scale(1.1);
+    text-decoration: underline;
     text-decoration-color: #efe1cd;
  }
 
  .light footer a:hover {
   color: #50391e;
 
+text-decoration: underline;
   text-decoration-color: #50391e;
  }
 
  .dark nav a:hover {
   color: #efe1cd;
+text-decoration: underline;
     text-decoration-color: #efe1cd;
  }
 
  .light nav a:hover {
   color: #50391e;
-
+text-decoration: underline;
   text-decoration-color: #50391e;
- }
-  
+}
     .sidebar {
   background-color: rgb(35 55 75 / 90%);
   color: #fff;

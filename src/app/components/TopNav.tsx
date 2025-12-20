@@ -25,9 +25,9 @@ if (!mounted) return null;
   return (<div className={`${
     theme === 'dark'
       ? 'bg-[#644b2e]'
-      : 'bg-[#fff9f0]'
-  } w-full h-28 align-middle flex items-center`}>
-<div className={` w-full h-28 align-middle flex items-center justify-center`}>
+      : 'bg-[#efe1cd]'
+  } w-full h-24 align-middle flex items-center`}>
+<div className={` w-full h-24 align-middle flex items-center justify-center`}>
        <motion.div
   initial={{ opacity: 0, x: -150 }}
   animate={{ opacity: 1, x: 0 }}
@@ -35,14 +35,10 @@ if (!mounted) return null;
 >
   <Link href="/" className="w-24 h-24 relative block">
     <Image
-      src={
-        theme === "dark"
-          ? "https://res.cloudinary.com/dayvllk5w/image/upload/v1764707810/logo_light_br_sqdgac.png"
-          : "https://res.cloudinary.com/dayvllk5w/image/upload/v1764707809/logo_dark_br_ywdqow.png"
-      }
+      src='https://res.cloudinary.com/dayvllk5w/image/upload/v1765535934/logo_bw9gem.jpg'
       alt="Logo"
       fill
-      className="object-contain"
+      className="object-cover"
       priority
     />
   </Link>

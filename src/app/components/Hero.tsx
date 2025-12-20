@@ -45,7 +45,7 @@ const Hero = () => {
         ))}
       </Zoom>
       {/* <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[radial-gradient(circle_at_center,#00000025,black)]':'bg-[radial-gradient(circle_at_center,#ffffff25,white)]'}`}></div> */}
- <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[#50391e]/40':'bg-[#efe1cd]/40'}`}></div>
+ <div className={`z-10 absolute top-0 right-0 left-0 bottom-0 w-full  h-full ${theme==='dark'?'bg-[#644b2e]/40':'bg-[#efe1cd]/40'}`}></div>
 <div className="absolute opacity-85 flex flex-col  top-1/2 w-[95%] -translate-y-1/2  left-1/2 -translate-x-1/2 p-4 pt-5 z-10"> <div className="w-full text-center py-2 z-10 font-extrabold  text-5xl max-lg:text-4xl max-md:text-3xl flex flex-row gap-2 flex justify-center"> <span className={` ${
         theme === 'dark' ? 'text-white' : 'text-black '
       } `} >TELECARE</span><span className={` ${

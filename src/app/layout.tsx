@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        
+        className="transition-all duration-1000"
       >
         <ThemeProvider
           attribute="class"

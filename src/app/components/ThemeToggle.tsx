@@ -27,14 +27,14 @@ return (
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className={`cursor-target ${
         theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
-      } px-1.5 p-1 pr-3 font-semibold transition text-sm`}
+      } px-1.5 h-8 pr-2 font-semibold transition text-md`}
        aria-labelledby="Toggle theme"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (
-       <span className='gap-1.5 flex flex-row items-center align-middle'><Sun className="w-5 h-5 text-blue-400" /> <span>Light</span></span> 
+       <span className='gap-1.5 flex flex-row items-center align-middle text-center'><Sun className="w-5 h-5 text-blue-400" /> <span>Light</span></span> 
       ) : (
-       <span className='gap-1.5 flex flex-row items-center align-middle '> <Moon className="w-5 h-5 text-gray-400" /> <span> Dark</span> </span>
+       <span className='gap-1.5 flex flex-row items-center align-middle text-center '> <Moon className="w-5 h-5 text-gray-400" /> <span className='text-center flex item-center align-middle justify-center'> Dark</span> </span>
       )}
     </motion.button>
   );

@@ -27,6 +27,38 @@ testimony:"Timely services delivered worthy of recommendation to anyone."
   }
 ];
 
+const locations = [
+  {
+    title: "Cambridge Home",
+    address: [
+      "206 S Regulator Dr, Cambridge, MD 21613"
+    ],
+    phone: "443-972-5909"
+  },
+  {
+    title: "Silver Spring Home",
+    address: [
+      "13220 Schubert Place, Silver Spring, MD 20904"
+    ],
+    phone: "443-249-3285"
+  },
+  {
+    title: "Ridgely Home",
+    address: [
+      "111 West 1st Street, Ridgely, MD 21660"
+    ],
+    phone: "410-634-8278"
+  },
+  {
+    title: "Centerville Home",
+    address: [
+      "207 W Water St, Centreville"
+    ],
+    phone: "443-988-0391"
+  }
+];
+
+
 const services = [
   { 
     title: "Personal Support", 
@@ -70,35 +102,40 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
       <Hero />
       <section className={`${
     theme === 'dark'
-      ? 'bg-[#644b2e]'
+      ? 'bg-[#50391e]'
       : 'bg-[#fff9f0]'
-  } w-full h-fit py-14 flex flex-col align-middle justify-center items-start px-[3%]`}>
+  } w-full h-fit py-14 flex flex-row-reverse gap-5 align-middle justify-center items-start px-[3%]`}>
+    
+<div className="w-full h-96 relative ">
+  <Image className="object-contain" alt="team image" fill src='/happy-business-team.png' />
+</div>
+<div className="w-full flex flex-col ">
      <span className="text-3xl mb-4 font-semibold">ABOUT US</span>
 
-<span className=" max-sm:text-sm max-w-[500px] max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 flex flex-row  max-md:flex-col">  <span>
+<span className=" max-sm:text-sm max-w-[1000px] max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 flex flex-row  max-md:flex-col-reverse">  <span className="w-full flex items-start text-justify">
 At Telecare Services, we’re committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland. Our mission is rooted in empowering each participant to live fulfilling, independent lives within their communities. <br /> 
 {/* Our team is made up of dedicated professionals who bring not only experience but also empathy, patience, and a deep sense of purpose to their work.  Every member contributes significantly to the participants development, success, and sense of worth.  We strive to create an environment where families feel supported, individuals feel heard, and communities feel enriched by the contributions and unique strengths of those we serve.  This collective passion strengthens our mission every single day. */}
 </span>
-<span>
 
     {/* At the heart of our services is a strong focus on person-centred care, where every plan is shaped around what matters most to the participant.  Since every persons journey is unique, we customise our support to help them develop self-sufficiency, cultivate deep connections, and participate with confidence in daily activities.  By prioritising choice and autonomy, we encourage participants to take active roles in shaping their lives and exploring opportunities that bring them joy, fulfilment, and a true sense of belonging. */}
    
 
     {/* Every choice we make and every interaction we have is guided by our mission, vision, and values.  Compassion leads our approach, dignity shapes our respect for each person, inclusivity strengthens our communities, and responsibility drives our commitment to doing what is right.  In addition to providing care, Telecare Services aims to improve lives, boost self-esteem, and pave the way for self-sufficiency and personal development.  Through consistent support and a strong sense of partnership, we empower individuals to live meaningful, rewarding lives within the communities they choose. */}
     
-</span></span>
+</span>
 <Link className={`cursor-target w-fit h-fit p-2 px-3 mt-2 flex items-end font-semibold ${
         theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       } `} href='/about'>More about us</Link>
+      </div>
       </section>
   <section
   className={` ${
     theme === 'dark'
-      ? 'bg-[#50391e]'
+      ? 'bg-[#644b2e]'
       : 'bg-[#efe1cd]'
-  } w-full min-h-screen py-10 px-4 mx-auto max-w-7xl`}
+  } w-full h-fit flex align-middle justify-center flex-col py-16 px-[3%] m-auto`}
 >
- <div className="w-full flex flex-row"><h2 className="w-full text-3xl flex flex-1 m-auto font-bold mb-8 text-center">Services</h2>
+ <div className="w-full flex flex-row"><h2 className="w-full flex flex-1 m-auto font-bold mb-8 text-3xl text-center">Services</h2>
   <Link href='/services' className={`cursor-target w-fit h-fit p-1 px-2 text-sm font-semibold ${
         theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }`}>View all services</Link></div> 
@@ -106,7 +143,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
   <div
     className="
       grid 
-      gap-6 
+      gap-10 
       sm:grid-cols-2 
       lg:grid-cols-3 
       xl:grid-cols-4
@@ -121,8 +158,8 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
       viewport={{ once:true, amount: 0.2 }}
         key={i}
         className={`${
-          theme === 'dark' ? 'bg-[#644b2e] text-zinc-50' : 'bg-[#fff9f0] text-[#644b2e]'
-        } shadow-md hover:shadow-lg w-full max-w-[300px] overflow-hidden transition `}
+          theme === 'dark' ? 'bg-[#50391e] text-zinc-50' : 'bg-[#fff9f0] text-[#644b2e]'
+        } shadow-lg hover:shadow-2xl hover:scale-105 w-full max-w-[300px] overflow-hidden transition `}
       >
         <Image
           src={item.img}
@@ -132,7 +169,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
           className="object-cover w-full h-48"
         />
         <div className="p-4 space-y-1">
-          <h3 className="font-bold text-base">{item.title}</h3>
+          <h3 className="font-bold text-lg">{item.title}</h3>
           <p className="text-sm opacity-80">{item.desc}</p>
           <Link
             href={'/services/'+i}
@@ -146,7 +183,88 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
       </motion.div>
     ))}
   </div>
+  <div className="">
+
+  </div>
 </section>
+<section
+  className={` ${
+    theme === 'dark'
+      ? 'bg-[#644b2e]'
+      : 'bg-[#efe1cd]'
+  } w-full h-fit flex align-middle justify-center flex-col py-16 px-[3%] m-auto`}
+>
+  <h2 className="text-3xl  font-bold text-start mb-8">
+    Our Locations
+  </h2>
+
+  <div
+    className="
+       grid 
+      gap-10 
+      sm:grid-cols-2 
+      lg:grid-cols-3 
+      xl:grid-cols-4
+      justify-items-center-safe
+    "
+  >
+    {locations.map((location, i) => (
+      <motion.div
+        key={i}
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        className={`${
+          theme === 'dark' ? 'bg-[#50391e] text-zinc-50' : 'bg-[#fff9f0] text-[#644b2e]'
+        } shadow-lg hover:shadow-2xl hover:scale-105 w-full gap-2 flex flex-col align-start justify-between items-center text-center max-w-[300px] overflow-hidden transition py-8 p-3`}
+      >
+        <h3 className={`text-2xl font-bold 600 mb-2 ${
+          theme === 'dark' ? 'text-[#fff9f0]' : 'text-[#50391e] '
+        } `}>
+          {location.title}
+        </h3>
+
+     
+
+        <div className="space-y-1  text-sm mb-6">
+          {location.address.map((line, idx) =>
+           
+              <p key={idx}>{line}</p>
+            
+          )}
+        </div>
+
+        {location.phone && (
+          <p className="text-sm">
+            <span className="font-semibold">Phone:</span>{" "}
+            {location.phone}
+          </p>
+        )}
+
+      
+
+        <button
+          className={`cursor-target inline-block mt-3 px-3 py-1 font-semibold ${
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
+      }`}
+        >
+          Call us
+        </button>
+
+        <Link
+            href={'/services/'+i}
+            className={`cursor-targe`}
+          >
+        <div   className={`cursor-target inline-block mt-1 px-3 py-1 font-semibold ${
+        theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
+      }`}>Get Direction</div>    
+          </Link>
+      </motion.div>
+    ))}
+  </div>
+</section>
+
 {/* 
       <section className={`${
     theme === 'dark'

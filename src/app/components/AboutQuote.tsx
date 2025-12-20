@@ -16,7 +16,7 @@ const AboutQuote = () => {
               key={index}
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
-              transition={{ duration: 0.1, delay: index * 0.1 }}
+              transition={{ duration: 0.03, delay: index * 0.03 }}
               className="georgia"
             >
               {letter}

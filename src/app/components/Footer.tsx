@@ -170,7 +170,7 @@ const Footer = () => {
               </ul>
           </div>
         </div>
-<div className={` w-full h-24 align-middle flex items-center justify-center`}>
+<div className={` w-full h-24 mt-16 align-middle flex items-center justify-center`}>
        <motion.div
   initial={{ opacity: 0, x: -150 }}
   animate={{ opacity: 1, x: 0 }}
@@ -192,7 +192,7 @@ const Footer = () => {
     SERVICES
 </div>
 </div>
-        <div className="my-6 mb-0 flex flex-col md:flex-row justify-between items-center text-xs  border-t border-gray-500/30 pt-6 space-x-4">
+        <div className=" mb-0 pt-2 flex flex-col md:flex-row justify-between items-center text-xs  border-t border-gray-500/30 space-x-4">
           <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-3">
             <Link href="/policy/privacy" className="">
               Privacy Policy

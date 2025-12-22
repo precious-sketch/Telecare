@@ -104,15 +104,46 @@ return (<div className={`flex flex-col min-h-screen items-center justify-center 
     theme === 'dark'
       ? 'bg-[#50391e]'
       : 'bg-[#fff9f0]'
-  } w-full h-fit py-14 flex flex-row-reverse gap-5 align-middle justify-center items-start px-[3%]`}>
-    
-<div className="w-full h-96 relative ">
+  } w-full h-fit py-14 md:py-28 px-[3%]`}>
+    <div className="w-full max-w-5xl  flex flex-row-reverse m-auto gap-[3%] align-middle justify-center items-start">
+{/* <div className="w-full h-72 relative max-md:hidden">
   <Image className="object-contain" alt="team image" fill src='/happy-business-team.png' />
-</div>
-<div className="w-full flex flex-col ">
-     <span className="text-3xl mb-4 font-semibold">ABOUT US</span>
+</div> */}
 
-<span className=" max-sm:text-sm max-w-[1000px] max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 flex flex-row  max-md:flex-col-reverse">  <span className="w-full flex items-start text-justify">
+    <div className="relative aspect-square w-1/2 min-h-80 max-md:hidden">
+    
+      <Image
+       src='/happy-business-team.png'
+        alt="Blurred edge image"
+        fill
+        className="object-cover rounded-xl"
+        style={{
+          maskImage:
+            "radial-gradient(circle, black 30%, transparent 75%)",
+          WebkitMaskImage:
+            "radial-gradient(circle, black 30%, transparent 75%)",
+        }}
+      />
+    </div>
+<div className="w-full flex flex-col gap-3">
+     <span className="text-4xl font-semibold">About us</span>
+
+    <div className="relative aspect-square w-80 h-80 md:hidden">
+    
+      <Image
+       src='/happy-business-team.png'
+        alt="Blurred edge image"
+        fill
+        className="object-cover rounded-xl aspect-square"
+        style={{
+          maskImage:
+            "radial-gradient(circle, black 30%, transparent 75%)",
+          WebkitMaskImage:
+            "radial-gradient(circle, black 30%, transparent 75%)",
+        }}
+      />
+    </div>
+<span className=" max-sm:text-sm max-w-[1000px] max-lg:text-md max-2xl:text-lg text-xl leading-snug tracking-wide  justify-center text-justify gap-4 flex flex-row  max-md:flex-col-reverse">  <span className="w-full flex items-start text-justify leading-loose">
 At Telecare Services, we’re committed to providing compassionate and comprehensive Home-based and Community-Focused Care services for individuals with intellectual and developmental disabilities across Maryland. Our mission is rooted in empowering each participant to live fulfilling, independent lives within their communities. <br /> 
 {/* Our team is made up of dedicated professionals who bring not only experience but also empathy, patience, and a deep sense of purpose to their work.  Every member contributes significantly to the participants development, success, and sense of worth.  We strive to create an environment where families feel supported, individuals feel heard, and communities feel enriched by the contributions and unique strengths of those we serve.  This collective passion strengthens our mission every single day. */}
 </span>
@@ -126,7 +157,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
 <Link className={`cursor-target w-fit h-fit p-2 px-3 mt-2 flex items-end font-semibold ${
         theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       } `} href='/about'>More about us</Link>
-      </div>
+      </div></div>
       </section>
   <section
   className={` ${
@@ -135,7 +166,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
       : 'bg-[#efe1cd]'
   } w-full h-fit flex align-middle justify-center flex-col py-16 px-[3%] m-auto`}
 >
- <div className="w-full flex flex-row"><h2 className="w-full flex flex-1 m-auto font-bold mb-8 text-3xl text-center">Services</h2>
+ <div className="w-full flex flex-row"><h2 className="w-full flex flex-1 m-auto font-bold mb-8 text-4xl text-center">Our Services</h2>
   <Link href='/services' className={`cursor-target w-fit h-fit p-1 px-2 text-sm font-semibold ${
         theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }`}>View all services</Link></div> 
@@ -194,7 +225,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
       : 'bg-[#efe1cd]'
   } w-full h-fit flex align-middle justify-center flex-col py-16 px-[3%] m-auto`}
 >
-  <h2 className="text-3xl  font-bold text-start mb-8">
+  <h2 className="text-4xl  font-bold text-start mb-8">
     Our Locations
   </h2>
 
@@ -244,16 +275,17 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
 
       
 
-        <button
+        <Link
+        href={`tell:${location.phone}`}
           className={`cursor-target inline-block mt-3 px-3 py-1 font-semibold ${
         theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }`}
         >
           Call us
-        </button>
+        </Link>
 
         <Link
-            href={'/services/'+i}
+            href={'/location/'+i}
             className={`cursor-targe`}
           >
         <div   className={`cursor-target inline-block mt-1 px-3 py-1 font-semibold ${

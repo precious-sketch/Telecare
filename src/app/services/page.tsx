@@ -80,8 +80,8 @@ if (!mounted) return null;
   className={` ${
     theme === 'dark'
       ? 'text-zinc-50 bg-[#644b2e]'
-      : 'text-[#644b2e] bg-[#fff9f0]'
-  } w-full min-h-screen   mx-auto max-w-7xl`}>
+      : 'text-[#644b2e] bg-[#efe1cd]'
+  } w-full min-h-screen   mx-auto`}>
   
   <section className="w-full relative min-h-[250px] h-[40vh] max-h-[600px] bg-cover bg-center"
               style={{
@@ -115,7 +115,7 @@ if (!mounted) return null;
       viewport={{ once:true, amount: 0.2 }}
         key={i}
         className={`${
-          theme === 'dark' ? 'bg-[#50391e] text-zinc-50' : 'bg-[#efe1cd] text-[#644b2e]'
+          theme === 'dark' ? 'bg-[#50391e] text-zinc-50' : 'bg-[#fff9f0] text-[#644b2e]'
         } shadow-lg hover:shadow-xl hover:scale-105 w-full max-w-[300px] overflow-hidden transition `}
       >
         <Image

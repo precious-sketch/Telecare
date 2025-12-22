@@ -49,9 +49,9 @@ if (!mounted) return null;
   return (
     <nav
   className={`${theme === 'dark'
-    ? 'text-white mx-auto font-[550] decoration-[#efe1cd]'
+    ? 'text-white md:mx-auto max-md:left-0 max-md:mr-3 font-[550] decoration-[#efe1cd]'
     : 'text-black decoration-[#50391e]'
-  } font-medium fixed  top-0 left-1/2 -translate-x-1/2 w-fit z-50 px-6 py-3 text-lg`}
+  } font-medium fixed  top-0 md:left-1/2 md:-translate-x-1/2 w-fit z-50 py-3 text-lg`}
   style={{marginTop: scrollY < 112 ? `${112 - scrollY}px` : "0px"}}
 >
 
@@ -63,10 +63,10 @@ if (!mounted) return null;
       transition={{ duration: 0.4, delay: 0.3 }}
       className="hidden md:flex space-x-6"
     >
-      <Link href="/" className={linkClass("/")}>Home</Link>
-      <Link href="/about" className={linkClass("/about")}>About</Link>
-      <Link href="/services" className={linkClass("/services")}>Services</Link>
-      <Link href="/contact" className={linkClass("/contact")}>Contact</Link>
+      <Link href="/" className={linkClass("/")}>HOME</Link>
+      <Link href="/about" className={linkClass("/about")}>ABOUT</Link>
+      <Link href="/services" className={linkClass("/services")}>SERVICES</Link>
+      <Link href="/contact" className={linkClass("/contact")}>CONTACT</Link>
     </motion.div>
         <div className={`flex items-center float-right md:pl-20 gap-4 ${theme==='dark'?'text-white':'text-[#50391e]'}`}>
           <ThemeToggle />
@@ -77,7 +77,7 @@ if (!mounted) return null;
             className={`cursor-target md:hidden p-0 ${theme==='dark'?'text-white':'text-[#50391e]'}`}
             onClick={() => setOpen(!open)}
           >
-            {open ? <X  className='w-8 h-8' /> : <Menu className='w-8 h-8' />}
+            {open ? <X  className='w-9 h-9' /> : <Menu className='w-9 h-9' />}
           </motion.button>
         </div>
       </div>
@@ -92,7 +92,7 @@ if (!mounted) return null;
           <Link href="/career" onClick={() => setOpen(false)}>Career</Link> */}
           <Link href="/contact"  className={linkClass("/contact")} onClick={() => setOpen(false)}>Contact</Link>
           
-          <ThemeToggle />
+        
         </div>
       )}
     </nav>

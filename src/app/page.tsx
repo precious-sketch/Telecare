@@ -190,7 +190,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
         key={i}
         className={`${
           theme === 'dark' ? 'bg-[#50391e] text-zinc-50' : 'bg-[#fff9f0] text-[#644b2e]'
-        } shadow-lg hover:shadow-2xl hover:scale-105 w-full max-w-[300px] overflow-hidden transition `}
+        } shadow-lg hover:shadow-2xl hover:scale-105 w-full max-w-[350px] overflow-hidden transition `}
       >
         <Image
           src={item.img}

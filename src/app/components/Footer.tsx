@@ -149,7 +149,7 @@ const Footer = () => {
             
                 <li>
                   <Link href="tel:+14432493285" className="">
-                   +1 (443) 249-3285
+                    443 249-3285
                   </Link>
                 </li>
               </ul>

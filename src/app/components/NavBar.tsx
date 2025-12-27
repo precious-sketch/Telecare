@@ -49,7 +49,7 @@ if (!mounted) return null;
   return (
     <nav
   className={`${theme === 'dark'
-    ? 'text-white md:mx-auto max-md:left-0 max-md:mr-3 font-[550] decoration-[#efe1cd]'
+    ? 'text-white md:mx-auto max-md:right-0 max-md:mr-3 font-[550] decoration-[#efe1cd]'
     : 'text-black decoration-[#50391e]'
   } font-medium fixed  top-0 md:left-1/2 md:-translate-x-1/2 w-fit z-50 py-3 text-lg`}
   style={{marginTop: scrollY < 112 ? `${112 - scrollY}px` : "0px"}}

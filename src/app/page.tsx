@@ -33,28 +33,32 @@ const locations = [
     address: [
       "206 S Regulator Dr, Cambridge, MD 21613"
     ],
-    phone: "443-972-5909"
+    phone: "443-972-5909",
+    number:'+14439725909'
   },
   {
     title: "Silver Spring Home",
     address: [
       "13220 Schubert Place, Silver Spring, MD 20904"
     ],
-    phone: "443-249-3285"
+    phone: "443-249-3285",
+    number:'+14432493285'
   },
   {
     title: "Ridgely Home",
     address: [
       "111 West 1st Street, Ridgely, MD 21660"
     ],
-    phone: "410-634-8278"
+    phone: "410-634-8278",
+    number:'+14106348278'
   },
   {
     title: "Centerville Home",
     address: [
       "207 W Water St, Centreville"
     ],
-    phone: "443-988-0391"
+    phone: "443-988-0391",
+    number:'+14439880391'
   }
 ];
 
@@ -276,7 +280,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
       
 
         <Link
-        href={`tell:${location.phone}`}
+        href={`tel:${location.number}`}
           className={`cursor-target inline-block mt-3 px-3 py-1 font-semibold ${
         theme === 'dark' ? 'bg-[#efe1cd] text-[#50391e]' : 'bg-[#50391e] text-white'
       }`}
@@ -285,7 +289,7 @@ At Telecare Services, we’re committed to providing compassionate and comprehen
         </Link>
 
         <Link
-            href={'/location/'+i}
+            href={`/locations#${i}`}
             className={`cursor-targe`}
           >
         <div   className={`cursor-target inline-block mt-1 px-3 py-1 font-semibold ${

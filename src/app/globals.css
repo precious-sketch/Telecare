@@ -10,6 +10,14 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
+html,
+* {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 80px;
+}
 * {
 font-family: "Fresca", sans-serif;
   font-optical-sizing: auto;

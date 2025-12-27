@@ -105,6 +105,7 @@ if (!mounted) return null;
       lg:grid-cols-3 
       xl:grid-cols-4
       justify-items-center
+      px-[3%]
     "
   >
     {services.map((item, i) => (

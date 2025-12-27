@@ -116,7 +116,7 @@ if (!mounted) return null;
 <div className="font-bold">Call us</div>
 <div className="flex flex-col text-sm w-full  tracking-tighter">
 <Link href="tel:+14432493285" className="">
-                   +1 (443) 249-3285
+                   443 249-3285
                   </Link>
 </div>
 </div>

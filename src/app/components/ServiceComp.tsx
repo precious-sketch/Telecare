@@ -180,12 +180,12 @@ if (!mounted) return null;
     </div>
 
     {/* Content Sections */}
-    <div className="mt-4 space-y-3">
+    <div className="mt-4 space-y-5">
 
     {service.content_paragraphs.map((res, index)=>{
-        return  <p key={index} className="
+        return  <p key={index} className=" relative
        text-md">
-        {res}
+       <span className='absolute top-0 bottom-0 left-1/2 -translate-x-1/2 text-5xl font-extrabold'>{index+1}</span> {res}
     </p>
     })}
 

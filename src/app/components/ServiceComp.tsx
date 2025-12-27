@@ -181,14 +181,14 @@ if (!mounted) return null;
 
     {/* Content Sections */}
     <div className="mt-4 space-y-5">
-
+<ul className='space-y-3'>
     {service.content_paragraphs.map((res, index)=>{
-        return  <p key={index} className=" relative
+        return  <li key={index} className="list-disc relative
        text-md">
-       <span className='absolute top-0 bottom-0 left-1/2 -translate-x-1/2 text-5xl font-extrabold'>{index+1}</span> {res}
-    </p>
+        {res}
+    </li>
     })}
-
+</ul>
  <Link
             href="/contact"
             className={`inline-block cursor-target mt-1 px-5 max-md:text-lg text-xl  py-2 font-semibold ${

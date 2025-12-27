@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
 @import "tailwindcss";
 
 
@@ -19,8 +19,7 @@ html,
   scroll-margin-top: 80px;
 }
 * {
-font-family: "Fresca", sans-serif;
-  font-optical-sizing: auto;
+font-family: "Sniglet", system-ui;
   font-style: normal;
 }
 
